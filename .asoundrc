@@ -1,3 +1,5 @@
+# Please only use this if you'd like to route all alsa traffic to pulseaudio
+
 # Use PulseAudio by default
 pcm.!default {
   type pulse
@@ -12,5 +14,3 @@ ctl.!default {
   type pulse
   fallback "sysdefault"
 }
-
-# vim:set ft=alsaconf:
