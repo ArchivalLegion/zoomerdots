@@ -1,5 +1,5 @@
 ## URxvt Settings
-##
+## Xdefaults
 ##
 urxvt*termName:				rxvt-unicode
 urxvt*depth:				32
