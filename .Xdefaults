@@ -1,0 +1,55 @@
+## URxvt Settings
+##
+##
+urxvt*termName:				rxvt-unicode
+urxvt*depth:				32
+## Font
+xft*dpi:					96
+xft*antialias:				true
+xft*hinting:				true
+xft*autohint:				false
+xft*hintstyle:				hintfull
+xft*rgba:					rgb
+xft*lcdfilter:				lcddefault
+urxvt*font:					xft:Droid Sans Mono
+urxvt*boldFont:				xft:Droid Sans Mono:bold
+urxvt*letterSpace:			0
+##
+## Scrolling
+##
+## remove scrollbar
+urxvt*scrollBar:			false
+## do not scroll with output
+urxvt*scrollTtyOutput:		false
+## scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+urxvt*scrollWithBuffer:		true
+## scroll back to the bottom on keypress
+urxvt*scrollTtyKeypress:	true
+## let programs with their own scrollback buffer handle themselves
+urxvt*secondaryScreen:		1
+urxvt*secondaryScroll:		0
+urxvt*secondaryWheel:		1
+##
+## Coloring
+##
+urxvt*background:			#1c1b20
+urxvt*pointerColor:			#b7dc4d
+urxvt*cursorColor:			#b7dc4d
+##
+URxvt*foreground:			#ffffff
+URxvt*color0:				#3f3f3f
+URxvt*color1:				#705050
+URxvt*color2:				#00b45a
+URxvt*color3:				#dfcf8f
+URxvt*color4:				#506070
+URxvt*color5:				#dc8cc3
+URxvt*color6:				#8cd0d3
+URxvt*color7:				#dcdccc
+URxvt*color8:				#709080
+URxvt*color9:				#cc5454
+URxvt*color10:				#4d9f4d
+URxvt*color11:				#f0dfaf
+URxvt*color12:				#4186be
+URxvt*color13:				#ec93d3
+URxvt*color14:				#93e0e3
+URxvt*color15:				#ffffff
