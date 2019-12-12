@@ -1,0 +1,123 @@
+ThemeName="gkaiser"
+ThemeDescription="Green beats for iceWM"
+ThemeAuthor="Ren Canteros Sousa <ren DOT kudun AT gmx DOT com>"
+License="GPL"
+Look=flat
+
+TitleBarHeight=22
+TitleButtonsSupported=""
+#xmihs
+TitleBarCentered=0
+TitleBarJustify=50
+
+BorderSizeX=0
+BorderSizeY=0
+CornerSizeX=24
+CornerSizeY=24
+DlgBorderSizeX=0
+DlgBorderSizeY=0
+
+ColorNormalBorder="rgb:2d/2d/2d"
+ColorActiveBorder="rgb:2d/2d/2d"
+ColorNormalButton="rgb:2d/2d/2d"
+ColorActiveButton="rgb:2d/2d/2d"
+ColorNormalTitleBar="rgb:2d/2d/2d"
+ColorActiveTitleBar="rgb:2d/2d/2d"
+ColorNormalTitleBarText="rgb:2d/2d/2d"
+ColorActiveTitleBarText="rgb:56/52/48"
+ColorActiveTitleBarShadow="rgb:2d/2d/2d"
+
+ColorNormalMenu="rgb:2d/2d/2d"
+ColorActiveMenuItem="black"
+ColorNormalMenuItemText="rgb:5a/5f/5f"
+ColorActiveMenuItemText="white"
+ColorDisabledMenuItemText="black"
+
+ColorMoveSizeStatus="rgb:2d/2d/2d"
+ColorMoveSizeStatusText="rgb:9c/a9/57"
+
+ColorDefaultTaskBar="rgb:2d/2d/2d"
+ColorNormalTaskBarApp="rgb:2d/2d/2d"
+ColorNormalTaskBarAppText="rgb:5f/5f/5f"
+ColorActiveTaskBarApp="rgb:2d/2d/2d"
+ColorActiveTaskBarAppText="rgb:9c/a9/57"
+ColorMinimizedTaskBarApp="rgb:2d/2d/2d"
+ColorMinimizedTaskBarAppText="rgb:5f/5f/5f"
+ColorInvisibleTaskBarApp="rgb:2d/2d/2d"
+ColorInvisibleTaskBarAppText="rgb:5f/5f/5f"
+
+ColorQuickSwitch="rgb:2d/2d/2d"
+ColorQuickSwitchText="rgb:5f/5f/5f"
+ColorQuickSwitchActive="rgb:9c/a9/57"
+
+DesktopBackgroundColor="rgb:9c/a9/57"
+DesktopBackgroundCenter=1 # 0 / 1
+DesktopBackgroundScaled=0 # 0 / 1
+DesktopBackgroundImage = "458.jpg"
+
+ColorScrollBar="rgb:2d/2d/2d"
+ColorScrollBarArrow="rgb:2d/2d/2d"
+ColorScrollBarSlider="rgb:2d/2d/2d"
+ColorListBox="rgb:2d/2d/2d"
+ColorListBoxText="rgb:5f/5f/5f"
+ColorListBoxSelection="rgb:2d/2d/2d"
+ColorListBoxSelectionText="rgb:9c/a9/57"
+
+ColorToolTip="rgb:2d/2d/2d"
+ColorToolTipText="rgb:a2/af/5d"
+ColorLabel="rgb:2d/2d/2d"
+ColorLabelText="rgb:a2/af/5d"
+
+ColorClock="rgb:2d/2d/2d"
+ColorClockText="rgb:9c/a9/57"
+
+ColorCPUStatusUser="rgb:0c/8c/5c"
+ColorCPUStatusSystem="rgb:de/ef/6e"
+ColorCPUStatusNice="rgb:db/af/5d"
+ColorCPUStatusIdle="rgb:db/cf/6e"
+ColorNetSend="rgb:db/ef/6e"
+ColorNetReceive="rgb:85/8c/5c"
+ColorNetIdle="black"
+
+ColorActiveWorkspaceButton="rgb:2d/2d/2d"
+ColorActiveWorkspaceButtonText="white"
+SmallIconSize=16
+
+TitleFontName="-*-terminus-*-13-*-*-*-p-*-koi8-r"
+TitleFontNameXft = terminusre33:size=9
+MenuFontNameXft	           =    terminusre33:size=9
+MinimizedWindowFontNameXft =   terminusre33:size=9
+ActiveButtonFontNameXft    =    terminusre33:size=9
+ToolButtonFontNameXft    =    terminusre33:size=9
+NormalWorkspaceFontNameXft	=	terminusre33:size=9
+ActiveWorkspaceFontNameXft	=	terminusre33:size=9
+NormalButtonFontNameXft    =   terminusre33:size=9
+QuickSwitchFontNameXft     =    terminusre33:size=9
+ListBoxFontNameXft         =    terminusre33:size=9
+StatusFontNameXft          =   terminusre33:size=9
+ToolTipFontNameXft         =   terminusre33:size=9
+ActiveTaskBarFontNameXft   =   terminusre33:size=9
+NormalTaskBarFontNameXft   =   terminusre33:size=9
+ClockFontNameXft           =   terminusre33:size=9:bold
+InputFontNameXft		  =    terminusre33:size=9
+ApmFontNameXft             =   terminusre33:size=9
+
+#MenuFontName		=	"terminus-8-*-*-*-*-*-*-*"
+MinimizedWindowFontName	=	"terminus-10-*-*-*-*-*-*-*"
+ActiveButtonFontName	=	"terminus-10-*-*-*-*-*-*-*"
+NormalButtonFontName	=	"terminus-10-*-*-*-*-*-*-*"
+QuickSwitchFontName	=	"terminus-10-*-*-*-*-*-*-*"
+ListBoxFontName		=	"terminus-10-*-*-*-*-*-*-*"
+StatusFontName		=	"terminus-10-*-*-*-*-*-*-*"
+ToolTipFontName		=	"terminus-10-*-*-*-*-*-*-*"
+ActiveTaskBarFontName	=	"terminus-10-*-*-*-*-*-*-*"
+NormalTaskBarFontName	=	"terminus-10-*-*-*-*-*-*-*"
+ClockFontName		=	"terminus-10-*-*-*-*-*-*-*"
+ApmFontName		=	"terminus-10-*-*-*-*-*-*-*"
+
+TaskBarClockLeds=0
+TaskBarDoubleHeight=0
+SmallIconSize=8
+ShowMenuButtonIcon=1
+
+
