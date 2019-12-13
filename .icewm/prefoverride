@@ -52,7 +52,7 @@ DlgBorderSizeY=2 # [0-128]
 # CornerSizeY=24 # [0-64]
 
 #  Title bar height
-TitleBarHeight=21 # [0-128]
+TitleBarHeight=22 # [0-128]
 
 #  Justification of the window title
 # TitleBarJustify=0 # [0-100]
