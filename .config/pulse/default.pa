@@ -32,13 +32,13 @@ load-module module-switch-on-port-available
 load-module module-native-protocol-unix
 
 ### Manual alsa card
-load-module module-alsa-card device_id="0" card_name="TuxxAudio" namereg_fail=true sink_name="Archie" source_name="Mastas" format=float32le rate=48000 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
+#load-module module-alsa-card device_id="0" card_name="TuxxAudio" namereg_fail=true sink_name="Archie" source_name="Mastas" format=float32le rate=48000 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
 ### List of buffers *Using 44100 [2048 = 5.804~ 5.8 (128) | 4096 = 11.609~ 11.6 (256)]
 
 ### Auto load cards
-#.ifexists module-udev-detect.so
-#load-module module-udev-detect
-#.else
+.ifexists module-udev-detect.so
+load-module module-udev-detect
+.else
 
 ### Null sink for echo waste
 #load-module module-null-sink sink_name="Tek" format=float32le rate=48000 channels=2 channel_map=front-left,front-right
