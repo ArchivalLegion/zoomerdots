@@ -26,4 +26,3 @@ key "XF86AudioRaiseVolume"	amixer sset Master 5%+
 key "XF86AudioMute"			amixer sset Master toggle
 key "XF86MonBrightnessUp"	brightlight -pi 10
 key "XF86MonBrightnessDown"	brightlight -pd 10
-#
