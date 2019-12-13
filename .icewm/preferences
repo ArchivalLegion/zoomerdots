@@ -838,7 +838,7 @@ DesktopBackgroundCenter=0 # 0/1
 DesktopBackgroundScaled=1 # 0/1
 
 #  Desktop background image(s)
-DesktopBackgroundImage="/home/prostagama/Pictures/wllppr/astro-vib.png"
+DesktopBackgroundImage=
 
 #  Desktop background color(s)
 DesktopBackgroundColor=""
