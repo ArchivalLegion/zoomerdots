@@ -14,6 +14,6 @@
 # COULD KILL THE XSERVER!
 
 xrdb -load $HOME/.Xresources
-exec dbus-launch --exit-with-session icewm
+icewm-session
 
 # Of course this can't be agnostic because this file is tailored for a single person's DE/WM setup
