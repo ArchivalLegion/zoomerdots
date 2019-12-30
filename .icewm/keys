@@ -9,11 +9,13 @@
 # You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
 # XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
 #
-key "Super+t"	urxvt
-key "Super+g"	geany
+key	"Super+t"	urxvt
+key	"Super+g"	geany
 key	"Super+b"	chromium --incognito
-key "Super+a"	urxvt -e pulsemixer
-#
+key	"Super+a"	urxvt -e pulsemixer
+#key	"F11"		clicker
+#key	"F12"		killall xdotool
+
 # "Multimedia key" bindings for Xorg. Gather the keycodes of your
 # advanced function keys by watching the output of the xev command whilest
 # pressing those keys and map those symbols by using xmodmap.

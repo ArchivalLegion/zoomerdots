@@ -1,0 +1,5 @@
+# This is an example for IceWM's window options file.
+#
+# Place your variants in /etc/X11/icewm or in $HOME/.icewm
+# since modifications to this file will be discarded when you
+# (re)install icewm.
