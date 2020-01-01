@@ -1,0 +1,583 @@
+#-----INFO-----
+
+#  Description of the theme, credits
+ThemeDescription="A port of Ant-Dracula Blood for IceWM"
+
+#  Theme author, e-mail address, credits
+ThemeAuthor="TODO"
+
+# Formating: section =       "#                       "
+#                             #-----NAME OF GROUP-----
+#                            "#                       "
+#                             |
+# sub-section =              "#-----ETC-----"
+
+#
+#-----Colors-----
+#
+# Everything till "#//" is color related.
+
+# Which pixmap type to use, I'm not using one so it's "flat"
+Look="flat"
+
+#  List of gradient pixmaps in the current theme
+Gradients=""
+
+#-----CPU-----
+#  User load on the CPU monitor
+ColorCPUStatusUser="rgb:05/D5/FC"
+
+#  System load on the CPU monitor
+ColorCPUStatusSystem="rgb:DE/B9/7D"
+
+#  Interrupts on the CPU monitor
+#ColorCPUStatusInterrupts="rgb:FF/FF/00"
+
+#  IO Wait on the CPU monitor
+ColorCPUStatusIoWait="rgb:60/00/60"
+
+#  Soft Interrupts on the CPU monitor
+#ColorCPUStatusSoftIrq="rgb:00/FF/FF"
+
+#  Nice load on the CPU monitor
+#ColorCPUStatusNice="rgb:00/00/FF"
+
+#  Idle (non) load on the CPU monitor, leave empty to force transparency
+ColorCPUStatusIdle="rgb:28/2A/36"
+
+#  Involuntary Wait on the CPU monitor
+#ColorCPUStatusSteal="rgb:FF/8A/91"
+
+#  Temperature of the CPU
+ColorCPUStatusTemp="rgb:F8/66/AF"
+
+
+#-----Network-----
+#  Outgoing load on the network monitor
+ColorNetSend="rgb:98/66/C5"
+
+#  Incoming load on the network monitor
+ColorNetReceive="rgb:B2/22/22"
+
+#  Idle (non) load on the network monitor, leave empty to force transparency
+ColorNetIdle="rgb:28/2A/36"
+
+
+#-----Memory-----
+
+#  User program usage in the memory monitor
+# ColorMEMStatusUser="rgb:40/40/80"
+
+#  OS buffers usage in the memory monitor
+# ColorMEMStatusBuffers="rgb:60/60/C0"
+
+#  OS cached usage in the memory monitor
+# ColorMEMStatusCached="rgb:80/80/FF"
+
+#  Free memory in the memory monitor
+# ColorMEMStatusFree="rgb:00/00/00"
+
+
+#-----Battery-----
+
+#  Background of APM monitor, leave empty to force transparency
+ColorApm="rgb:28/2A/36"
+
+#  Textcolor of APM monitor
+# ColorApmText="rgb:EF/72/BB"
+
+#  Color of APM monitor in battery mode
+# ColorApmBattery="rgb:FF/FF/00"
+
+#  Color of APM monitor in line mode
+ColorApmLine="rgb:EF/72/BB"
+
+#  Background color for graph mode
+ColorApmGraphBg="rgb:28/2A/36"
+
+#-----Clock-----
+
+#  Background of non-LCD clock, leave empty to force transparency
+ColorClock="rgb:1E/1F/29"
+
+#  Text of non-LCD monitor
+ColorClockText="rgb:EF/72/BB"
+
+
+#-----Workspace-----
+
+#  Background of workspace buttons, ColorNormalButton is used if empty
+ColorNormalWorkspaceButton="rgb:1E/1F/29"
+
+#  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
+ColorNormalWorkspaceButtonText="rgb:50/FA/7B"
+
+#  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
+ColorActiveWorkspaceButtonText="rgb:EF/72/BB"
+
+#-----Titlebar-----
+
+#  Border of inactive windows
+ColorNormalBorder="rgb:1E/1F/29"
+
+#  Border of active windows
+ColorActiveBorder="rgb:1E/1F/29"
+
+#  Background of the titlebar of active windows
+ColorActiveTitleBar="rgb:1E/1F/29"
+
+#  Background of the titlebar of regular windows
+ColorNormalTitleBar="rgb:1E/1F/29"
+
+#  Textcolor of the titlebar of regular windows
+ColorNormalTitleBarText="rgb:FF/FF/FF"
+
+#  Textcolor of the titlebar of active windows
+ColorActiveTitleBarText="rgb:FF/FF/FF"
+
+#-----Menu-----
+
+#  Background of pop-up menus
+ColorNormalMenu="rgb:1E/1F/29"
+
+#  Background of selected menu item, leave empty to force transparency
+ColorActiveMenuItem="rgb:28/2A/36"
+
+#  Textcolor of regular menu items
+ColorNormalMenuItemText="rgb:FF/FF/FF"
+
+#  Textcolor of selected menu items
+ColorActiveMenuItemText="rgb:50/FA/7B"
+
+#  Textcolor of disabled menu items
+ColorDisabledMenuItemText="rgb:FF/55/55"
+
+
+#-----Taskbar-----
+
+#  Background of the taskbar
+ColorDefaultTaskBar="rgb:1E/1F/29"
+
+#  Background for task buttons of regular windows 
+ColorNormalTaskBarApp="rgb:1E/1F/29"
+
+#  Textcolor for task buttons of regular windows
+ColorNormalTaskBarAppText="rgb:EF/72/BB"
+
+#  Textcolor for task buttons of the active window
+ColorActiveTaskBarAppText="rgb:FF/52/30"
+
+#  Background for task buttons of the active window
+ColorActiveTaskBarApp="rgb:28/2A/36"
+
+#  Background for task buttons of minimized windows
+ColorMinimizedTaskBarApp="rgb:1E/1F/29"
+
+#  Textcolor for task buttons of minimized windows
+ColorMinimizedTaskBarAppText="rgb:EF/72/BB"
+
+#-----Listbox-----
+
+ColorListBox="rgb:1C/1B/20"
+ColorListBoxText="rgb:FF/FF/FF"
+ColorListBoxSelection="rgb:05/D5/FC"
+ColorListBoxSelectionText="rgb:FF/FF/FF"
+
+#-----Scrollbar-----
+
+ColorScrollBar="rgb:1C/1B/20"
+ColorScrollBarSlider="rgb:3A/3E/42"
+ColorScrollBarButton="rgb:3A/3E/42"
+ColorScrollBarButtonArrow="rgb:FF/ff/ff"
+
+#-----Move Size Status-----
+
+#  Background of move/resize status window
+ColorMoveSizeStatus="rgb:1E/1F/29"
+
+#  Textcolor of move/resize status window
+ColorMoveSizeStatusText="rgb:FF/FF/FF"
+
+
+#-----QuickSwitch-----
+
+#  Background of the quick switch window
+ColorQuickSwitch="rgb:1E/1F/29"
+
+#  Textcolor in the quick switch window
+ColorQuickSwitchText="rgb:FF/FF/FF"
+
+#  Rectangle arround the active icon in the quick switch window
+ColorQuickSwitchActive="rgb:28/2A/36"
+
+
+#-----ToolTip-----
+
+#  Background of tooltips
+ColorToolTip="rgb:1E/1F/29"
+
+#  Textcolor of tooltips
+ColorToolTipText="rgb:FF/FF/FF"
+
+#-----Dialog-----
+
+#  Background of dialog windows
+ColorDialog="rgb:1E/1F/29"
+
+#  Background of labels, leave empty to force transparency
+ColorLabel="rgb:1E/1F/29"
+
+#  Textcolor of labels
+ColorLabelText="rgb:FF/FF/FF"
+
+#  Background of regular buttons
+ColorNormalButton="rgb:28/2A/36"
+
+#  Textcolor of regular buttons
+ColorNormalButtonText="rgb:FF/FF/FF"
+#//
+
+
+#
+#-----Fonts-----
+#
+
+#  Name of the title bar font.
+TitleFontName=""
+
+#  Name of the title bar font.
+TitleFontNameXft="sans:size=12"
+
+#  Name of the menu font.
+MenuFontName=""
+
+#  Name of the menu font.
+MenuFontNameXft="sans:size=10"
+
+#  Name of the status display font.
+StatusFontName=""
+
+#  Name of the status display font.
+StatusFontNameXft="monospace:size=8"
+
+#  Name of the font for Alt+Tab switcher window.
+QuickSwitchFontName=""
+
+#  Name of the font for Alt+Tab switcher window.
+QuickSwitchFontNameXft="sans:size=10"
+
+#  Name of the normal button font.
+NormalButtonFontName=""
+
+#  Name of the normal button font.
+NormalButtonFontNameXft="sans:size=10:bold"
+
+#  Name of the active button font.
+ActiveButtonFontName=""
+
+#  Name of the active button font.
+ActiveButtonFontNameXft="sans:size=10:italic:bold"
+
+#  Name of the normal task bar item font.
+NormalTaskBarFontName=""
+
+#  Name of the normal task bar item font.
+NormalTaskBarFontNameXft="sans:size=10:bold"
+
+#  Name of the active task bar item font.
+ActiveTaskBarFontName=""
+
+#  Name of the active task bar item font.
+ActiveTaskBarFontNameXft="sans:size=10:bold"
+
+#  Name of the tool button font (fallback: NormalButtonFontName).
+ToolButtonFontName=""
+
+#  Name of the tool button font (fallback: NormalButtonFontName).
+ToolButtonFontNameXft="sans:size=12"
+
+#  Name of the normal workspace button font (fallback: NormalButtonFontName).
+NormalWorkspaceFontName=""
+
+#  Name of the normal workspace button font (fallback: NormalButtonFontName).
+NormalWorkspaceFontNameXft="sans:size=12"
+
+#  Name of the active workspace button font (fallback: ActiveButtonFontName).
+ActiveWorkspaceFontName=""
+
+#  Name of the active workspace button font (fallback: ActiveButtonFontName).
+ActiveWorkspaceFontNameXft="sans:size=12"
+
+#  Name of the mini-window font.
+MinimizedWindowFontName=""
+
+#  Name of the mini-window font.
+MinimizedWindowFontNameXft="sans:size=12"
+
+#  Name of the window list font.
+ListBoxFontName=""
+
+#  Name of the window list font.
+ListBoxFontNameXft="sans:size=12"
+
+#  Name of the tool tip font.
+ToolTipFontName=""
+
+#  Name of the tool tip font.
+ToolTipFontNameXft="sans:size=10"
+
+#  Name of the task bar clock font.
+ClockFontName=""
+
+#  Name of the task bar clock font.
+ClockFontNameXft="sans:size=10:bold"
+
+#  Name of the task bar temperature font.
+TempFontName=""
+
+#  Name of the task bar temperature font.
+TempFontNameXft="sans:size=8"
+
+#  Name of the task bar battery font.
+ApmFontName=""
+
+#  Name of the task bar battery font.
+ApmFontNameXft="sans:size=8"
+
+#  Name of the input field font.
+InputFontName=""
+
+#  Name of the input field font.
+InputFontNameXft="monospace:size=10"
+
+#  Name of the label font.
+LabelFontName=""
+
+#  Name of the label font.
+LabelFontNameXft="sans:size=12"
+
+
+#
+#-----Misc-----
+#
+
+RolloverButtonsSupported=1
+
+
+#
+#-----Menu (App menu, Root menu)-----
+#
+
+#  Menus track mouse even with no mouse buttons held
+MenuMouseTracking=1 # 0/1
+
+#  Show application icon over menu button
+ShowMenuButtonIcon=0 # 0/1
+
+#
+#-----Window Prop.-----
+#
+
+#-----Title bar-----
+
+#  Title bar height
+TitleBarHeight=22 # [0-128]
+
+#  Justification of the window title
+TitleBarJustify=50 # [0-100]
+
+#  Join title*S and title*T
+TitleBarJoinLeft=0 # 0/1
+
+#  Join title*T and title*B
+TitleBarJoinRight=0 # 0/1
+
+#  Titlebar buttons from left to right (x=close,  m=max,  i=min,  h=hide, r=rollup,       s=sysmenu,      d=depth)
+TitleButtonsLeft=""
+
+#  Titlebar buttons from right to left (x=close,  m=max,  i=min,  h=hide, r=rollup,       s=sysmenu,      d=depth)
+TitleButtonsRight=""
+
+#  Does it support the 'O' title bar button images (for mouse rollover)
+TitleButtonsSupported=""
+
+#  Horizontal offset for the window title text
+TitleBarHorzOffset=0 # [-128-128]
+
+#  Vertical offset for the window title text
+TitleBarVertOffset=0 # [-128-128]
+
+
+#-----Borders-----
+
+#  Horizontal window border
+BorderSizeX=0 # [0-128]
+
+#  Vertical window border
+BorderSizeY=0 # [0-128]
+
+#  Resize corner width
+CornerSizeX=0 # [0-64]
+
+#  Resize corner height
+CornerSizeY=0 # [0-64]
+
+#  Horizontal dialog window border
+DlgBorderSizeX=0 # [0-128]
+
+#  Vertical dialog window border
+DlgBorderSizeY=0 # [0-128]
+
+
+#
+#	Icons
+#
+
+#  Menu icon size
+MenuIconSize=16 # [8-128]
+
+#  Dimension of the small icons
+SmallIconSize=16 # [8-128]
+
+#  Dimension of the large icons
+LargeIconSize=32 # [8-128]
+
+#  Dimension of the large icons
+HugeIconSize=48 # [8-128]
+
+
+#
+#-----Taskbar-----
+#
+
+#  Show a button to collapse the taskbar
+TaskBarShowCollapseButton=0
+
+#  Show clock on task bar
+TaskBarShowClock=1 # 0/1
+
+#  Task bar clock/APM uses nice pixmapped LCD display (but then it doesn't display correctly in many languages anymore, e.g. for Japanese and Korean it works only when a real font is used and not the LEDs
+TaskBarClockLeds=0 # 0/1
+
+#  Use double-height task bar
+TaskBarDoubleHeight=0 # 0/1
+
+#  Enable address bar functionality in taskbar
+EnableAddressBar=1 # 0/1
+
+#  Show address bar in task bar
+ShowAddressBar=1 # 0/1
+
+#  Show APM status in graph mode
+TaskBarShowAPMGraph=1 # 0/1
+
+#  Taskbar justify left, right or center
+TaskBarJustify="center"
+
+#  Task bar width as percentage of the screen width
+TaskBarWidthPercentage=100 # [0-100]
+
+#  Place workspace pager on left, not right
+TaskBarWorkspacesLeft=1 # 0/1
+
+#  Show workspace switching buttons on task bar
+TaskBarShowWorkspaces=1 # 0/1
+
+#  Place workspace pager on top row when using dual-height taskbar
+TaskBarWorkspacesTop=0 # 0/1
+
+#  Enable mouse wheel cycling over workspaces and task buttons in taskbar
+TaskBarUseMouseWheel=0 # 0/1
+
+#  Show a mini desktop preview on each workspace button
+PagerShowPreview=0 # 0/1
+
+#  Draw window icons inside large enough preview windows on pager (if PagerShowPreview=1)
+PagerShowWindowIcons=0 # 0/1
+
+#  Draw even minimized windows as unfilled rectangles (if PagerShowPreview=1)
+PagerShowMinimized=0 # 0/1
+
+#  Draw border around workspace buttons (if PagerShowPreview=1)
+PagerShowBorders=0 # 0/1
+
+#  Show number of workspace on workspace button (if PagerShowPreview=1)
+PagerShowNumbers=1 # 0/1
+
+#  Width of taskbutton side icons
+TaskbuttonIconOffset=0 # [0-16]
+
+#  Maximum scaled width of tray icons
+# TrayIconMaxWidth=32 # [16-128]
+
+#  Maximum scaled height of tray icons
+# TrayIconMaxHeight=24 # [16-128]
+
+#  Show icons of windows on the task bar
+TaskBarShowWindowIcons=1 # 0/1
+
+#  Show 'Start' menu on task bar
+TaskBarShowStartMenu=0 # 0/1
+
+#  Show 'window list' menu on task bar
+TaskBarShowWindowListMenu=0 # 0/1
+
+#  Show windows on the taskbar
+TaskBarShowWindows=1 # 0/1
+
+#  Show 'show desktop' button on taskbar
+TaskBarShowShowDesktopButton=0 # 0/1
+
+#  Show Ellipsis in taskbar items
+ShowEllipsis=1 # 0/1
+
+#  Show application icon over menu button
+ShowMenuButtonIcon=0 # 0/1
+
+#
+#-----Quickswitch-----
+# Alt+TAB
+
+#  Show all reachable icons when quick switching
+QuickSwitchAllIcons=1 # 0/1
+
+#  Show the window title above (all reachable) icons
+QuickSwitchTextFirst=1 # 0/1
+
+#  Attempt to create a small QuickSwitch window (1/3 instead of 3/5 of screen width)
+QuickSwitchSmallWindow=1 # 0/1
+
+#  Go trough all window titles and choose width of the longest one
+QuickSwitchMaxWidth=0 # 0/1
+
+#  Place the icons and titles vertical instead of horizontal
+QuickSwitchVertical=1 # 0/1
+
+#  Show the huge (48x48) of the window icon for the active window
+QuickSwitchHugeIcon=1 # 0/1
+
+#  Horizontal margin of the quickswitch window
+QuickSwitchHorzMargin=2 # [0-64]
+
+#  Vertical margin of the quickswitch window
+QuickSwitchVertMargin=2 # [0-64]
+
+#  Vertical margin in the quickswitch window
+QuickSwitchIconMargin=6 # [0-64]
+
+#  Distance between the active icon and it's border
+QuickSwitchIconBorder=0 # [0-64]
+
+#  Height of the separator between (all reachable) icons and text, 0 to avoid it
+QuickSwitchSeparatorSize=0 # [0-64]
+
+
+#
+#-----Scrollbar-----
+#
+
+#  Scrollbar width
+# ScrollBarX=16 # [0-64]
+
+#  Scrollbar (button) height
+# ScrollBarY=16 # [0-64]
