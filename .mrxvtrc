@@ -1,46 +1,52 @@
-##	This .mrxvtrc file is for the abandoned Mrxvt terminal emulator
+##	This .mrxvtrc file for the abandoned Mrxvt terminal emulator
 ##		Hopefully this can help someone who still uses
 ##			mrxvt in 2019~xxxx	;-)
+# /
 #
 # Transparency / Opacity options
 #
-mrxvt.transparent:			False
-mrxvt.opacity:				90
-mrxvt.transparentTabbar:	False
+Mrxvt.transparent:			False
+Mrxvt.opacity:				90
+Mrxvt.transparentTabbar:	False
+# /
 #
 # Scroll options
 #
-mrxvt.scrollBar:			False
-mrxvt.mouseWheelScrollPage:	False
+Mrxvt.scrollBar:			False
+Mrxvt.mouseWheelScrollPage:	False
+# /
 #
 # Coloring
 #
-mrxvt.background:			#1C1B20
-mrxvt.pointerColor:			#B7DC4D
-mrxvt.cursorColor:			#B7DC4D
-mrxvt.tabBackground:		#1C1B20
-mrxvt.itabBackground:		#1C1B20
-mrxvt.tabForeground:		#B7DC4D
-mrxvt.itabForeground:		#779CC3
+Mrxvt.background:			#1C1B20
+Mrxvt.pointerColor:			#B7DC4D
+Mrxvt.cursorColor:			#B7DC4D
+Mrxvt.tabBackground:		#1C1B20
+Mrxvt.itabBackground:		#1C1B20
+Mrxvt.tabForeground:		#B7DC4D
+Mrxvt.itabForeground:		#779CC3
+# /
 #
 # Fonts
 #
 # Make sure you compile True/Free type font support !!
-mrxvt.xft:					True
-mrxvt.xftaa:				True
-mrxvt.xftGlobalAdvance:		False
-mrxvt.xftHinting:			True
-mrxvt.xftAutoHint:			True
-mrxvt.xftRGBA:				rgb
-mrxvt.xftFont:				Ubuntu Mono
+Mrxvt.xft:					True
+Mrxvt.xftaa:				True
+Mrxvt.xftGlobalAdvance:		False
+Mrxvt.xftHinting:			True
+Mrxvt.xftAutoHint:			True
+Mrxvt.xftRGBA:				rgb
+Mrxvt.xftFont:				Ubuntu Mono
+# /
 #
 # Keyboard & window options
 #
-mrxvt.fullscreen:			False
-mrxvt.cursorBlink:			False
-mrxvt.visualBell:			True
+Mrxvt.fullscreen:			False
+Mrxvt.cursorBlink:			False
+Mrxvt.visualBell:			True
+# /
 #
 # Terminal Options
 #
-mrxvt.title:				VTerm
-mrxvt.termName:				rxvt
+Mrxvt.title:				VTerm
+Mrxvt.termName:				rxvt

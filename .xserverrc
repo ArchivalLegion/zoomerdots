@@ -1,5 +1,3 @@
 #!/bin/sh
-# Simply starts X on current vt and slight hardening
-# https://tstarling.com/blog/2016/06/x11-security-isolation/
 
 exec /usr/bin/Xorg -nolisten tcp -nolisten local "$@" vt$XDG_VTNR
