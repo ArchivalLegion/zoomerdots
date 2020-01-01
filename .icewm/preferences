@@ -177,19 +177,19 @@ QuickSwitchAllIcons=1 # 0/1
 QuickSwitchTextFirst=1 # 0/1
 
 #  Attempt to create a small QuickSwitch window (1/3 instead of 3/5 of screen width)
-QuickSwitchSmallWindow=0 # 0/1
+QuickSwitchSmallWindow=1 # 0/1
 
 #  Go trough all window titles and choose width of the longest one
 QuickSwitchMaxWidth=0 # 0/1
 
 #  Place the icons and titles vertical instead of horizontal
-# QuickSwitchVertical=1 # 0/1
+QuickSwitchVertical=1 # 0/1
 
 #  Show the huge (48x48) of the window icon for the active window
-# QuickSwitchHugeIcon=0 # 0/1
+QuickSwitchHugeIcon=1 # 0/1
 
 #  Fill the rectangle highlighting the current icon
-# QuickSwitchFillSelection=0 # 0/1
+QuickSwitchFillSelection=1 # 0/1
 
 #  Manage root window (EXPERIMENTAL - normally enabled!)
 GrabRootWindow=1 # 0/1
@@ -360,7 +360,7 @@ ShowSettingsMenu=0 # 0/1
 ShowFocusModeMenu=0 # 0/1
 
 #  Show themes submenu in the program menu
-ShowThemesMenu=0 # 0/1
+ShowThemesMenu=1 # 0/1
 
 #  Show logout menu in the program menu
 ShowLogoutMenu=1 # 0/1
@@ -837,7 +837,7 @@ SupportSemitransparency=0 # 0/1
 DesktopBackgroundScaled=1 # 0/1
 
 #  Desktop background image(s)
-DesktopBackgroundImage="
+DesktopBackgroundImage="$HOME/Pictures/wllppr/astro-vib.png"
 
 #  Desktop background color(s)
 DesktopBackgroundColor=""
