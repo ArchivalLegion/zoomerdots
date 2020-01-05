@@ -1,7 +1,7 @@
 # Default programs
 export EDITOR="nano"
-export TERMINAL="xterm"
-export BROWSER="firefox"
+export TERMINAL="urxvt"
+export BROWSER="chromium"
 
 # Set some useful theme / vaapi stuff
 export QT_QPA_PLATFORMTHEME=gtk2
