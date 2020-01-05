@@ -662,7 +662,7 @@ KeyWinNext=""
 
 KeyWinMove=""
 
-KeyWinSize="Alt+s"
+KeyWinSize=""
 
 KeyWinMinimize="Alt+F9"
 
@@ -809,7 +809,7 @@ KeySysHideAll="
 
 KeySysUndoArrange=""
 
-KeySysShowDesktop="Super+d"
+KeySysShowDesktop=""
 
 KeySysCollapseTaskBar=""
 
