@@ -6,6 +6,7 @@ if [[ -f ~/.bashrc ]] ; then
 	. ~/.bashrc
 fi
 
+
 # Very "standard" programs will be set for simplicity sake,
 # Edit this however needed to get settled.
 # Default programs
@@ -23,7 +24,7 @@ export GST_VAAPI_ALL_DRIVERS=1
 
 # Generic compile options,
 # please set march accordingly otherwise use generic.
-COMMON_FLAGS="-march=ivybridge -O2 -pipe"
+COMMON_FLAGS="-march=native -O2 -pipe"
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
@@ -31,4 +32,4 @@ FFLAGS="${COMMON_FLAGS}"
 
 # Specific but helpful
 export LIBVA_DRIVER_NAME=i965
-export MAKEFLAGS="-j9"
+export MAKEFLAGS="-j2"
