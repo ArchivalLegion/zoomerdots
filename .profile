@@ -1,5 +1,3 @@
-# Very "standard" programs will be set for simplicity sake,
-# Edit this however needed to get settled.
 # Default programs
 export EDITOR="nano"
 export TERMINAL="xterm"
@@ -19,5 +17,5 @@ FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
 
 # Specific but helpful
-#export LIBVA_DRIVER_NAME=i965
-#export MAKEFLAGS="-j9"
+export LIBVA_DRIVER_NAME=i965
+export MAKEFLAGS="-j2"
