@@ -1,2 +1,2 @@
-# Start full icewm WM
+xrdb ~/.Xresources
 icewm-session
