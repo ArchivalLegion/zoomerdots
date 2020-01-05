@@ -1,41 +1,59 @@
-## URxvt Settings
-##
-##
-urxvt*termName:				rxvt-unicode
-urxvt*depth:				32
-## Font
-xft*dpi:					96
-xft*antialias:				true
-xft*hinting:				true
-xft*autohint:				false
-xft*hintstyle:				hintfull
-xft*rgba:					rgb
-xft*lcdfilter:				lcddefault
-urxvt*font:					xft:Droid Sans Mono
-urxvt*boldFont:				xft:Droid Sans Mono:bold
-urxvt*letterSpace:			0
-##
-## Scrolling
-##
-## remove scrollbar
-urxvt*scrollBar:			false
-## do not scroll with output
-urxvt*scrollTtyOutput:		false
-## scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-urxvt*scrollWithBuffer:		true
-## scroll back to the bottom on keypress
-urxvt*scrollTtyKeypress:	true
-## let programs with their own scrollback buffer handle themselves
-urxvt*secondaryScreen:		1
-urxvt*secondaryScroll:		0
-urxvt*secondaryWheel:		1
-##
-## Coloring
-##
-urxvt*background:			#1e1f29
-urxvt*pointerColor:			#b7dc4d
-urxvt*cursorColor:			#b7dc4d
-##
+!!
+!! Cursor
+!!
+
+Xcursor.theme:				Adwaita
+Xcursor.size:				32
+
+!!
+!!	URxvt Settings
+!!
+
+URxvt*termName:				rxvt-unicode
+URxvt*depth:				16
+
+!! Font
+Xft.dpi:					96
+Xft.antialias:				true
+Xft.hinting:				true
+Xft.autohint:				false
+Xft.hintstyle:				hintfull
+Xft.rgba:					rgb
+Xft.lcdfilter:				lcddefault
+URxvt*font:					xft:Ubuntu Mono:size=14
+URxvt*boldFont:				xft:Ubuntu Mono:bold:size=16
+URxvt*italicFont:			xft:Ubuntu Mono:italic:size=14
+URxvt*boldItalicFont:		xft:Ubuntu Mono:bold:italic:size=16
+URxvt*letterSpace:			0
+
+!!
+!! Scrolling
+!!
+
+!! remove scrollbar
+URxvt*scrollBar:			false
+
+!! do not scroll with output
+URxvt*scrollTtyOutput:		false
+
+!! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer:		true
+
+!! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress:	true
+
+!! let programs with their own scrollback buffer handle themselves
+URxvt*secondaryScreen:		1
+URxvt*secondaryScroll:		1
+URxvt*mouseWheelScrollPage:	0
+
+!!
+!! Coloring
+!!
+URxvt*background:			#282a36
+URxvt*pointerColor:			#b7dc4d
+URxvt*cursorColor:			#b7dc4d
+!!
 URxvt*foreground:			#ffffff
 URxvt*color0:				#3f3f3f
 URxvt*color1:				#705050
