@@ -381,7 +381,7 @@ ShowMenuButtonIcon=0 # 0/1
 #-----Title bar-----
 
 #  Title bar height
-TitleBarHeight=22 # [0-128]
+TitleBarHeight=24 # [0-128]
 
 #  Justification of the window title
 TitleBarJustify=50 # [0-100]
@@ -405,16 +405,16 @@ TitleButtonsSupported=""
 TitleBarHorzOffset=0 # [-128-128]
 
 #  Vertical offset for the window title text
-TitleBarVertOffset=0 # [-128-128]
+TitleBarVertOffset=-4 # [-128-128]
 
 
 #-----Borders-----
 
 #  Horizontal window border
-BorderSizeX=0 # [0-128]
+BorderSizeX=6 # [0-128]
 
 #  Vertical window border
-BorderSizeY=0 # [0-128]
+BorderSizeY=6 # [0-128]
 
 #  Resize corner width
 CornerSizeX=0 # [0-64]
@@ -423,10 +423,10 @@ CornerSizeX=0 # [0-64]
 CornerSizeY=0 # [0-64]
 
 #  Horizontal dialog window border
-DlgBorderSizeX=0 # [0-128]
+DlgBorderSizeX=6 # [0-128]
 
 #  Vertical dialog window border
-DlgBorderSizeY=0 # [0-128]
+DlgBorderSizeY=6 # [0-128]
 
 
 #
