@@ -1,21 +1,21 @@
 #-----INFO-----
+# This is a WIP
 
 #  Description of the theme, credits
 ThemeDescription="A port of Ant-Dracula Blood for IceWM"
 
 #  Theme author, e-mail address, credits
-ThemeAuthor="TODO"
+ThemeAuthor="https://github.com/EliverLara/"
 
-# Formating: section =       "#                       "
-#                             #-----NAME OF GROUP-----
-#                            "#                       "
-#                             |
-# sub-section =              "#-----ETC-----"
+# Formating: section = "#                                             "
+#                                       "#-----NAME OF GROUP-----
+#                                       "#                                              "
+#                                        |
+# sub-section =              "#-----ETC-----                           "
 
 #
 #-----Colors-----
 #
-# Everything till "#//" is color related.
 
 # Which pixmap type to use, I'm not using one so it's "flat"
 Look="flat"
@@ -235,8 +235,6 @@ ColorNormalButton="rgb:28/2A/36"
 
 #  Textcolor of regular buttons
 ColorNormalButtonText="rgb:FF/FF/FF"
-#//
-
 
 #
 #-----Fonts-----
@@ -355,229 +353,3 @@ LabelFontName=""
 
 #  Name of the label font.
 LabelFontNameXft="sans:size=12"
-
-
-#
-#-----Misc-----
-#
-
-RolloverButtonsSupported=1
-
-
-#
-#-----Menu (App menu, Root menu)-----
-#
-
-#  Menus track mouse even with no mouse buttons held
-MenuMouseTracking=1 # 0/1
-
-#  Show application icon over menu button
-ShowMenuButtonIcon=0 # 0/1
-
-#
-#-----Window Prop.-----
-#
-
-#-----Title bar-----
-
-#  Title bar height
-TitleBarHeight=24 # [0-128]
-
-#  Justification of the window title
-TitleBarJustify=50 # [0-100]
-
-#  Join title*S and title*T
-TitleBarJoinLeft=0 # 0/1
-
-#  Join title*T and title*B
-TitleBarJoinRight=0 # 0/1
-
-#  Titlebar buttons from left to right (x=close,  m=max,  i=min,  h=hide, r=rollup,       s=sysmenu,      d=depth)
-TitleButtonsLeft=""
-
-#  Titlebar buttons from right to left (x=close,  m=max,  i=min,  h=hide, r=rollup,       s=sysmenu,      d=depth)
-TitleButtonsRight=""
-
-#  Does it support the 'O' title bar button images (for mouse rollover)
-TitleButtonsSupported=""
-
-#  Horizontal offset for the window title text
-TitleBarHorzOffset=0 # [-128-128]
-
-#  Vertical offset for the window title text
-TitleBarVertOffset=-4 # [-128-128]
-
-
-#-----Borders-----
-
-#  Horizontal window border
-BorderSizeX=6 # [0-128]
-
-#  Vertical window border
-BorderSizeY=6 # [0-128]
-
-#  Resize corner width
-CornerSizeX=0 # [0-64]
-
-#  Resize corner height
-CornerSizeY=0 # [0-64]
-
-#  Horizontal dialog window border
-DlgBorderSizeX=6 # [0-128]
-
-#  Vertical dialog window border
-DlgBorderSizeY=6 # [0-128]
-
-
-#
-#	Icons
-#
-
-#  Menu icon size
-MenuIconSize=16 # [8-128]
-
-#  Dimension of the small icons
-SmallIconSize=16 # [8-128]
-
-#  Dimension of the large icons
-LargeIconSize=32 # [8-128]
-
-#  Dimension of the large icons
-HugeIconSize=48 # [8-128]
-
-
-#
-#-----Taskbar-----
-#
-
-#  Show a button to collapse the taskbar
-TaskBarShowCollapseButton=0
-
-#  Show clock on task bar
-TaskBarShowClock=1 # 0/1
-
-#  Task bar clock/APM uses nice pixmapped LCD display (but then it doesn't display correctly in many languages anymore, e.g. for Japanese and Korean it works only when a real font is used and not the LEDs
-TaskBarClockLeds=0 # 0/1
-
-#  Use double-height task bar
-TaskBarDoubleHeight=0 # 0/1
-
-#  Enable address bar functionality in taskbar
-EnableAddressBar=1 # 0/1
-
-#  Show address bar in task bar
-ShowAddressBar=1 # 0/1
-
-#  Show APM status in graph mode
-TaskBarShowAPMGraph=1 # 0/1
-
-#  Taskbar justify left, right or center
-TaskBarJustify="center"
-
-#  Task bar width as percentage of the screen width
-TaskBarWidthPercentage=100 # [0-100]
-
-#  Place workspace pager on left, not right
-TaskBarWorkspacesLeft=1 # 0/1
-
-#  Show workspace switching buttons on task bar
-TaskBarShowWorkspaces=1 # 0/1
-
-#  Place workspace pager on top row when using dual-height taskbar
-TaskBarWorkspacesTop=0 # 0/1
-
-#  Enable mouse wheel cycling over workspaces and task buttons in taskbar
-TaskBarUseMouseWheel=0 # 0/1
-
-#  Show a mini desktop preview on each workspace button
-PagerShowPreview=0 # 0/1
-
-#  Draw window icons inside large enough preview windows on pager (if PagerShowPreview=1)
-PagerShowWindowIcons=0 # 0/1
-
-#  Draw even minimized windows as unfilled rectangles (if PagerShowPreview=1)
-PagerShowMinimized=0 # 0/1
-
-#  Draw border around workspace buttons (if PagerShowPreview=1)
-PagerShowBorders=0 # 0/1
-
-#  Show number of workspace on workspace button (if PagerShowPreview=1)
-PagerShowNumbers=1 # 0/1
-
-#  Width of taskbutton side icons
-TaskbuttonIconOffset=0 # [0-16]
-
-#  Maximum scaled width of tray icons
-# TrayIconMaxWidth=32 # [16-128]
-
-#  Maximum scaled height of tray icons
-# TrayIconMaxHeight=24 # [16-128]
-
-#  Show icons of windows on the task bar
-TaskBarShowWindowIcons=1 # 0/1
-
-#  Show 'Start' menu on task bar
-TaskBarShowStartMenu=0 # 0/1
-
-#  Show 'window list' menu on task bar
-TaskBarShowWindowListMenu=0 # 0/1
-
-#  Show windows on the taskbar
-TaskBarShowWindows=1 # 0/1
-
-#  Show 'show desktop' button on taskbar
-TaskBarShowShowDesktopButton=0 # 0/1
-
-#  Show Ellipsis in taskbar items
-ShowEllipsis=1 # 0/1
-
-#  Show application icon over menu button
-ShowMenuButtonIcon=0 # 0/1
-
-#
-#-----Quickswitch-----
-# Alt+TAB
-
-#  Show all reachable icons when quick switching
-QuickSwitchAllIcons=1 # 0/1
-
-#  Show the window title above (all reachable) icons
-QuickSwitchTextFirst=1 # 0/1
-
-#  Attempt to create a small QuickSwitch window (1/3 instead of 3/5 of screen width)
-QuickSwitchSmallWindow=1 # 0/1
-
-#  Go trough all window titles and choose width of the longest one
-QuickSwitchMaxWidth=0 # 0/1
-
-#  Place the icons and titles vertical instead of horizontal
-QuickSwitchVertical=1 # 0/1
-
-#  Show the huge (48x48) of the window icon for the active window
-QuickSwitchHugeIcon=1 # 0/1
-
-#  Horizontal margin of the quickswitch window
-QuickSwitchHorzMargin=2 # [0-64]
-
-#  Vertical margin of the quickswitch window
-QuickSwitchVertMargin=2 # [0-64]
-
-#  Vertical margin in the quickswitch window
-QuickSwitchIconMargin=6 # [0-64]
-
-#  Distance between the active icon and it's border
-QuickSwitchIconBorder=0 # [0-64]
-
-#  Height of the separator between (all reachable) icons and text, 0 to avoid it
-QuickSwitchSeparatorSize=0 # [0-64]
-
-
-#
-#-----Scrollbar-----
-#
-
-#  Scrollbar width
-# ScrollBarX=16 # [0-64]
-
-#  Scrollbar (button) height
-# ScrollBarY=16 # [0-64]
