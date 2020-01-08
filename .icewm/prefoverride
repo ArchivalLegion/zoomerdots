@@ -738,7 +738,7 @@ MouseWinSize="Alt+Pointer_Button3"
 
 # KeySysWinListMenu=""
 
-# KeySysAddressBar="Super+r"
+KeySysAddressBar="Super+r"
 
 # KeySysWorkspacePrev="Alt+Ctrl+Left"
 
