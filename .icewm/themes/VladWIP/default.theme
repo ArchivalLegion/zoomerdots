@@ -84,13 +84,13 @@ ColorNetIdle="rgb:28/2A/36"
 ColorApm="rgb:28/2A/36"
 
 #  Textcolor of APM monitor
-# ColorApmText="rgb:EF/72/BB"
+# ColorApmText="rgb:FF/79/C6"
 
 #  Color of APM monitor in battery mode
 # ColorApmBattery="rgb:FF/FF/00"
 
 #  Color of APM monitor in line mode
-ColorApmLine="rgb:EF/72/BB"
+ColorApmLine="rgb:FF/79/C6"
 
 #  Background color for graph mode
 ColorApmGraphBg="rgb:28/2A/36"
@@ -101,7 +101,7 @@ ColorApmGraphBg="rgb:28/2A/36"
 ColorClock="rgb:1E/1F/29"
 
 #  Text of non-LCD monitor
-ColorClockText="rgb:EF/72/BB"
+ColorClockText="rgb:FF/79/C6"
 
 
 #-----Workspace-----
@@ -113,7 +113,7 @@ ColorNormalWorkspaceButton="rgb:1E/1F/29"
 ColorNormalWorkspaceButtonText="rgb:50/FA/7B"
 
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
-ColorActiveWorkspaceButtonText="rgb:EF/72/BB"
+ColorActiveWorkspaceButtonText="rgb:FF/79/C6"
 
 #-----Titlebar-----
 
@@ -162,7 +162,7 @@ ColorDefaultTaskBar="rgb:1E/1F/29"
 ColorNormalTaskBarApp="rgb:1E/1F/29"
 
 #  Textcolor for task buttons of regular windows
-ColorNormalTaskBarAppText="rgb:EF/72/BB"
+ColorNormalTaskBarAppText="rgb:FF/79/C6"
 
 #  Textcolor for task buttons of the active window
 ColorActiveTaskBarAppText="rgb:FF/52/30"
@@ -174,7 +174,7 @@ ColorActiveTaskBarApp="rgb:28/2A/36"
 ColorMinimizedTaskBarApp="rgb:1E/1F/29"
 
 #  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="rgb:EF/72/BB"
+ColorMinimizedTaskBarAppText="rgb:FF/79/C6"
 
 #-----Listbox-----
 
