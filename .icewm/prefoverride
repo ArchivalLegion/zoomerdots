@@ -68,7 +68,7 @@ DontRotateMenuPointer=1 # 0/1
 LimitSize=0 # 0/1
 
 #  Limit position of windows to screen
-LimitPosition=0 # 0/1
+LimitPosition=1 # 0/1
 
 #  Let the Dock layer limit the workspace (incompatible with GNOME Panel)
 LimitByDockLayer=0 # 0/1
@@ -155,7 +155,7 @@ UseMouseWheel=0 # 0/1
 ShowPopupsAbovePointer=0 # 0/1
 
 #  Send the clicks outside menus to target window
-ReplayMenuCancelClick=1 # 0/1
+ReplayMenuCancelClick=0 # 0/1
 
 #  Alt+Tab window switching
 QuickSwitch=1 # 0/1
@@ -536,7 +536,7 @@ TaskBarWidthPercentage=100 # [0-100]
 TaskBarJustify="center
 
 #  Width of APM Monitor
-TaskBarApmGraphWidth=5 # [1-1000]
+TaskBarApmGraphWidth=3 # [1-1000]
 
 #  Height of taskbar monitoring applets
 TaskBarGraphHeight=20 # [16-1000]
@@ -643,10 +643,10 @@ DateFormat="%c"
 # AcpiIgnoreBatteries=""
 
 #  Mouse binding for window move
-# MouseWinMove="Alt+Pointer_Button1"
+MouseWinMove="Alt+Pointer_Button1"
 
 #  Mouse binding for window resize
-# MouseWinSize="Alt+Pointer_Button3"
+MouseWinSize="Alt+Pointer_Button3"
 
 #  Mouse binding to raise window
 # MouseWinRaise="Ctrl+Alt+Pointer_Button1"
@@ -738,7 +738,7 @@ DateFormat="%c"
 
 # KeySysWinListMenu=""
 
-# KeySysAddressBar="Alt+Ctrl+Space"
+# KeySysAddressBar="Super+r"
 
 # KeySysWorkspacePrev="Alt+Ctrl+Left"
 
@@ -885,7 +885,7 @@ TitleBarJustify=50 # [0-100]
 TitleBarHorzOffset=0 # [-128-128]
 
 #  Vertical offset for the window title text
-TitleBarVertOffset=-4 # [-128-128]
+TitleBarVertOffset=-2 # [-128-128]
 
 #  Scrollbar width
 ScrollBarX=16 # [0-64]
