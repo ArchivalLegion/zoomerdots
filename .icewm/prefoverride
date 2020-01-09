@@ -488,10 +488,10 @@ WorkspaceStatusTime=700 # [0-2500]
 # ButtonRaiseMask=1 # [0-255]
 
 #  Desktop mouse-button click to show the window list menu
-DesktopWinMenuButton=0 # [0-20]
+DesktopWinMenuButton=3 # [0-20]
 
 #  Desktop mouse-button click to show the window list
-DesktopWinListButton=2 # [0-20]
+DesktopWinListButton=0 # [0-20]
 
 #  Desktop mouse-button click to show the root menu
 DesktopMenuButton=1 # [0-20]
