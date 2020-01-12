@@ -10,7 +10,7 @@ Xcursor.size:				32
 !!
 
 URxvt*termName:				rxvt-unicode
-URxvt*depth:				16
+URxvt*depth:				24
 
 !! Font
 Xft.dpi:					96
