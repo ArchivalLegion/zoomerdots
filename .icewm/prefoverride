@@ -625,7 +625,7 @@ NetStatusClassHint="ss.urxvt"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="[en]*"
+NetworkStatusDevice="[wl]*"
 
 #  Clock Time format (strftime format string)
 TimeFormat="%H:%M"
