@@ -1,5 +1,5 @@
 # Set XDG_RUNTIME_DIR without elogind
-#if test -z "${XDG_RUNTIME_DIR}"; then
+# if test -z "${XDG_RUNTIME_DIR}"; then
 #     export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
 #     if ! test -d "${XDG_RUNTIME_DIR}"; then
 #         mkdir "${XDG_RUNTIME_DIR}"
@@ -10,6 +10,7 @@
 # Default programs
 export EDITOR="nano"
 export TERMINAL="urxvt"
+export TERM="rxvt-unicode"
 export BROWSER="chromium"
 export FILE="spacefm"
 
