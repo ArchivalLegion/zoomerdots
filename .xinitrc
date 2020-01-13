@@ -1,5 +1,5 @@
 xrdb ~/.Xresources &&
 sleep 1 &&
-udiskie -ANt2 &
+udiskie -Ant &
 sleep 1 &&
 icewm-session
