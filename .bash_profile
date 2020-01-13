@@ -20,7 +20,7 @@ export EDITOR="nano"
 export TERMINAL="urxvt"
 export TERM="rxvt-unicode"
 export BROWSER="chromium"
-export FILE="spacefm"
+export FILE="pcmanfm"
 
 # Paths
 export PATH=/usr/lib/llvm/8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
