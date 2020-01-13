@@ -146,7 +146,7 @@ DelayPointerFocus=0 # 0/1
 Win95Keys=1 # 0/1
 
 #  Treat Super/Win modifier as Ctrl+Alt
-ModSuperIsCtrlAlt=1 # 0/1
+ModSuperIsCtrlAlt=0 # 0/1
 
 #  Support mouse wheel
 UseMouseWheel=0 # 0/1
@@ -200,7 +200,7 @@ QuickSwitchFillSelection=0 # 0/1
 GrabRootWindow=1 # 0/1
 
 #  Snap to nearest screen edge/window when moving windows
-SnapMove=0# 0/1
+SnapMove=0 # 0/1
 
 #  Workspace switches by moving mouse to left/right screen edge
 EdgeSwitch=0 # 0/1
@@ -245,7 +245,7 @@ TaskBarShowAPMStatus=0 # 0/1
 TaskBarShowAPMAuto=1 # 0/1
 
 #  Show APM status on task bar in time-format
-TaskBarShowAPMTime=0 #0/1
+TaskBarShowAPMTime=0 # 0/1
 
 #  Show APM status in graph mode
 TaskBarShowAPMGraph=1 # 0/1
@@ -341,16 +341,16 @@ TaskBarUseMouseWheel=0 # 0/1
 PagerShowPreview=0 # 0/1
 
 #  Draw window icons inside large enough preview windows on pager (if PagerShowPreview=1)
-# PagerShowWindowIcons=1 # 0/1
+PagerShowWindowIcons=1 # 0/1
 
 #  Draw even minimized windows as unfilled rectangles (if PagerShowPreview=1)
-# PagerShowMinimized=1 # 0/1
+PagerShowMinimized=1 # 0/1
 
 #  Draw border around workspace buttons (if PagerShowPreview=1)
-# PagerShowBorders=1 # 0/1
+PagerShowBorders=0 # 0/1
 
 #  Show number of workspace on workspace button (if PagerShowPreview=1)
-# PagerShowNumbers=0 # 0/1
+PagerShowNumbers=1 # 0/1
 
 #  Execute taskbar applet commands (like MailCommand,     ClockCommand,   ...) on single click
 TaskBarLaunchOnSingleClick=1 # 0/1
@@ -419,7 +419,7 @@ DoubleBuffer=1 # 0/1
 PreferFreetypeFonts=1 # 0/1
 
 #  Delay fuzziness, to allow merging of multiple timer timeouts into one (notebook power saving)
-DelayFuzziness=10 # [0-100]
+DelayFuzziness=0 # [0-100]
 
 #  Pointer motion distance before click gets interpreted as drag
 ClickMotionDistance=4 # [0-32]
@@ -512,16 +512,16 @@ MailCheckDelay=86400 # [0-86400]
 TaskBarCPUDelay=3000 # [10-3600000]
 
 #  Width of CPU Monitor
-TaskBarCPUSamples=20 # [2-1000]
+TaskBarCPUSamples=15 # [2-1000]
 
 #  Width of Memory Monitor
-TaskBarMEMSamples=20 # [2-1000]
+TaskBarMEMSamples=15 # [2-1000]
 
 #  Delay between Memory Monitor samples in ms
 TaskBarMEMDelay=3000 # [10-3600000]
 
 #  Width of Net Monitor
-TaskBarNetSamples=20 # [2-1000]
+TaskBarNetSamples=15 # [2-1000]
 
 #  Delay between Net Monitor samples in ms
 TaskBarNetDelay=3000 # [10-3600000]
@@ -533,10 +533,10 @@ TaskbarButtonWidthDivisor=3 # [1-25]
 TaskBarWidthPercentage=100 # [0-100]
 
 #  Taskbar justify left, right or center
-TaskBarJustify="center
+TaskBarJustify="center"
 
 #  Width of APM Monitor
-TaskBarApmGraphWidth=3 # [1-1000]
+TaskBarApmGraphWidth=5 # [1-1000]
 
 #  Height of taskbar monitoring applets
 TaskBarGraphHeight=20 # [16-1000]
@@ -586,6 +586,7 @@ ClockClassHint="icewm.XClock"
 #  Command to select and run a program
 # RunCommand=""
 
+#  This is missing in genperf (1.6.3)
 OpenCommand=""
 
 #  Terminal emulator must accept -e option.
@@ -613,7 +614,7 @@ CPUStatusCommand="urxvt -e htop"
 CPUStatusClassHint="top.urxvt"
 
 #  Combine all CPUs to one
-# CPUStatusCombine=1 # 0/1
+CPUStatusCombine=1 # 0/1
 
 #  Command to run on Net status
 NetStatusCommand="urxvt -geometry 122x20 -title 'Swatch' -e watch -n 2 'ss -atu'"
@@ -625,7 +626,7 @@ NetStatusClassHint="ss.urxvt"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="[wl]*"
+NetworkStatusDevice="*"
 
 #  Clock Time format (strftime format string)
 TimeFormat="%H:%M"
@@ -640,7 +641,7 @@ DateFormat="%c"
 # XRRPrimaryScreenName=""
 
 #  List of battery names (directories) in /proc/acpi/battery to ignore. Useful when more slots are built-in, but only one battery is used
-# AcpiIgnoreBatteries=""
+AcpiIgnoreBatteries=""
 
 #  Mouse binding for window move
 MouseWinMove="Alt+Pointer_Button1"
