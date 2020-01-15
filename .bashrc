@@ -11,6 +11,7 @@ alias sudo='sudo '
 
 # Quickies
 alias %b="cat /sys/class/power_supply/BAT?/capacity"
+alias spc="picom -b"
 
 # Void linux
 alias vdate='sudo xbps-install -Su'
