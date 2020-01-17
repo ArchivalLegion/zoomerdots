@@ -5,7 +5,7 @@
 # Transparency / Opacity options
 
 Mrxvt.transparent:          False
-Mrxvt.opacity:              90
+Mrxvt.opacity:              100
 Mrxvt.transparentTabbar:    False
 
 
