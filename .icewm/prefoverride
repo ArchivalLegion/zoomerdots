@@ -586,7 +586,7 @@ ClockClassHint="icewm.XClock"
 #  Command to select and run a program
 # RunCommand=""
 
-#  This is missing in genperf (1.6.3)
+#  This is missing in genperf (1.6.3-4)
 OpenCommand=""
 
 #  Terminal emulator must accept -e option.
