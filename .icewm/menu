@@ -1,1 +1,1 @@
-includeprog icewm-menu-fdo --no-sub-cats
+includeprog mmaker -t rxvt --no-legacy --no-debian -c icewm
