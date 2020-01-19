@@ -1,18 +1,18 @@
 # Set XDG_RUNTIME_DIR without elogind
-# if test -z "${XDG_RUNTIME_DIR}"; then
-#     export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
-#     if ! test -d "${XDG_RUNTIME_DIR}"; then
-#         mkdir "${XDG_RUNTIME_DIR}"
-#         chmod 0700 "${XDG_RUNTIME_DIR}"
-#     fi
-# fi
+ if test -z "${XDG_RUNTIME_DIR}"; then
+     export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
+     if ! test -d "${XDG_RUNTIME_DIR}"; then
+         mkdir "${XDG_RUNTIME_DIR}"
+         chmod 0700 "${XDG_RUNTIME_DIR}"
+     fi
+ fi
 
 # Default programs
 export EDITOR="nano"
 export TERMINAL="urxvt"
-export TERM="rxvt-unicode"
+export TERM="urxvt"
 export BROWSER="chromium"
-export FILE="pcmanfm"
+export FILE="thunar"
 
 # Paths
 export PATH=/usr/lib/llvm/8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
