@@ -10,7 +10,7 @@
 # Default programs
 export EDITOR="nano"
 export TERMINAL="urxvt"
-export TERM="urxvt"
+export TERM="rxvt-unicode"
 export BROWSER="chromium"
 export FILE="thunar"
 
