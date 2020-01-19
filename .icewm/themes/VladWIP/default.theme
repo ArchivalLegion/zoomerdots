@@ -7,11 +7,11 @@ ThemeDescription="A port of Ant-Dracula Blood for IceWM"
 #  Theme author, e-mail address, credits
 ThemeAuthor="https://github.com/EliverLara/"
 
-# Formating: section = "#                                             "
-#                                       "#-----NAME OF GROUP-----
-#                                       "#                                              "
-#                                        |
-# sub-section =              "#-----ETC-----                           "
+# Formating: section ="#                       "
+#                     "#-----NAME OF GROUP-----"
+#                     "#                       "
+#
+# sub-section =       "#-----ETC-----          "
 
 #
 #-----Colors-----
