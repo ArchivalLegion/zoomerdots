@@ -1,7 +1,7 @@
 # Default programs
 export EDITOR="nano"
 export TERMINAL="urxvt"
-export BROWSER="chromium"
+export BROWSER="firefox"
 export FILE="thunar"
 
 # Paths
