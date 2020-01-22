@@ -36,7 +36,7 @@ load-module module-alsa-card device_id="0" card_name="TuxxAudio" namereg_fail=tr
 
 ### Example buffers *Using 44100 [2048 = 5.804~ 5.8 (128) | 4096 = 11.609~ 11.6 (256)]
 
-### Auto load cards
+### Auto load sound devices
 #.ifexists module-udev-detect.so
 #load-module module-udev-detect
 #.else
@@ -53,9 +53,6 @@ load-module module-rescue-streams
 
 ### If autoexit on idle is enabled we want to make sure we only quit
 ### when no local session needs us anymore.
-#.ifexists module-console-kit.so
-#load-module module-console-kit
-#.endif
 .ifexists module-systemd-login.so
 load-module module-systemd-login
 .endif
