@@ -1,1 +1,1 @@
-includeprog mmaker -t rxvt --no-legacy --no-debian -c icewm
+includeprog mmaker -t rxvt --no-legacy -c icewm
