@@ -54,6 +54,7 @@ URxvt*mouseWheelScrollPage: 0
 !!
 !! Coloring
 !!
+Sxiv*background:            #282a36
 URxvt*background:           #282a36
 URxvt*pointerColor:         #b7dc4d
 URxvt*cursorColor:          #b7dc4d
