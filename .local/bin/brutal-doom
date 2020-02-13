@@ -1,0 +1,2 @@
+#!/bin/sh
+gzdoom -file doom.wad ./brutalv21/brutalv21.pk3
