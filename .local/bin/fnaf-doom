@@ -1,0 +1,2 @@
+#!/bin/sh
+gzdoom -iwad freedoom1.wad -file ./fnaf1-doom/WADs/FD1/* +map e1m2 -skill 1 -extratic +sv_cheats 1
