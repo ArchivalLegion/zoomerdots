@@ -16,4 +16,4 @@ alias sudo='sudo '
 alias %b="cat /sys/class/power_supply/BAT?/capacity"
 alias spc="picom -b"
 alias sx="clear && startx"
-alias eup="sudo emerge -uDU --keep-going --with-bdeps=y @world"
+alias eup="sudo emerge --ask -uDU --keep-going --with-bdeps=y @world"
