@@ -1,3 +1,3 @@
 xrdb ~/.Xresources &&
-udiskie -Ant &&
+udiskie -Ant &
 icewm-session
