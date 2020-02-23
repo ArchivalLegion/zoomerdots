@@ -11,12 +11,12 @@
 
 key "Super+t"   urxvt
 key "Super+g"   geany
-key "Super+b"   firefox-bin --private-window
+key "Super+b"   firefox --private-window
 key "Super+a"   urxvt -e alsamixer
 key "Super+s"   scrot '-c -d 3 -q 100 %Y-%m-%d_$wx$h.png' -e 'mv $f ~/scrots/'
 key "Super+f"   thunar
-key "F11"       clicker
-key "F12"       killall xdotool
+#key "F11"       clicker
+#key "F12"       killall xdotool
 
 # "Multimedia key" bindings for Xorg. Gather the keycodes of your
 # advanced function keys by watching the output of the xev command whilest
