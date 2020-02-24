@@ -1,1 +1,1 @@
-includeprog mmaker -t rxvt --no-legacy -c icewm
+includeprog icewm-menu-fdo --no-sub-cats
