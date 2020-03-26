@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# VAAPI (h264:high) and aac
+
+ffmpeg -y \
+-thread_queue_size 512 -f pulse -channels 2 -i Vanilla-Jack.monitor \
+-vaapi_device /dev/dri/renderD128 \
+-probesize 30M -f x11grab -video_size 1366x768 -i :0 \
+-vf 'format=nv12,hwupload' \
+-c:v h264_vaapi -rc_mode:v CQP -profile:v high -qp:v 20 -level:v 4.1 -compression_level:v 1 \
+-qcomp:v 0.4 -sc_threshold:v 20 -bf:v 1 -b_strategy:v 2 -keyint_min:v 30 -trellis:v 2 -subq:v 11 \
+-c:a aac -profile:a aac_main -b:a 128000 \
+/tmp/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.mp4 \
+&> /tmp/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.log
