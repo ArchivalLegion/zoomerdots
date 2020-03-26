@@ -11,8 +11,7 @@ export TERMINAL="urxvt"
 export BROWSER="firefox"
 export FILE="thunar"
 
-# Paths
-export PATH=/usr/lib/llvm/8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+# Path
 export PATH=$PATH:$HOME/.local/bin
 
 # Paths for .files and rc's
@@ -35,4 +34,4 @@ export QT_QPA_PLATFORMTHEME=gtk2
 #FFLAGS="${COMMON_FLAGS}"
 
 # i7 3610qm
-export MAKEFLAGS="-j9"
+export MAKEFLAGS="-j5"
