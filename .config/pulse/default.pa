@@ -19,9 +19,9 @@ load-module module-switch-on-port-available
 load-module module-native-protocol-unix
 
 ### Manual alsa card
-load-module module-alsa-card device_id="0" card_name="TuxxAudio" namereg_fail=true sink_name="Archie" source_name="Mastas" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
+load-module module-alsa-card device_id="0" card_name="TuxxAudio" namereg_fail=true sink_name="Archie" source_name="Mastas" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=2048 ignore_dB=false deferred_volume=false use_ucm=true
 
-### Example buffers *Using 44100 [2048 = 5.804~ 5.8 (128) | 4096 = 11.609~ 11.6 (256)]
+### Example buffers *Using 44100 [2048 = 5.804~ 5.8 (128) | 4096 = 11.609~ 11.6 (256) | 8192 = 23.219~ 23.2 (512)]
 
 ### Auto load sound devices
 #.ifexists module-udev-detect.so
