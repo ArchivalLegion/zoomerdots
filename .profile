@@ -7,13 +7,12 @@ export FILE="thunar"
 # Path
 export PATH=$PATH:$HOME/.local/bin
 
-# Paths for .files and rc's
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+# Paths for .files, otherwise they clutter ~
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
 
 
 # Quiet GTK
 export NO_AT_BRIDGE=1
-
 
 # Set qt5 theme engine using plugin styles
 export QT_QPA_PLATFORMTHEME=gtk2
@@ -26,4 +25,4 @@ export QT_QPA_PLATFORMTHEME=gtk2
 #FCFLAGS="${COMMON_FLAGS}"
 #FFLAGS="${COMMON_FLAGS}"
 # i7 3610qm
-export MAKEFLAGS="-j5"
+#export MAKEFLAGS="-j5"
