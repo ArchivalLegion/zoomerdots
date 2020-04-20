@@ -2,7 +2,8 @@
 [ -z "$PS1" ] && return
 
 # Set the prompt
-export PS1="\[\033[38;5;93m\]{\[$(tput sgr0)\]\[\033[38;5;86m\]\u\[$(tput sgr0)\]\[\033[38;5;1m\]@\[$(tput sgr0)\]\[\033[38;5;226m\]\H\[$(tput sgr0)\]\[\033[38;5;93m\]}\[$(tput sgr0)\]\[\033[38;5;46m\]\W\[$(tput sgr0)\]\[\033[38;5;93m\]>\[$(tput sgr0)\]"
+# Sourced from artix linux
+export PS1='\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] '
 # Make sudo work within alias's
 alias sudo='sudo '
 
