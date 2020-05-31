@@ -1,6 +1,6 @@
 ##  This .mrxvtrc file for the abandoned Mrxvt terminal emulator
-##      Hopefully this can help someone who still uses
-##          mrxvt in 2019~xxxx  ;-)
+##  Hopefully this can help someone who still uses
+##  mrxvt in 2019~xxxx  ;-)
 
 # Transparency / Opacity options
 
@@ -30,7 +30,7 @@ Mrxvt.itabForeground:       #779CC3
 Mrxvt.xft:                  True
 Mrxvt.xftaa:                True
 Mrxvt.xftGlobalAdvance:     False
-Mrxvt.xftHinting:           True
+Mrxvt.xftHinting:           False
 Mrxvt.xftAutoHint:          False
 Mrxvt.xftRGBA:              rgb
 Mrxvt.xftFont:              Ubuntu Mono
