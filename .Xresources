@@ -2,8 +2,8 @@
 !! Cursor
 !!
 
-Xcursor.theme:              Adwaita
-Xcursor.size:               32
+Xcursor*theme:              Adwaita
+Xcursor*size:               32
 
 !!
 !!  URxvt Settings
@@ -13,17 +13,17 @@ URxvt*termName:             rxvt-unicode
 URxvt*depth:                24
 
 !! Font
-Xft.dpi:                    96
-Xft.antialias:              true
-Xft.hinting:                true
-Xft.autohint:               false
-Xft.hintstyle:              hintfull
-Xft.rgba:                   rgb
-Xft.lcdfilter:              lcddefault
-URxvt*font:                 xft:Ubuntu Mono:size=14
-URxvt*boldFont:             xft:Ubuntu Mono:bold:size=16
-URxvt*italicFont:           xft:Ubuntu Mono:italic:size=14
-URxvt*boldItalicFont:       xft:Ubuntu Mono:bold:italic:size=16
+Xft*dpi:                    96
+Xft*antialias:              true
+Xft*hinting:                false
+Xft*autohint:               false
+Xft*hintstyle:              hintnone
+Xft*rgba:                   rgb
+Xft*lcdfilter:              lcdnone
+URxvt*font:                 xft:Source Code Pro:size=14
+URxvt*boldFont:             xft:Source Code Pro:bold:size=16
+URxvt*italicFont:           xft:Source Code Pro:italic:size=14
+URxvt*boldItalicFont:       xft:Source Code Pro:bold:italic:size=16
 URxvt*letterSpace:          0
 
 !! Perl
