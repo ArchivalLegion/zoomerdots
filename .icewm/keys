@@ -11,7 +11,7 @@
 
 key "Super+t" urxvt
 key "Super+g" geany
-key "Super+b" firefox --private-window
+key "Super+b" palemoon --private-window
 key "Super+a" pavucontrol
 key "Super+w" scrot -d 3 -q 100 '%m-%d-%Y.png' -e 'mv $f ~/scrots/'
 key "Super+f" thunar
