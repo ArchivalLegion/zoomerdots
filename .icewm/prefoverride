@@ -949,7 +949,7 @@ TitleButtonsSupported=""
 #
 
 #  Paint the background image over all multihead monitors combined
-DesktopBackgroundMultihead=0 # 0/1
+DesktopBackgroundMultihead=1 # 0/1
 
 #  Display desktop background centered and not tiled
 DesktopBackgroundCenter=1 # 0/1
