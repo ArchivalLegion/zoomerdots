@@ -1,3 +1,7 @@
+if [[ -f ~/.bashrc ]]; then
+      . ~/.bashrc
+fi
+
 # Default programs
 export EDITOR="nano"
 export TERMINAL="urxvt"
