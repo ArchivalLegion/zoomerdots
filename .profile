@@ -15,12 +15,14 @@ export WINEPREFIX=~/.openwound
 export WINEARCH=win32
 
 # Make Java less ugly
-_JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+# Java stuff
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 
 # Quiet GTK
 export NO_AT_BRIDGE=1
 
-# Set qt5 theme engine using plugin styles
+# Set qt5 theme using qt5ct
 export QT_QPA_PLATFORMTHEME=gtk2
 
 # Ivy bridge compile options,
@@ -31,4 +33,4 @@ export QT_QPA_PLATFORMTHEME=gtk2
 #FCFLAGS="${COMMON_FLAGS}"
 #FFLAGS="${COMMON_FLAGS}"
 # i7 3610qm
-#export MAKEFLAGS="-j5"
+#export MAKEFLAGS="-j4"
