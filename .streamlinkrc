@@ -1,0 +1,8 @@
+# Player options
+player=mpv --cache --demuxer-max-bytes=8MiB
+player-no-close
+player-continuous-http
+
+# Streamlink options
+twitch-disable-hosting
+twitch-disable-reruns
