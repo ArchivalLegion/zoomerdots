@@ -4,7 +4,7 @@ fi
 
 # Default programs
 export EDITOR="nano"
-export BROWSER="firefox"
+export BROWSER="palemoon"
 export FILE="thunar"
 
 # Paths
