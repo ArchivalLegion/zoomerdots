@@ -1,7 +1,6 @@
 # Default programs
 export EDITOR="nano"
-export TERMINAL="urxvt"
-export BROWSER="firefox"
+export BROWSER="palemoon"
 export FILE="thunar"
 
 # Paths
@@ -22,7 +21,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 # Quiet GTK
 export NO_AT_BRIDGE=1
 
-# Set qt5 theme using qt5ct
+# Set qt5 theme using style plugins
 export QT_QPA_PLATFORMTHEME=gtk2
 
 # Ivy bridge compile options,
