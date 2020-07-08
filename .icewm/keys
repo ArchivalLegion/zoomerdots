@@ -15,8 +15,8 @@ key "Super+b" palemoon --private-window
 key "Super+a" pavucontrol
 key "Super+w" scrot -d 3 -q 100 '%m-%d-%Y.png' -e 'mv $f ~/scrots/'
 key "Super+f" thunar
-key "F11"     clicker
-key "F12"     killall xdotool
+key "Super+F11" clicker
+key "Super+F12" killall xdotool
 
 # "Multimedia key" bindings for Xorg. Gather the keycodes of your
 # advanced function keys by watching the output of the xev command whilest
@@ -25,8 +25,8 @@ key "F12"     killall xdotool
 # Note: some of them might have unwanted side effects through concurrency with
 # other listeners like systemd for the suspend key events
 
-key "XF86AudioLowerVolume"  amixer sset Master 5%-
-key "XF86AudioRaiseVolume"  amixer sset Master 5%+
-key "XF86AudioMute"         amixer sset Master toggle
+#key "XF86AudioLowerVolume" amixer sset Master 5%-
+#key "XF86AudioRaiseVolume" amixer sset Master 5%+
+#key "XF86AudioMute"        amixer sset Master toggle
 key "XF86MonBrightnessUp"   brightlight -pi 10
 key "XF86MonBrightnessDown" brightlight -pd 10
