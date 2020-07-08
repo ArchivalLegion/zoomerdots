@@ -1,5 +1,5 @@
 # Player options
-player=mpv --cache --demuxer-max-bytes=8MiB
+player=mpv --cache --demuxer-max-bytes=4MiB
 player-no-close
 player-continuous-http
 
