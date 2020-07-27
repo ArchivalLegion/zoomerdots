@@ -1,7 +1,4 @@
 #!/usr/bin/pulseaudio -nF
-#
-# This file is part of PulseAudio.
-#
 # This startup script is used only if PulseAudio is started per-user
 # (i.e. not in system mode)
 
@@ -37,9 +34,3 @@ load-module module-default-device-restore
 ### Automatically move streams to the default sink if the sink they are
 ### connected to dies, similar for sources.
 load-module module-rescue-streams
-
-### If autoexit on idle is enabled we want to make sure we only quit
-### when no local session needs us anymore.
-.ifexists module-systemd-login.so
-load-module module-systemd-login
-.endif
