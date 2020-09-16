@@ -1,4 +1,4 @@
-# icewm preferences(1.6.6)
+# icewm preferences(1.8.2)
 
 # This file should be copied to /etc/icewm or $HOME/.icewm/
 # NOTE: All settings are commented out by default.
@@ -572,7 +572,10 @@ BatteryPollingPeriod=60 #[2-3600]
 NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/usr/share/icons/Papirus-Dark/"
+IconPath="/usr/local/share/icons"
+
+#  Colon separated icon theme list with wildcard support. Minus prefix - can be used to exclude themes.
+IconThemes="Papirus-Dark"
 
 #  Mailbox path (use $MAIL instead)
 MailBoxPath=""
@@ -581,7 +584,7 @@ MailBoxPath=""
 MailCommand=""
 
 #  WM_CLASS to allow runonce for MailCommand
-MailClassHint="mutt.urxvt"
+MailClassHint=""
 
 #  Command to run when new mail arrives
 NewMailCommand=""
@@ -944,8 +947,6 @@ TitleButtonsSupported=""
 
 #
 # icewmbg preferences
-#
-# IMPORTANT: To set the background run icewmbg before icewm.
 #
 
 #  Paint the background image over all multihead monitors combined
