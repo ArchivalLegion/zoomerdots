@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Ardour (rt)
+Comment=Ardour Digital Audio Workstation
+Exec=prlimit --rtprio=86 ardour6
+Icon=ardour6
+Terminal=false
+MimeType=application/x-ardour;
+Type=Application
+Categories=AudioVideo;Audio;AudioEditing;X-Recorders;X-Multitrack;X-Jack;
