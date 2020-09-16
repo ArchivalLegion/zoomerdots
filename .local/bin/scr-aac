@@ -1,14 +1,13 @@
 #!/bin/sh
 #
-# VAAPI (h264:high) and aac
+# VAAPI h264 and aac
 
 ffmpeg -y \
--thread_queue_size 512 -f pulse -channels 2 -i Vanilla-Jack.monitor \
 -vaapi_device /dev/dri/renderD128 \
--probesize 30M -f x11grab -video_size 1366x768 -i :0 \
+-thread_queue_size 2048 -probesize 32M -f pulse -sample_rate 44100 -i default \
+-thread_queue_size 2048 -probesize 32M -f x11grab -s 2560x1080 -framerate 60 -i :0 \
 -vf 'format=nv12,hwupload' \
--c:v h264_vaapi -rc_mode:v CQP -profile:v high -qp:v 20 -level:v 4.1 -compression_level:v 1 \
--qcomp:v 0.4 -sc_threshold:v 20 -bf:v 1 -b_strategy:v 2 -keyint_min:v 30 -trellis:v 2 -subq:v 11 \
--c:a aac -profile:a aac_main -b:a 128000 \
-/tmp/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.mp4 \
-&> /tmp/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.log
+-c:v h264_vaapi -rc_mode:v CBR -compression_level:v 0 -b:v 8000k  \
+-c:a flac -compression_level:a 5 \
+/run/media/prostagama/please-no/rec-s/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.mkv \
+&> /run/media/prostagama/please-no/rec-s/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.log
