@@ -1,2 +1,0 @@
-#!/bin/sh
-prlimit --rtprio=0 /opt/discord/Discord
