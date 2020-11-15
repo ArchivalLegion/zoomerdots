@@ -12,6 +12,12 @@ load-module module-device-restore
 load-module module-stream-restore
 load-module module-card-restore
 
+### Automatically restore the default sink/source when changed by the user
+### during runtime.
+### NOTE: This should be loaded as early as possible so that subsequent modules
+### that look up the default sink/source get the right value.
+load-module module-default-device-restore
+
 ### Should be after module-*-restore but before module-*-detect
 load-module module-switch-on-port-available
 
@@ -27,13 +33,3 @@ load-module module-alsa-card device_id="0" card_name="TuxxAudio" namereg_fail=tr
 #.ifexists module-udev-detect.so
 #load-module module-udev-detect
 #.else
-
-### Automatically restore the default sink/source when changed by the user
-### during runtime.
-### NOTE: This should be loaded as early as possible so that subsequent modules
-### that look up the default sink/source get the right value.
-load-module module-default-device-restore
-
-### Automatically move streams to the default sink if the sink they are
-### connected to dies, similar for sources.
-load-module module-rescue-streams
