@@ -1,7 +1,7 @@
 # Default programs
 export EDITOR="nano"
-export BROWSER="palemoon"
-export FILE="thunar"
+export BROWSER="chromium"
+export FILE="pcmanfm"
 
 # Paths
 export PATH=$PATH:$HOME/.local/bin
@@ -15,8 +15,6 @@ export WINEARCH=win32
 
 # Make Java less ugly
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
-# Java stuff
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 
 # Quiet GTK
 export NO_AT_BRIDGE=1
@@ -32,4 +30,4 @@ export QT_QPA_PLATFORMTHEME=gtk2
 #FCFLAGS="${COMMON_FLAGS}"
 #FFLAGS="${COMMON_FLAGS}"
 # i7 3610qm
-#export MAKEFLAGS="-j4"
+#export MAKEFLAGS="-j8"
