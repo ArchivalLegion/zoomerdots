@@ -84,10 +84,10 @@ ColorNetIdle="rgb:28/2A/36"
 ColorApm="rgb:28/2A/36"
 
 #  Textcolor of APM monitor
-# ColorApmText="rgb:FF/79/C6"
+# ColorApmText="rgb:74/60/99"
 
 #  Color of APM monitor in battery mode
-# ColorApmBattery="rgb:FF/FF/00"
+ColorApmBattery="rgb:FF/79/C6"
 
 #  Color of APM monitor in line mode
 ColorApmLine="rgb:FF/79/C6"
@@ -101,7 +101,7 @@ ColorApmGraphBg="rgb:28/2A/36"
 ColorClock="rgb:1E/1F/29"
 
 #  Text of non-LCD monitor
-ColorClockText="rgb:FF/79/C6"
+ColorClockText="rgb:FF/FF/FF"
 
 
 #-----Workspace-----
@@ -111,6 +111,9 @@ ColorNormalWorkspaceButton="rgb:1E/1F/29"
 
 #  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
 ColorNormalWorkspaceButtonText="rgb:50/FA/7B"
+
+#  Background of the active workspace button, ColorActiveButton is used if empty
+ColorActiveWorkspaceButton="rgb:1E/1F/29"
 
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
 ColorActiveWorkspaceButtonText="rgb:FF/79/C6"
@@ -150,7 +153,7 @@ ColorNormalMenuItemText="rgb:FF/FF/FF"
 ColorActiveMenuItemText="rgb:50/FA/7B"
 
 #  Textcolor of disabled menu items
-ColorDisabledMenuItemText="rgb:FF/55/55"
+ColorDisabledMenuItemText="rgb:FF/79/C6"
 
 
 #-----Taskbar-----
@@ -158,14 +161,14 @@ ColorDisabledMenuItemText="rgb:FF/55/55"
 #  Background of the taskbar
 ColorDefaultTaskBar="rgb:1E/1F/29"
 
-#  Background for task buttons of regular windows 
+#  Background for task buttons of regular windows
 ColorNormalTaskBarApp="rgb:1E/1F/29"
 
 #  Textcolor for task buttons of regular windows
-ColorNormalTaskBarAppText="rgb:FF/79/C6"
+ColorNormalTaskBarAppText="rgb:FF/FF/FF"
 
 #  Textcolor for task buttons of the active window
-ColorActiveTaskBarAppText="rgb:FF/52/30"
+ColorActiveTaskBarAppText="rgb:FF/79/C6"
 
 #  Background for task buttons of the active window
 ColorActiveTaskBarApp="rgb:28/2A/36"
@@ -174,7 +177,7 @@ ColorActiveTaskBarApp="rgb:28/2A/36"
 ColorMinimizedTaskBarApp="rgb:1E/1F/29"
 
 #  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="rgb:FF/79/C6"
+ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
 
 #-----Listbox-----
 
@@ -230,11 +233,21 @@ ColorLabel="rgb:1E/1F/29"
 #  Textcolor of labels
 ColorLabelText="rgb:FF/FF/FF"
 
+
+
+#-----Buttons-----
+
 #  Background of regular buttons
 ColorNormalButton="rgb:28/2A/36"
 
 #  Textcolor of regular buttons
 ColorNormalButtonText="rgb:FF/FF/FF"
+
+#  Background of pressed buttons
+#ColorActiveButton="rgb:E0/E0/E0"
+
+#  Text color of pressed buttons
+#ColorActiveButtonText="rgb:00/00/00"
 
 #
 #-----Fonts-----
