@@ -1,11 +1,11 @@
-# icewm preferences(1.8.2)
+# icewm preferences ( 1.9.1 )
 
 # This file should be copied to /etc/icewm or $HOME/.icewm/
 # NOTE: All settings are commented out by default.
 # Be sure to uncomment them if you change them!
 
 #  Use a 32-bit visual for alpha blending
-Alpha=0 # 0/1
+Alpha=1 # 0/1
 
 #  Synchronize X11 for debugging (slow)
 Synchronize=0 # 0/1
@@ -133,14 +133,14 @@ OpaqueResize=1 # 0/1
 #  Windows initially placed manually by user
 ManualPlacement=0 # 0/1
 
-#  Smart window placement (minimal overlap)
+#  Smart window placement with minimal overlap
 SmartPlacement=1 # 0/1
 
 #  Hide title bar when maximized
 HideTitleBarWhenMaximized=1 # 0/1
 
 #  Center large windows
-CenterLarge=1 # 0/1
+CenterLarge=0 # 0/1
 
 #  Center dialogs on owner window
 CenterTransientsOnOwner=1 # 0/1
@@ -193,7 +193,7 @@ QuickSwitchAllIcons=1 # 0/1
 #  Show the window title above (all reachable) icons
 QuickSwitchTextFirst=0 # 0/1
 
-#  Attempt to create a small QuickSwitch window (1/3 instead of 3/5 of screen width)
+#  Create a smaller QuickSwitch window of 1/3 screen width
 QuickSwitchSmallWindow=0 # 0/1
 
 #  Go trough all window titles and choose width of the longest one
@@ -361,10 +361,13 @@ PagerShowMinimized=1 # 0/1
 #  Draw border around workspace buttons (if PagerShowPreview=1)
 PagerShowBorders=0 # 0/1
 
+#  Show workspace name label on workspace button (if PagerShowPreview=1)
+PagerShowLabels=1 # 0/1
+
 #  Show number of workspace on workspace button (if PagerShowPreview=1)
 PagerShowNumbers=1 # 0/1
 
-#  Execute taskbar applet commands (like MailCommand, ClockCommand,   ...) on single click
+#  Execute taskbar applet commands (like MailCommand, ClockCommand, ...) on single click
 TaskBarLaunchOnSingleClick=1 # 0/1
 
 #  Allow mouse actions on client windows (buggy with some programs)
@@ -380,7 +383,7 @@ ShowSettingsMenu=0 # 0/1
 ShowFocusModeMenu=0 # 0/1
 
 #  Show themes submenu in the program menu
-ShowThemesMenu=1 # 0/1
+ShowThemesMenu=0 # 0/1
 
 #  Show logout menu in the program menu
 ShowLogoutMenu=1 # 0/1
@@ -389,13 +392,13 @@ ShowLogoutMenu=1 # 0/1
 ShowHelp=0 # 0/1
 
 #  Show logout submenu in the program menu
-ShowLogoutSubMenu=1 # 0/1
+ShowLogoutSubMenu=0 # 0/1
 
 #  Show the about menu item in the program menu
 ShowAbout=0 # 0/1
 
 #  Show the run menu item in the program menu
-ShowRun=1 # 0/1
+ShowRun=0 # 0/1
 
 #  Show the window menu item in the program menu
 ShowWindowList=0 # 0/1
@@ -422,15 +425,15 @@ ConfirmLogout=1 # 0/1
 ShapesProtectClientWindow=1 # 0/1
 
 #  Use double buffering when redrawing the display
-DoubleBuffer=0 # 0/1
+DoubleBuffer=1 # 0/1
 
 #  Disable use of new XRANDR API for dual head (nvidia workaround)
 XRRDisable=0 # 0/1
 
-#  Favor *Xft fonts over core X11 fonts where possible
+#  Favour Xft fonts over core X11 fonts where possible
 PreferFreetypeFonts=1 # 0/1
 
-#  Delay fuzziness, to allow merging of multiple timer timeouts into one (notebook power saving)
+#  Delay fuzziness, to allow merging of multiple timer timeouts into one for notebook power saving
 DelayFuzziness=0 # [0-100]
 
 #  Pointer motion distance before click gets interpreted as drag
@@ -517,22 +520,22 @@ TitleBarRollupButton=0 # [0-5]
 #  Preselect to Cancel (0) or the OK (1) button in message boxes
 MsgBoxDefaultAction=0 # [0-1]
 
-#  Delay between new-mail checks. (seconds)
+#  Delay between new-mail checks in seconds
 MailCheckDelay=86400 # [0-86400]
 
 #  Delay between CPU Monitor samples in ms
 TaskBarCPUDelay=3000 # [10-3600000]
 
-#  Width of CPU Monitor
+#  The width of CPU Monitor applet in pixels
 TaskBarCPUSamples=15 # [2-1000]
 
-#  Width of Memory Monitor
+#  The width of Memory Monitor applet in pixels
 TaskBarMEMSamples=15 # [2-1000]
 
 #  Delay between Memory Monitor samples in ms
 TaskBarMEMDelay=3000 # [10-3600000]
 
-#  Width of Net Monitor
+#  The width of Net Monitor applet in pixels
 TaskBarNetSamples=15 # [2-1000]
 
 #  Delay between Net Monitor samples in ms
@@ -553,7 +556,7 @@ TaskBarApmGraphWidth=5 # [1-1000]
 #  Height of taskbar monitoring applets
 TaskBarGraphHeight=20 # [16-1000]
 
-#  Primary screen for xinerama (taskbar, ...)
+#  Primary screen for xinerama where taskbar is shown
 # XineramaPrimaryScreen=0 # [0-63]
 
 #  Number of seconds the taskbar app will blink when requesting focus (0 = forever)
@@ -565,19 +568,19 @@ FocusRequestFlashInterval=100 # [0-30000]
 #  Minimal number of themes after which the Themes menu becomes nested (0=disabled)
 NestedThemeMenuMinNumber=0 # [0-1234]
 
-#  Delay between power status updates (seconds)
+#  Delay between power status updates in seconds
 BatteryPollingPeriod=60 #[2-3600]
 
 #  NET_WORKAREA behaviour: 0 (single/multimonitor with STRUT information, like metacity), 1 (always full desktop), 2 (singlemonitor with STRUT, multimonitor without STRUT)
 NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/usr/local/share/icons"
+IconPath="/usr/share/icons"
 
 #  Colon separated icon theme list with wildcard support. Minus prefix - can be used to exclude themes.
 IconThemes="Papirus-Dark"
 
-#  Mailbox path (use $MAIL instead)
+#  Colon separated paths of your mailboxes, otherwise $MAILPATH or $MAIL is used
 MailBoxPath=""
 
 #  Command to run on mailbox
@@ -593,10 +596,10 @@ NewMailCommand=""
 LockCommand=""
 
 #  Command to run on clock
-ClockCommand="xclock -name icewm -title Clock"
+ClockCommand=""
 
 #  WM_CLASS to allow runonce for ClockCommand
-ClockClassHint="icewm.XClock"
+ClockClassHint=""
 
 #  Command to select and run a program
 # RunCommand=""
@@ -623,19 +626,19 @@ RebootCommand=""
 SuspendCommand=""
 
 #  Command to run on CPU status
-CPUStatusCommand="urxvt -e htop"
+CPUStatusCommand="urxvt -g 215x41 -e htop"
 
 #  WM_CLASS to allow runonce for CPUStatusCommand
-CPUStatusClassHint="top.urxvt"
+CPUStatusClassHint=""
 
 #  Combine all CPUs to one
 CPUStatusCombine=1 # 0/1
 
 #  Command to run on Net status
-NetStatusCommand="urxvt -geometry 122x20 -title 'Swatch' -e watch -n 2 'ss -atu'"
+NetStatusCommand="urxvt -g 215x41 -title 'Swatch' -e watch -n 2 'ss -atu'"
 
 #  WM_CLASS to allow runonce for NetStatusCommand
-NetStatusClassHint="ss.urxvt"
+NetStatusClassHint=""
 
 #  Command to run for address bar entries
 # AddressBarCommand=""
@@ -646,7 +649,7 @@ NetworkStatusDevice="*"
 #  Clock Time format (strftime format string)
 TimeFormat="%H:%M"
 
-#  Alternate Clock Time format (e.g. for blinking effects)
+#  Alternate Clock Time format for blinking effects
 TimeFormatAlt="%I:%M"
 
 #  Clock Date format for tooltip (strftime format string)
@@ -721,6 +724,8 @@ MouseWinSize="Alt+Pointer_Button3"
 # KeyWinArrangeNW="Ctrl+Alt+KP_7"
 
 # KeyWinArrangeC="Ctrl+Alt+KP_5"
+
+# KeyWinSmartPlace="Ctrl+Alt+Shift+KP_5"
 
 # KeySysSwitchNext="Alt+Tab"
 
@@ -836,7 +841,9 @@ KeySysAddressBar="Super+r"
 
 # KeySysCollapseTaskBar="Alt+Ctrl+h"
 
-WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 ", " 5 "
+
+# KeyboardLayouts=""
 
 #  Items supported in menu window (rmsnxfhualytickw)
 WinMenuItems="rmsnxfhualyticw"
@@ -849,7 +856,7 @@ WinMenuItems="rmsnxfhualyticw"
 #  Does it support the 'O' title bar button images (for mouse rollover)
 RolloverButtonsSupported=0 # 0/1
 
-#  Task bar clock/APM uses nice pixmapped LCD display (but then it doesn't display correctly in many languages anymore, e.g. for Japanese and Korean it works only when a real font is used and not the LEDs
+#  Task bar clock/APM uses nice pixmap LCD display (but then it doesn't display correctly in many languages anymore, e.g. for Japanese and Korean it works only when a real font is used and not the LCD pixmaps
 TaskBarClockLeds=0 # 0/1
 
 #  Width of taskbutton side icons
@@ -863,6 +870,9 @@ TrayIconMaxHeight=24 # [16-128]
 
 #  Surround the tray with plastic border
 TrayDrawBevel=0 # 0/1
+
+#  Draw window title centered (obsoleted by TitleBarJustify)
+TitleBarCentered=1 # 0/1
 
 #  Join title*S and title*T
 TitleBarJoinLeft=0 # 0/1
@@ -902,6 +912,9 @@ TitleBarHorzOffset=0 # [-128-128]
 
 #  Vertical offset for the window title text
 TitleBarVertOffset=-2 # [-128-128]
+
+#  Vertical offset for the menu button icon
+MenuButtonIconVertOffset=0 # [-128-128]
 
 #  Scrollbar width
 ScrollBarX=16 # [0-64]
@@ -962,7 +975,7 @@ SupportSemitransparency=1 # 0/1
 DesktopBackgroundScaled=1 # 0/1
 
 #  Desktop background image(s)
-DesktopBackgroundImage="$HOME/Pictures/wllppr/300559-og-mansion.jpg"
+DesktopBackgroundImage="/home/prostagama/Pictures/wllppr/Konachan.com - 317214 bondrewd made_in_abyss male nanachi scenic ying_yi.jpg"
 
 #  Desktop background color(s)
 DesktopBackgroundColor=""
