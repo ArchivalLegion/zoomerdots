@@ -2,16 +2,10 @@
 # This is a WIP
 
 #  Description of the theme, credits
-ThemeDescription="A imitation of Ant-Dracula Blood for IceWM"
+ThemeDescription="A imitation of Ant-Dracula for IceWM"
 
 #  Theme author, e-mail address, credits
 ThemeAuthor="https://github.com/EliverLara/"
-
-# Formating: section ="#                       "
-#                     "#-----NAME OF GROUP-----"
-#                     "#                       "
-#
-# sub-section =       "#-----ETC-----          "
 
 #
 #-----Colors-----
@@ -43,14 +37,13 @@ ColorCPUStatusIoWait="rgb:60/00/60"
 #ColorCPUStatusNice="rgb:00/00/FF"
 
 #  Idle (non) load on the CPU monitor, leave empty to force transparency
-ColorCPUStatusIdle="rgb:28/2A/36"
+ColorCPUStatusIdle="rgb:2A/2C/39"
 
 #  Involuntary Wait on the CPU monitor
 #ColorCPUStatusSteal="rgb:FF/8A/91"
 
 #  Temperature of the CPU
 ColorCPUStatusTemp="rgb:F8/66/AF"
-
 
 #-----Network-----
 #  Outgoing load on the network monitor
@@ -60,28 +53,26 @@ ColorNetSend="rgb:98/66/C5"
 ColorNetReceive="rgb:B2/22/22"
 
 #  Idle (non) load on the network monitor, leave empty to force transparency
-ColorNetIdle="rgb:28/2A/36"
-
+ColorNetIdle="rgb:2A/2C/39"
 
 #-----Memory-----
 
 #  User program usage in the memory monitor
-# ColorMEMStatusUser="rgb:40/40/80"
+#ColorMEMStatusUser="rgb:40/40/80"
 
 #  OS buffers usage in the memory monitor
-# ColorMEMStatusBuffers="rgb:60/60/C0"
+#ColorMEMStatusBuffers="rgb:60/60/C0"
 
 #  OS cached usage in the memory monitor
-# ColorMEMStatusCached="rgb:80/80/FF"
+#ColorMEMStatusCached="rgb:80/80/FF"
 
 #  Free memory in the memory monitor
-# ColorMEMStatusFree="rgb:00/00/00"
-
+#ColorMEMStatusFree="rgb:00/00/00"
 
 #-----Battery-----
 
 #  Background of APM monitor, leave empty to force transparency
-ColorApm="rgb:28/2A/36"
+ColorApm="rgb:2A/2C/39"
 
 #  Textcolor of APM monitor
 # ColorApmText="rgb:74/60/99"
@@ -93,7 +84,7 @@ ColorApmBattery="rgb:FF/79/C6"
 ColorApmLine="rgb:FF/79/C6"
 
 #  Background color for graph mode
-ColorApmGraphBg="rgb:28/2A/36"
+ColorApmGraphBg="rgb:2A/2C/39"
 
 #-----Clock-----
 
@@ -102,7 +93,6 @@ ColorClock="rgb:1E/1F/29"
 
 #  Text of non-LCD monitor
 ColorClockText="rgb:FF/FF/FF"
-
 
 #-----Workspace-----
 
@@ -144,7 +134,7 @@ ColorActiveTitleBarText="rgb:FF/FF/FF"
 ColorNormalMenu="rgb:1E/1F/29"
 
 #  Background of selected menu item, leave empty to force transparency
-ColorActiveMenuItem="rgb:28/2A/36"
+ColorActiveMenuItem="rgb:2A/2C/39"
 
 #  Textcolor of regular menu items
 ColorNormalMenuItemText="rgb:FF/FF/FF"
@@ -154,7 +144,6 @@ ColorActiveMenuItemText="rgb:50/FA/7B"
 
 #  Textcolor of disabled menu items
 ColorDisabledMenuItemText="rgb:FF/79/C6"
-
 
 #-----Taskbar-----
 
@@ -171,7 +160,7 @@ ColorNormalTaskBarAppText="rgb:FF/FF/FF"
 ColorActiveTaskBarAppText="rgb:FF/79/C6"
 
 #  Background for task buttons of the active window
-ColorActiveTaskBarApp="rgb:28/2A/36"
+ColorActiveTaskBarApp="rgb:2A/2C/39"
 
 #  Background for task buttons of minimized windows
 ColorMinimizedTaskBarApp="rgb:1E/1F/29"
@@ -179,12 +168,12 @@ ColorMinimizedTaskBarApp="rgb:1E/1F/29"
 #  Textcolor for task buttons of minimized windows
 ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
 
-#-----Listbox-----
+#-----Listbox/WindowList-----
 
 ColorListBox="rgb:1C/1B/20"
 ColorListBoxText="rgb:FF/FF/FF"
-ColorListBoxSelection="rgb:05/D5/FC"
-ColorListBoxSelectionText="rgb:FF/FF/FF"
+ColorListBoxSelection="rgb:74/60/99"
+ColorListBoxSelectionText="rgb:50/FA/7B"
 
 #-----Scrollbar-----
 
@@ -201,7 +190,6 @@ ColorMoveSizeStatus="rgb:1E/1F/29"
 #  Textcolor of move/resize status window
 ColorMoveSizeStatusText="rgb:FF/FF/FF"
 
-
 #-----QuickSwitch-----
 
 #  Background of the quick switch window
@@ -211,8 +199,7 @@ ColorQuickSwitch="rgb:1E/1F/29"
 ColorQuickSwitchText="rgb:FF/FF/FF"
 
 #  Rectangle arround the active icon in the quick switch window
-ColorQuickSwitchActive="rgb:28/2A/36"
-
+ColorQuickSwitchActive="rgb:2A/2C/39"
 
 #-----ToolTip-----
 
@@ -233,12 +220,10 @@ ColorLabel="rgb:1E/1F/29"
 #  Textcolor of labels
 ColorLabelText="rgb:FF/FF/FF"
 
-
-
 #-----Buttons-----
 
 #  Background of regular buttons
-ColorNormalButton="rgb:28/2A/36"
+ColorNormalButton="rgb:2A/2C/39"
 
 #  Textcolor of regular buttons
 ColorNormalButtonText="rgb:FF/FF/FF"
