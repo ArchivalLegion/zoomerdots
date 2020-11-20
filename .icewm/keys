@@ -10,7 +10,7 @@ key "Super+g" geany
 key "Super+b" chromium --incognito
 key "Super+a" pavucontrol
 key "Super+w" scrot -d 3 -q 95 '%m-%d-%Y_%H-%M-%S.png' -e 'mv $f ~/Pictures/screens/'
-key "Super+f" pcmanfm
+key "Super+f" spacefm
 key "Super+F11" clicker
 key "Super+F12" killall xdotool
 #key "XF86AudioLowerVolume" amixer sset Master 5%-
