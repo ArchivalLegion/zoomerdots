@@ -626,7 +626,7 @@ RebootCommand=""
 SuspendCommand=""
 
 #  Command to run on CPU status
-CPUStatusCommand="urxvt -g 215x41 -e htop"
+CPUStatusCommand="urxvt -e htop"
 
 #  WM_CLASS to allow runonce for CPUStatusCommand
 CPUStatusClassHint=""
@@ -635,7 +635,7 @@ CPUStatusClassHint=""
 CPUStatusCombine=1 # 0/1
 
 #  Command to run on Net status
-NetStatusCommand="urxvt -g 215x41 -title 'Swatch' -e watch -n 2 'ss -atu'"
+NetStatusCommand="urxvt -title 'Swatch' -e watch -n 2 'ss -atu'"
 
 #  WM_CLASS to allow runonce for NetStatusCommand
 NetStatusClassHint=""
@@ -881,7 +881,7 @@ TitleBarJoinLeft=0 # 0/1
 TitleBarJoinRight=0 # 0/1
 
 #  Show application icon over menu button
-ShowMenuButtonIcon=0 # 0/1
+ShowMenuButtonIcon=1 # 0/1
 
 #  Horizontal window border
 BorderSizeX=4 # [0-128]
@@ -975,7 +975,7 @@ SupportSemitransparency=1 # 0/1
 DesktopBackgroundScaled=1 # 0/1
 
 #  Desktop background image(s)
-DesktopBackgroundImage="/home/prostagama/Pictures/wllppr/Konachan.com - 317214 bondrewd made_in_abyss male nanachi scenic ying_yi.jpg"
+DesktopBackgroundImage=""
 
 #  Desktop background color(s)
 DesktopBackgroundColor=""
