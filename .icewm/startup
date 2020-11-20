@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Setup monitors
+sleep 1 &&
+screens &
+
+# Use Nitrogen instead of icewmbg
+sleep 1 &&
+nitrogen --restore
