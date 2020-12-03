@@ -22,12 +22,11 @@ export NO_AT_BRIDGE=1
 # Set qt5 theme using style plugins
 export QT_QPA_PLATFORMTHEME=gtk2
 
-# Ivy bridge compile options,
+# Generic compile options,
 # please set march accordingly otherwise use generic / native.
-#COMMON_FLAGS="-march=ivybridge -O2 -pipe"
-#CFLAGS="${COMMON_FLAGS}"
-#CXXFLAGS="${COMMON_FLAGS}"
-#FCFLAGS="${COMMON_FLAGS}"
-#FFLAGS="${COMMON_FLAGS}"
-# i7 3610qm
-#export MAKEFLAGS="-j8"
+COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+export MAKEFLAGS="-j$(nproc)"
