@@ -5,7 +5,7 @@ fi
 # Default programs
 export EDITOR="nano"
 export BROWSER="chromium"
-export FILE="pcmanfm"
+export FILE="spacefm"
 
 # Paths
 export PATH=$PATH:$HOME/.local/bin
@@ -28,9 +28,9 @@ export QT_QPA_PLATFORMTHEME=gtk2
 
 # Generic compile options,
 # please set march accordingly otherwise use generic / native.
-COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
-CFLAGS="${COMMON_FLAGS}"
-CXXFLAGS="${COMMON_FLAGS}"
-FCFLAGS="${COMMON_FLAGS}"
-FFLAGS="${COMMON_FLAGS}"
+export COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
+export CFLAGS="${COMMON_FLAGS}"
+export CXXFLAGS="${COMMON_FLAGS}"
+export FCFLAGS="${COMMON_FLAGS}"
+export FFLAGS="${COMMON_FLAGS}"
 export MAKEFLAGS="-j$(nproc)"
