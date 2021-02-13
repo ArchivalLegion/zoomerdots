@@ -1,37 +1,55 @@
 #!/usr/bin/pulseaudio -nF
-#
-# This file is part of PulseAudio.
-#
-# This startup script is used only if PulseAudio is started per-user
-# (i.e. not in system mode)
 
-.fail
+# Automatically restore the default sink/source when changed by the user
+# during runtime.
+# NOTE: This should be loaded as early as possible so that subsequent modules
+# that look up the default sink/source get the right value.
+load-module module-default-device-restore
 
-### Automatically restore the volume of streams and devices
+# Automatically restore the volume of streams and devices
 load-module module-device-restore
 load-module module-stream-restore
 load-module module-card-restore
 
-### Automatically restore the default sink/source when changed by the user
-### during runtime.
-### NOTE: This should be loaded as early as possible so that subsequent modules
-### that look up the default sink/source get the right value.
-load-module module-default-device-restore
-
-### Should be after module-*-restore but before module-*-detect
+# Should be after module-*-restore but before module-*-detect
 load-module module-switch-on-port-available
 
-### Load several protocols
+# Load protocols
+.ifexists module-dbus-protocol
+load-module module-dbus-protocol
+.endif
+.ifexists module-esound-protocol-unix.so
+load-module module-esound-protocol-unix
+.endif
+.ifexsists module-native-protocol-unix
 load-module module-native-protocol-unix
+.endif
 
-### Manual alsa card
+.fail
+# Statically loading/configuring alsa card
+
 load-module module-alsa-card device_id="1" card_name="Intergrated" namereg_fail=true sink_name="Archie" source_name="Mastas" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
 
-load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sink_name="GPU" source_name="GPU-Source" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
+load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sink_name="GPU-Sink" source_name="GPU-Source" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
 
-### Example buffers *Using 44100 [2048 = 5.804~ 5.8 (128) | 4096 = 11.609~ 11.6 (256) | 8192 = 23.219~ 23.2 (512)]
+# Example buffers using 44100 sample rate [2048 = 5.804 ~ 5.8 (128) | 4096 = 11.609 ~ 11.6 (256) | 8192 = 23.219 ~ 23.2 (512)]
 
-### Auto load sound devices
+# Automatically load driver modules depending on the hardware available
 #.ifexists module-udev-detect.so
 #load-module module-udev-detect
-#.else
+#.endif
+
+# Auto load sound devices
+#.ifexists module-udev-detect.so
+#load-module module-udev-detect
+#.endif
+.nofail
+
+# If autoexit on idle is enabled we want to make sure we only quit
+# when no local session needs us anymore.
+.ifexists module-console-kit.so
+load-module module-console-kit
+.endif
+.ifexists module-systemd-login.so
+load-module module-systemd-login
+.endif
