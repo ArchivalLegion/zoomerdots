@@ -21,7 +21,7 @@ load-module module-dbus-protocol
 .ifexists module-esound-protocol-unix.so
 load-module module-esound-protocol-unix
 .endif
-.ifexsists module-native-protocol-unix
+.ifexists module-native-protocol-unix
 load-module module-native-protocol-unix
 .endif
 
