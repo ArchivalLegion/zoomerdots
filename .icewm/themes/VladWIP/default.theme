@@ -7,10 +7,7 @@ ThemeDescription="A imitation of Ant-Dracula for IceWM"
 #  Theme author, e-mail address, credits
 ThemeAuthor="https://github.com/EliverLara/"
 
-#
 #-----Colors-----
-#
-
 # Which pixmap type to use, I'm not using one so it's "flat"
 Look="flat"
 
@@ -56,7 +53,6 @@ ColorNetReceive="rgb:B2/22/22"
 ColorNetIdle="rgb:2A/2C/39"
 
 #-----Memory-----
-
 #  User program usage in the memory monitor
 #ColorMEMStatusUser="rgb:40/40/80"
 
@@ -70,7 +66,6 @@ ColorNetIdle="rgb:2A/2C/39"
 #ColorMEMStatusFree="rgb:00/00/00"
 
 #-----Battery-----
-
 #  Background of APM monitor, leave empty to force transparency
 ColorApm="rgb:2A/2C/39"
 
@@ -87,7 +82,6 @@ ColorApmLine="rgb:FF/79/C6"
 ColorApmGraphBg="rgb:2A/2C/39"
 
 #-----Clock-----
-
 #  Background of non-LCD clock, leave empty to force transparency
 ColorClock="rgb:1E/1F/29"
 
@@ -95,7 +89,6 @@ ColorClock="rgb:1E/1F/29"
 ColorClockText="rgb:FF/FF/FF"
 
 #-----Workspace-----
-
 #  Background of workspace buttons, ColorNormalButton is used if empty
 ColorNormalWorkspaceButton="rgb:1E/1F/29"
 
@@ -109,7 +102,6 @@ ColorActiveWorkspaceButton="rgb:1E/1F/29"
 ColorActiveWorkspaceButtonText="rgb:FF/79/C6"
 
 #-----Titlebar-----
-
 #  Border of inactive windows
 ColorNormalBorder="rgb:1E/1F/29"
 
@@ -129,7 +121,6 @@ ColorNormalTitleBarText="rgb:FF/FF/FF"
 ColorActiveTitleBarText="rgb:FF/FF/FF"
 
 #-----Menu-----
-
 #  Background of pop-up menus
 ColorNormalMenu="rgb:1E/1F/29"
 
@@ -146,7 +137,6 @@ ColorActiveMenuItemText="rgb:50/FA/7B"
 ColorDisabledMenuItemText="rgb:FF/79/C6"
 
 #-----Taskbar-----
-
 #  Background of the taskbar
 ColorDefaultTaskBar="rgb:1E/1F/29"
 
@@ -169,21 +159,18 @@ ColorMinimizedTaskBarApp="rgb:1E/1F/29"
 ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
 
 #-----Listbox/WindowList-----
-
 ColorListBox="rgb:1C/1B/20"
 ColorListBoxText="rgb:FF/FF/FF"
 ColorListBoxSelection="rgb:74/60/99"
 ColorListBoxSelectionText="rgb:50/FA/7B"
 
 #-----Scrollbar-----
-
 ColorScrollBar="rgb:1C/1B/20"
 ColorScrollBarSlider="rgb:3A/3E/42"
 ColorScrollBarButton="rgb:3A/3E/42"
 ColorScrollBarButtonArrow="rgb:FF/ff/ff"
 
 #-----Move Size Status-----
-
 #  Background of move/resize status window
 ColorMoveSizeStatus="rgb:1E/1F/29"
 
@@ -191,7 +178,6 @@ ColorMoveSizeStatus="rgb:1E/1F/29"
 ColorMoveSizeStatusText="rgb:FF/FF/FF"
 
 #-----QuickSwitch-----
-
 #  Background of the quick switch window
 ColorQuickSwitch="rgb:1E/1F/29"
 
@@ -202,7 +188,6 @@ ColorQuickSwitchText="rgb:FF/FF/FF"
 ColorQuickSwitchActive="rgb:2A/2C/39"
 
 #-----ToolTip-----
-
 #  Background of tooltips
 ColorToolTip="rgb:1E/1F/29"
 
@@ -210,7 +195,6 @@ ColorToolTip="rgb:1E/1F/29"
 ColorToolTipText="rgb:FF/FF/FF"
 
 #-----Dialog-----
-
 #  Background of dialog windows
 ColorDialog="rgb:1E/1F/29"
 
@@ -221,7 +205,6 @@ ColorLabel="rgb:1E/1F/29"
 ColorLabelText="rgb:FF/FF/FF"
 
 #-----Buttons-----
-
 #  Background of regular buttons
 ColorNormalButton="rgb:2A/2C/39"
 
@@ -237,7 +220,6 @@ ColorNormalButtonText="rgb:FF/FF/FF"
 #
 #-----Fonts-----
 #
-
 #  Name of the title bar font.
 TitleFontName=""
 
@@ -320,7 +302,7 @@ ListBoxFontNameXft="sans:size=12"
 ToolTipFontName=""
 
 #  Name of the tool tip font.
-ToolTipFontNameXft="sans:size=10"
+ToolTipFontNameXft="monospace:size=10"
 
 #  Name of the task bar clock font.
 ClockFontName=""
@@ -332,13 +314,13 @@ ClockFontNameXft="sans:size=10:bold"
 TempFontName=""
 
 #  Name of the task bar temperature font.
-TempFontNameXft="sans:size=8"
+TempFontNameXft="monospace:size=8"
 
 #  Name of the task bar battery font.
 ApmFontName=""
 
 #  Name of the task bar battery font.
-ApmFontNameXft="sans:size=8"
+ApmFontNameXft="monospace:size=8"
 
 #  Name of the input field font.
 InputFontName=""
@@ -350,4 +332,4 @@ InputFontNameXft="monospace:size=10"
 LabelFontName=""
 
 #  Name of the label font.
-LabelFontNameXft="sans:size=12"
+LabelFontNameXft="monospace:size=12"
