@@ -2,35 +2,39 @@
 
 # Automatically restore the default sink/source when changed by the user
 # during runtime.
-# NOTE: This should be loaded as early as possible so that subsequent modules
-# that look up the default sink/source get the right value.
 load-module module-default-device-restore
 
-# Automatically restore the volume of streams and devices
+# Automatically restore the volume of streams and devices.
 load-module module-device-restore
 load-module module-stream-restore
 load-module module-card-restore
 
-# Should be after module-*-restore but before module-*-detect
+# Automatically switches the card profile and/or device port when a port changes its availablility status.
+# In practice this happens when plugging in or out something to/from a 3.5mm connector.
 load-module module-switch-on-port-available
 
-# Load protocols
-.ifexists module-dbus-protocol
+# Load protocols.
+.ifexists module-dbus-protocol.so
 load-module module-dbus-protocol
 .endif
 .ifexists module-esound-protocol-unix.so
 load-module module-esound-protocol-unix
 .endif
-.ifexists module-native-protocol-unix
+.ifexists module-native-protocol-unix.so
 load-module module-native-protocol-unix
 .endif
 
+# Position event sounds between L and R depending on the position on screen of the widget triggering them.
+.ifexists module-position-event-sounds.so
+load-module module-position-event-sounds
+.endif
+
 .fail
-# Statically loading/configuring alsa card
+# Manually loading/configuring alsa device(s)
 
-load-module module-alsa-card device_id="1" card_name="Intergrated" namereg_fail=true sink_name="Archie" source_name="Mastas" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
+load-module module-alsa-card device_id="0" card_name="Motherboard" namereg_fail=true sink_name="Archie" source_name="Mastas" format=float32le rate=44100 mmap=true tsched=true fixed_latency_range=true tsched_buffer_size=4096 ignore_dB=false deferred_volume=true use_ucm=true
 
-load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sink_name="GPU-Sink" source_name="GPU-Source" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=false use_ucm=true
+#load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sink_name="GPU-Sink" source_name="GPU-Source" format=float32le rate=44100 mmap=true tsched=true fixed_latency_range=true tsched_buffer_size=4096 ignore_dB=false deferred_volume=true use_ucm=true
 
 # Example buffers using 44100 sample rate [2048 = 5.804 ~ 5.8 (128) | 4096 = 11.609 ~ 11.6 (256) | 8192 = 23.219 ~ 23.2 (512)]
 
@@ -39,7 +43,7 @@ load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sin
 #load-module module-udev-detect
 #.endif
 
-# Auto load sound devices
+# Auto load sound devices.
 #.ifexists module-udev-detect.so
 #load-module module-udev-detect
 #.endif
