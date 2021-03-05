@@ -32,18 +32,13 @@ load-module module-position-event-sounds
 .fail
 # Manually loading/configuring alsa device(s)
 
-load-module module-alsa-card device_id="0" card_name="Motherboard" namereg_fail=true sink_name="Archie" source_name="Mastas" format=float32le rate=44100 mmap=true tsched=true fixed_latency_range=true tsched_buffer_size=4096 ignore_dB=false deferred_volume=true use_ucm=true
+#load-module module-alsa-card device_id="1" card_name="Motherboard" namereg_fail=true sink_name="Archie" source_name="Mastas" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=true use_ucm=true
 
-#load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sink_name="GPU-Sink" source_name="GPU-Source" format=float32le rate=44100 mmap=true tsched=true fixed_latency_range=true tsched_buffer_size=4096 ignore_dB=false deferred_volume=true use_ucm=true
+load-module module-alsa-card device_id="0" card_name="GPU" namereg_fail=true sink_name="GPU-Sink" source_name="GPU-Source" format=s32le rate=44100 mmap=true tsched=true fixed_latency_range=false tsched_buffer_size=4096 ignore_dB=false deferred_volume=true use_ucm=true
 
-# Example buffers using 44100 sample rate [2048 = 5.804 ~ 5.8 (128) | 4096 = 11.609 ~ 11.6 (256) | 8192 = 23.219 ~ 23.2 (512)]
+# Example buffers using 44100 sample rate: 2048 =~5.8 (128) | 4096 =~ 11.6 (256) | 8192 =~ 23.2 (512)
 
-# Automatically load driver modules depending on the hardware available
-#.ifexists module-udev-detect.so
-#load-module module-udev-detect
-#.endif
-
-# Auto load sound devices.
+# Automatically load driver modules depending on the hardware available.
 #.ifexists module-udev-detect.so
 #load-module module-udev-detect
 #.endif
