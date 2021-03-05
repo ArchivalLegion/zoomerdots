@@ -2,9 +2,6 @@
 # /usr/include/X11/keysym.h, keysymdefs.h, XF86keysym.h, ...
 # You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
 # XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
-
-key "Shift+Alt+o" scr-local
-key "Shift+Alt+p" killall ffmpeg
 key "Shift+Alt+t" urxvt
 key "Shift+Alt+g" geany
 key "Shift+Alt+b" chromium --incognito
