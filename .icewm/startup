@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# Source options
+xrdb ~/.Xresources &
+
+# Start up udiskie
+sleep 1 &&
+udiskie -Ant &
+
 # Setup monitors
 sleep 1 &&
 screens &
