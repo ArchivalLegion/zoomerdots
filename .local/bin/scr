@@ -3,9 +3,9 @@
 # h264 and aac
 
 ffmpeg -y \
--thread_queue_size 512 -probesize 32M -f pulse -sample_rate 44100 -i default \
--thread_queue_size 512 -probesize 32M -f x11grab -s 2560x1080 -framerate 30 -i :0 \
--c:v libx264 -nal-hrd:v cbr -preset:v veryfast -b:v 2500k  \
+-thread_queue_size 512 -probesize 256M -f pulse -sample_rate 44100 -i default \
+-thread_queue_size 512 -probesize 512M -f x11grab -s 2560x1080 -framerate 30 -i :0 \
+-c:v libx264 -nal-hrd:v cbr -preset:v medium -b:v 8500k  \
 -c:a aac -profile:a aac_main -aac_coder twoloop -q:a 1 \
 ~/Videos/recs/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.mkv \
 &> ~/Videos/recs/screen1_recording_`date '+%m-%d-%Y_%H-%M-%S'`.log
