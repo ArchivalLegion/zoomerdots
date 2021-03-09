@@ -1,5 +1,4 @@
-player=mpv
-player-args="--cache=yes --demuxer-max-bytes=128MiB"
+player=mpv --cache=yes --demuxer-max-bytes=128MiB
 player-no-close
 player-continuous-http
 twitch-disable-ads
