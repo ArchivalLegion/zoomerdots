@@ -10,7 +10,7 @@ export FILE="spacefm"
 # Paths
 export PATH=$PATH:$HOME/.local/bin
 
-# Paths for .files, otherwise they clutter ~
+# Moving various .dotfiles out of $HOME
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
 
 # Wine
