@@ -1,5 +1,5 @@
 [global]
-font = Ubuntu Mono 12
+font = Noto Sans Mono 12
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -79,12 +79,12 @@ shrink = no
 # The transparency of the window.  Range: [0; 100].
 # This option will only work if a compositing windowmanager is
 # present (e.g. xcompmgr, compiz, etc.).
-transparency = 5
+transparency = 55
 
 # Don't remove messages, if the user is idle (no mouse or keyboard input)
 # for longer than idle_threshold seconds.
 # Set to 0 to disable.
-idle_threshold = 0
+idle_threshold = 3
 
 # Which monitor should the notifications be displayed on.
 monitor = 0
@@ -100,14 +100,14 @@ monitor = 0
 #
 # If this option is set to mouse or keyboard, the monitor option
 # will be ignored.
-follow = none
+follow = mouse
 
 # Should a notification popped up from history be sticky or timeout
 # as if it would normally do.
 sticky_history = yes
 
 # Maximum amount of notifications kept in history
-history_length = 15
+history_length = 100
 
 # Display indicators for URLs (U) and actions (A).
 show_indicators = no
@@ -168,15 +168,15 @@ frame_color = "#8EC07C"
 close = ctrl+space
 
 # Close all notifications.
-close_all = ctrl+shift+space
+close_all = alt+shift+space
 
 # Redisplay last message(s).
 # On the US keyboard layout "grave" is normally above TAB and left
 # of "1".
-history = ctrl+grave
+history = alt+grave
 
 # Context menu.
-context = ctrl+shift+period
+context = alt+shift+period
 
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
@@ -260,4 +260,3 @@ timeout = 8
 #    summary = *twitter.com*
 #    urgency = normal
 #
-# vim: ft=cfg
