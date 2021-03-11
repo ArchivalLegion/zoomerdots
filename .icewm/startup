@@ -8,8 +8,8 @@ sleep 1 &&
 udiskie -Ant &
 
 # Setup monitors
-sleep 1 &&
-screens &
+#sleep 1 &&
+#screens &
 
 # Use Nitrogen instead of icewmbg
 sleep 1 &&
