@@ -975,16 +975,16 @@ SupportSemitransparency=1 # 0/1
 DesktopBackgroundScaled=0 # 0/1
 
 #  Desktop background image(s)
-DesktopBackgroundImage=""
+# DesktopBackgroundImage=""
 
 #  Desktop background color(s)
-DesktopBackgroundColor=""
+# DesktopBackgroundColor=""
 
 #  Image(s) to announce for semitransparent windows
-DesktopTransparencyImage=""
+# DesktopTransparencyImage=""
 
 #  Color(s) to announce for semitransparent windows
-DesktopTransparencyColor=""
+# DesktopTransparencyColor=""
 
 #  Choose a random selection from the list of background images
 ShuffleBackgroundImages=0 # 0/1
