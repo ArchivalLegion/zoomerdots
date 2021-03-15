@@ -1,13 +1,16 @@
-# If not running interactively, don't do anything
+# If not running interactively, don't do anything.
 [ -z "$PS1" ] && return
 
-# Set the prompt, sourced from artix linux
+# Set the PS1 prompt.
 export PS1='\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] '
 
-# Make sudo work within alias's
+# Colour ls
+alias ls='ls --color=always'
+
+# Make sudo work within alias's.
 alias sudo='sudo '
 
-# Time savers
+# Time savers.
 alias %b='cat /sys/class/power_supply/BAT?/capacity'
 alias spc='picom -b'
 alias sx='clear && startx'
