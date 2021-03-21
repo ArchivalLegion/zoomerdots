@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Source options
+# Source Xresources / Xdefaults
 xrdb ~/.Xresources &
 
 # Start up udiskie
@@ -14,3 +14,5 @@ udiskie -Ant &
 # Use Nitrogen instead of icewmbg
 sleep 1 &&
 nitrogen --restore
+
+return 0
