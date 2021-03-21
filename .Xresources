@@ -14,12 +14,12 @@ URxvt*depth:                24
 
 !! Font
 Xft*dpi:                    96
-Xft*antialias:              true
-Xft*hinting:                false
-Xft*autohint:               false
+Xft*antialias:              1
+Xft*hinting:                0
+Xft*autohint:               0
 Xft*hintstyle:              hintnone
 Xft*rgba:                   rgb
-Xft*lcdfilter:              lcdnone
+Xft*lcdfilter:              lcddefault
 URxvt*font:                 xft:Source Code Pro:size=14
 URxvt*boldFont:             xft:Source Code Pro:bold:size=16
 URxvt*italicFont:           xft:Source Code Pro:italic:size=14
