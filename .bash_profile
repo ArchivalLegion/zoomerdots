@@ -13,6 +13,11 @@ export PATH=$PATH:$HOME/.local/bin
 # Moving various .dotfiles out of $HOME
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
 
+# Ivy Bridge 4000 is pretty much on its last legs
+# of OpenGL support, 4.3 is the maximum supported by it
+# and some programs throw errors without this.
+#export MESA_GL_VERSION_OVERRIDE=4.5
+
 # Wine
 export WINEPREFIX=~/.openwound
 export WINEARCH=win32
