@@ -1,5 +1,5 @@
 [global]
-font = Noto Sans 12
+font = Sans 12
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -43,14 +43,14 @@ bounce_freq = 0
 # Show age of message if message is older than show_age_threshold
 # seconds.
 # Set to -1 to disable.
-show_age_threshold = 5
+show_age_threshold = 20
 
 # Split notifications into multiple lines if they don't fit into
 # geometry.
 word_wrap = yes
 
 # Ignore newlines '\n' in notifications.
-ignore_newline = no
+ignore_newline = yes
 
 # Hide duplicate's count and stack them
 stack_duplicates = yes
@@ -84,7 +84,7 @@ transparency = 20
 # Don't remove messages, if the user is idle (no mouse or keyboard input)
 # for longer than idle_threshold seconds.
 # Set to 0 to disable.
-idle_threshold = 3
+idle_threshold = 5
 
 # Which monitor should the notifications be displayed on.
 monitor = 0
@@ -152,8 +152,7 @@ icon_position = off
 max_icon_size = 80
 
 # Paths to default icons.
-icon_path = /usr/share/icons/Papirus-Dark/16x16/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/48x48/notifications/:/usr/share/icons/Papirus-Dark/48x48/emblems/
-
+icon_path = /usr/share/icons/Papirus-Dark/
 frame_width = 3
 frame_color = "#8EC07C"
 
