@@ -3,16 +3,12 @@
 # Source Xresources / Xdefaults
 xrdb ~/.Xresources &
 
-# Start up udiskie
-sleep 1 &&
-udiskie -Ant &
-
 # Setup monitors
-#sleep 1 &&
-#screens &
+screens &
 
 # Use Nitrogen instead of icewmbg
-sleep 1 &&
-nitrogen --restore
+sleep 2 &&
+nitrogen --restore &
 
-return 0
+# Gnome polkit agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
