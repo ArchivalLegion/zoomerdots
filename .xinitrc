@@ -1,2 +1,2 @@
 #!/bin/sh
-icewm-session -b
+dbus-launch --exit-with-session icewm-session -b
