@@ -9,10 +9,40 @@ Xcursor*size:               32
 !!  URxvt Settings
 !!
 
-URxvt*termName:             rxvt-unicode
-URxvt*depth:                24
+URxvt*depth:                32
 
-!! Font
+!! Perl
+
+URxvt*perl-ext:
+URxvt*perl-ext-common:
+
+!!
+!! Scrolling
+!!
+
+!! remove scrollbar
+
+URxvt*scrollBar:            false
+
+!! do not scroll with output
+
+URxvt*scrollTtyOutput:      false
+
+!! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+
+URxvt*scrollWithBuffer:     true
+
+!! scroll back to the bottom on keypress
+
+URxvt*scrollTtyKeypress:    true
+
+!! TODO: Name
+URxvt*secondaryScreen:      1
+URxvt*secondaryScroll:      1
+URxvt*mouseWheelScrollPage: 0
+
+!! Fonts
+
 Xft*dpi:                    96
 Xft*antialias:              1
 Xft*hinting:                0
@@ -25,31 +55,6 @@ URxvt*boldFont:             xft:Source Code Pro:bold:size=16
 URxvt*italicFont:           xft:Source Code Pro:italic:size=14
 URxvt*boldItalicFont:       xft:Source Code Pro:bold:italic:size=16
 URxvt*letterSpace:          0
-
-!! Perl
-URxvt*perl-ext:
-URxvt*perl-ext-common:
-
-!!
-!! Scrolling
-!!
-
-!! remove scrollbar
-URxvt*scrollBar:            false
-
-!! do not scroll with output
-URxvt*scrollTtyOutput:      false
-
-!! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer:     true
-
-!! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress:    true
-
-!!
-URxvt*secondaryScreen:      1
-URxvt*secondaryScroll:      1
-URxvt*mouseWheelScrollPage: 0
 
 !!
 !! Coloring
