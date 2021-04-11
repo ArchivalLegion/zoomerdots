@@ -102,7 +102,7 @@ HideBordersMaximized=1 # 0/1
 SizeMaximized=0 # 0/1
 
 #  Show position status window during move/resize
-ShowMoveSizeStatus=1 # 0/1
+ShowMoveSizeStatus=0 # 0/1
 
 #  Show name of current workspace while switching
 ShowWorkspaceStatus=1 # 0/1
@@ -123,7 +123,7 @@ MiniIconsBottomToTop=0 # 0/1
 StrongPointerFocus=0 # 0/1
 
 #  Opaque window move
-OpaqueMove=1 # 0/1
+OpaqueMove=0 # 0/1
 
 #  Opaque window resize
 OpaqueResize=1 # 0/1
@@ -276,7 +276,7 @@ TaskBarShowWorkspaces=1 # 0/1
 TaskBarShowWindows=1 # 0/1
 
 #  Show 'show desktop' button on taskbar (value of 2 to put after the clock)
-TaskBarShowShowDesktopButton=1 # [0-2]
+TaskBarShowShowDesktopButton=0 # [0-2]
 
 #  Show Ellipsis in taskbar items as indicator of further collapsed content.
 ShowEllipsis=1 # 0/1
