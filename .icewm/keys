@@ -5,10 +5,11 @@ key "Shift+Alt+b" chromium --incognito
 key "Shift+Alt+a" pavucontrol
 key "Shift+Alt+w" scrot -d 3 -q 95 '%m-%d-%Y_%H-%M-%S.png' -e 'mv $f ~/Pictures/screens/'
 key "Shift+Alt+f" spacefm
-key "Shift+Alt+F11" clicker
-key "Shift+Alt+F12" killall xdotool
-#key "XF86AudioLowerVolume" pactl set-sink-volume default -5%
-#key "XF86AudioRaiseVolume" pactl set-sink-volume default +5%
-#key "XF86AudioMute"        amixer sset Master toggle
+key "Shift+F11"   clicker
+key "Shift+F12"   killall xdotool
+key "XF86AudioRaiseVolume"  pactl set-sink-volume @DEFAULT_SINK@ +5%
+key "XF86AudioLowerVolume"  pactl set-sink-volume @DEFAULT_SINK@ -5%
+key "XF86AudioMute"         pactl set-sink-mute @DEFAULT_SINK@ toggle
+key "Shift+XF86AudioMute"   pactl set-sink-volume @DEFAULT_SINK@ 100%
 key "XF86MonBrightnessUp"   brightlight -pi 10
 key "XF86MonBrightnessDown" brightlight -pd 10
