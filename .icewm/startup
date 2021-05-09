@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# Source Xresources / Xdefaults
+# Source Xresources - Xdefaults
 xrdb ~/.Xresources &
 
 # Setup monitors
-screens &
+# screens &
 
-# Use Nitrogen instead of icewmbg
+# Nitrogen
 sleep 2 &&
 nitrogen --restore &
 
