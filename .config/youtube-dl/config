@@ -1,0 +1,30 @@
+# yt-dl config
+
+--console-title
+--hls-prefer-native
+
+# Rate limiting
+#--limit-rate 100k
+
+# Increase retries
+--retries 30
+
+# Bypass geo filtering
+--geo-bypass
+
+# Set the file output template
+-o '~/Videos/yt-archive/%(uploader)s/%(title)s/%(upload_date)s.%(ext)s'
+
+# Capture all info & metadata
+--write-description
+--write-info-json
+--write-annotations
+--all-subs
+#--write-all-thumbnails
+
+# Embed info into file
+--embed-subs
+--embed-thumbnail
+
+# h264 / mp4 is still the most common / supported format
+-f 'best[ext=mp4]'
