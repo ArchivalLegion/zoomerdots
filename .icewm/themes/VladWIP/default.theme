@@ -1,225 +1,19 @@
 #-----INFO-----
 # This is a WIP
 
+
 #  Description of the theme, credits
 ThemeDescription="A imitation of Ant-Dracula for IceWM"
 
 #  Theme author, e-mail address, credits
 ThemeAuthor="https://github.com/EliverLara/"
 
-#-----Colors-----
-# Which pixmap type to use, I'm not using one so it's "flat"
-Look="flat"
-
-#  List of gradient pixmaps in the current theme
-Gradients=""
-
-#-----CPU-----
-#  User load on the CPU monitor
-ColorCPUStatusUser="rgb:05/D5/FC"
-
-#  System load on the CPU monitor
-ColorCPUStatusSystem="rgb:DE/B9/7D"
-
-#  Interrupts on the CPU monitor
-#ColorCPUStatusInterrupts="rgb:FF/FF/00"
-
-#  IO Wait on the CPU monitor
-ColorCPUStatusIoWait="rgb:60/00/60"
-
-#  Soft Interrupts on the CPU monitor
-#ColorCPUStatusSoftIrq="rgb:00/FF/FF"
-
-#  Nice load on the CPU monitor
-#ColorCPUStatusNice="rgb:00/00/FF"
-
-#  Idle (non) load on the CPU monitor, leave empty to force transparency
-ColorCPUStatusIdle="rgb:28/2A/36"
-
-#  Involuntary Wait on the CPU monitor
-#ColorCPUStatusSteal="rgb:FF/8A/91"
-
-#  Temperature of the CPU
-ColorCPUStatusTemp="rgb:F8/66/AF"
-
-#-----Network-----
-#  Outgoing load on the network monitor
-ColorNetSend="rgb:98/66/C5"
-
-#  Incoming load on the network monitor
-ColorNetReceive="rgb:B2/22/22"
-
-#  Idle (non) load on the network monitor, leave empty to force transparency
-ColorNetIdle="rgb:28/2A/36"
-
-#-----Memory-----
-#  User program usage in the memory monitor
-#ColorMEMStatusUser="rgb:40/40/80"
-
-#  OS buffers usage in the memory monitor
-#ColorMEMStatusBuffers="rgb:60/60/C0"
-
-#  OS cached usage in the memory monitor
-#ColorMEMStatusCached="rgb:80/80/FF"
-
-#  Free memory in the memory monitor
-#ColorMEMStatusFree="rgb:00/00/00"
-
-#-----Battery-----
-#  Background of APM monitor, leave empty to force transparency
-ColorApm="rgb:28/2A/36"
-
-#  Textcolor of APM monitor
-# ColorApmText="rgb:74/60/99"
-
-#  Color of APM monitor in battery mode
-ColorApmBattery="rgb:FF/79/C6"
-
-#  Color of APM monitor in line mode
-ColorApmLine="rgb:FF/79/C6"
-
-#  Background color for graph mode
-ColorApmGraphBg="rgb:28/2A/36"
-
-#-----Clock-----
-#  Background of non-LCD clock, leave empty to force transparency
-ColorClock="rgb:1E/1F/29"
-
-#  Text of non-LCD monitor
-ColorClockText="rgb:FF/FF/FF"
-
-#-----Workspace-----
-#  Background of workspace buttons, ColorNormalButton is used if empty
-ColorNormalWorkspaceButton="rgb:1E/1F/29"
-
-#  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
-ColorNormalWorkspaceButtonText="rgb:50/FA/7B"
-
-#  Background of the active workspace button, ColorActiveButton is used if empty
-ColorActiveWorkspaceButton="rgb:1E/1F/29"
-
-#  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
-ColorActiveWorkspaceButtonText="rgb:FF/79/C6"
-
-#-----Titlebar-----
-#  Border of inactive windows
-ColorNormalBorder="rgb:1E/1F/29"
-
-#  Border of active windows
-ColorActiveBorder="rgb:1E/1F/29"
-
-#  Background of the titlebar of active windows
-ColorActiveTitleBar="rgb:1E/1F/29"
-
-#  Background of the titlebar of regular windows
-ColorNormalTitleBar="rgb:1E/1F/29"
-
-#  Textcolor of the titlebar of regular windows
-ColorNormalTitleBarText="rgb:FF/FF/FF"
-
-#  Textcolor of the titlebar of active windows
-ColorActiveTitleBarText="rgb:FF/FF/FF"
-
-#-----Menu-----
-#  Background of pop-up menus
-ColorNormalMenu="rgb:1E/1F/29"
-
-#  Background of selected menu item, leave empty to force transparency
-ColorActiveMenuItem="rgb:28/2A/36"
-
-#  Textcolor of regular menu items
-ColorNormalMenuItemText="rgb:FF/FF/FF"
-
-#  Textcolor of selected menu items
-ColorActiveMenuItemText="rgb:50/FA/7B"
-
-#  Textcolor of disabled menu items
-ColorDisabledMenuItemText="rgb:FF/79/C6"
-
-#-----Taskbar-----
-#  Background of the taskbar
-ColorDefaultTaskBar="rgb:1E/1F/29"
-
-#  Background for task buttons of regular windows
-ColorNormalTaskBarApp="rgb:1E/1F/29"
-
-#  Textcolor for task buttons of regular windows
-ColorNormalTaskBarAppText="rgb:FF/FF/FF"
-
-#  Textcolor for task buttons of the active window
-ColorActiveTaskBarAppText="rgb:FF/79/C6"
-
-#  Background for task buttons of the active window
-ColorActiveTaskBarApp="rgb:28/2A/36"
-
-#  Background for task buttons of minimized windows
-ColorMinimizedTaskBarApp="rgb:1E/1F/29"
-
-#  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
-
-#-----Listbox/WindowList-----
-ColorListBox="rgb:1C/1B/20"
-ColorListBoxText="rgb:FF/FF/FF"
-ColorListBoxSelection="rgb:74/60/99"
-ColorListBoxSelectionText="rgb:50/FA/7B"
-
-#-----Scrollbar-----
-ColorScrollBar="rgb:1C/1B/20"
-ColorScrollBarSlider="rgb:3A/3E/42"
-ColorScrollBarButton="rgb:3A/3E/42"
-ColorScrollBarButtonArrow="rgb:FF/ff/ff"
-
-#-----Move Size Status-----
-#  Background of move/resize status window
-ColorMoveSizeStatus="rgb:1E/1F/29"
-
-#  Textcolor of move/resize status window
-ColorMoveSizeStatusText="rgb:FF/FF/FF"
-
-#-----QuickSwitch-----
-#  Background of the quick switch window
-ColorQuickSwitch="rgb:1E/1F/29"
-
-#  Textcolor in the quick switch window
-ColorQuickSwitchText="rgb:FF/FF/FF"
-
-#  Rectangle arround the active icon in the quick switch window
-ColorQuickSwitchActive="rgb:28/2A/36"
-
-#-----ToolTip-----
-#  Background of tooltips
-ColorToolTip="rgb:1E/1F/29"
-
-#  Textcolor of tooltips
-ColorToolTipText="rgb:FF/FF/FF"
-
-#-----Dialog-----
-#  Background of dialog windows
-ColorDialog="rgb:1E/1F/29"
-
-#  Background of labels, leave empty to force transparency
-ColorLabel="rgb:1E/1F/29"
-
-#  Textcolor of labels
-ColorLabelText="rgb:FF/FF/FF"
-
-#-----Buttons-----
-#  Background of regular buttons
-ColorNormalButton="rgb:28/2A/36"
-
-#  Textcolor of regular buttons
-ColorNormalButtonText="rgb:FF/FF/FF"
-
-#  Background of pressed buttons
-#ColorActiveButton="rgb:E0/E0/E0"
-
-#  Text color of pressed buttons
-#ColorActiveButtonText="rgb:00/00/00"
 
 #
 #-----Fonts-----
 #
+
+
 #  Name of the title bar font.
 TitleFontName=""
 
@@ -333,3 +127,264 @@ LabelFontName=""
 
 #  Name of the label font.
 LabelFontNameXft="monospace:size=12"
+
+
+#-----Colors-----
+
+
+# Which pixmap type to use, I'm not using one so it's "flat"
+Look="flat"
+
+#  List of gradient pixmaps in the current theme
+Gradients=""
+
+
+#-----CPU-----
+
+
+#  User load on the CPU monitor
+ColorCPUStatusUser="rgb:05/D5/FC"
+
+#  System load on the CPU monitor
+ColorCPUStatusSystem="rgb:DE/B9/7D"
+
+#  Interrupts on the CPU monitor
+#ColorCPUStatusInterrupts="rgb:FF/FF/00"
+
+#  IO Wait on the CPU monitor
+ColorCPUStatusIoWait="rgb:60/00/60"
+
+#  Soft Interrupts on the CPU monitor
+#ColorCPUStatusSoftIrq="rgb:00/FF/FF"
+
+#  Nice load on the CPU monitor
+#ColorCPUStatusNice="rgb:00/00/FF"
+
+#  Idle (non) load on the CPU monitor, leave empty to force transparency
+ColorCPUStatusIdle="rgb:28/2A/36"
+
+#  Involuntary Wait on the CPU monitor
+#ColorCPUStatusSteal="rgb:FF/8A/91"
+
+#  Temperature of the CPU
+ColorCPUStatusTemp="rgb:F8/66/AF"
+
+
+#-----Network-----
+
+
+#  Outgoing load on the network monitor
+ColorNetSend="rgb:98/66/C5"
+
+#  Incoming load on the network monitor
+ColorNetReceive="rgb:B2/22/22"
+
+#  Idle (non) load on the network monitor, leave empty to force transparency
+ColorNetIdle="rgb:28/2A/36"
+
+
+#-----Memory-----
+
+
+#  User program usage in the memory monitor
+#ColorMEMStatusUser="rgb:40/40/80"
+
+#  OS buffers usage in the memory monitor
+#ColorMEMStatusBuffers="rgb:60/60/C0"
+
+#  OS cached usage in the memory monitor
+#ColorMEMStatusCached="rgb:80/80/FF"
+
+#  Free memory in the memory monitor
+#ColorMEMStatusFree="rgb:00/00/00"
+
+
+#-----Battery-----
+
+
+#  Background of APM monitor, leave empty to force transparency
+ColorApm="rgb:28/2A/36"
+
+#  Textcolor of APM monitor
+# ColorApmText="rgb:74/60/99"
+
+#  Color of APM monitor in battery mode
+ColorApmBattery="rgb:FF/79/C6"
+
+#  Color of APM monitor in line mode
+ColorApmLine="rgb:FF/79/C6"
+
+#  Background color for graph mode
+ColorApmGraphBg="rgb:28/2A/36"
+
+
+#-----Clock-----
+
+
+#  Background of non-LCD clock, leave empty to force transparency
+ColorClock="rgb:1E/1F/29"
+
+#  Text of non-LCD monitor
+ColorClockText="rgb:FF/FF/FF"
+
+
+#-----Workspace-----
+
+
+#  Background of workspace buttons, ColorNormalButton is used if empty
+ColorNormalWorkspaceButton="rgb:1E/1F/29"
+
+#  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
+ColorNormalWorkspaceButtonText="rgb:50/FA/7B"
+
+#  Background of the active workspace button, ColorActiveButton is used if empty
+ColorActiveWorkspaceButton="rgb:1E/1F/29"
+
+#  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
+ColorActiveWorkspaceButtonText="rgb:FF/79/C6"
+
+
+#-----Titlebar-----
+
+
+#  Border of inactive windows
+ColorNormalBorder="rgb:1E/1F/29"
+
+#  Border of active windows
+ColorActiveBorder="rgb:1E/1F/29"
+
+#  Background of the titlebar of active windows
+ColorActiveTitleBar="rgb:1E/1F/29"
+
+#  Background of the titlebar of regular windows
+ColorNormalTitleBar="rgb:1E/1F/29"
+
+#  Textcolor of the titlebar of regular windows
+ColorNormalTitleBarText="rgb:FF/FF/FF"
+
+#  Textcolor of the titlebar of active windows
+ColorActiveTitleBarText="rgb:FF/FF/FF"
+
+
+#-----Menu-----
+
+
+#  Background of pop-up menus
+ColorNormalMenu="rgb:1E/1F/29"
+
+#  Background of selected menu item, leave empty to force transparency
+ColorActiveMenuItem="rgb:28/2A/36"
+
+#  Textcolor of regular menu items
+ColorNormalMenuItemText="rgb:FF/FF/FF"
+
+#  Textcolor of selected menu items
+ColorActiveMenuItemText="rgb:50/FA/7B"
+
+#  Textcolor of disabled menu items
+ColorDisabledMenuItemText="rgb:FF/79/C6"
+
+
+#-----Taskbar-----
+
+
+#  Background of the taskbar
+ColorDefaultTaskBar="rgb:1E/1F/29"
+
+#  Background for task buttons of regular windows
+ColorNormalTaskBarApp="rgb:1E/1F/29"
+
+#  Textcolor for task buttons of regular windows
+ColorNormalTaskBarAppText="rgb:FF/FF/FF"
+
+#  Textcolor for task buttons of the active window
+ColorActiveTaskBarAppText="rgb:FF/79/C6"
+
+#  Background for task buttons of the active window
+ColorActiveTaskBarApp="rgb:28/2A/36"
+
+#  Background for task buttons of minimized windows
+ColorMinimizedTaskBarApp="rgb:1E/1F/29"
+
+#  Textcolor for task buttons of minimized windows
+ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
+
+
+#-----Listbox/WindowList-----
+
+
+ColorListBox="rgb:1E/1F/29"
+ColorListBoxText="rgb:FF/FF/FF"
+ColorListBoxSelection="rgb:74/60/99"
+ColorListBoxSelectionText="rgb:50/FA/7B"
+
+
+#-----Scrollbar-----
+
+
+ColorScrollBar="rgb:1C/1B/20"
+ColorScrollBarSlider="rgb:3A/3E/42"
+ColorScrollBarButton="rgb:3A/3E/42"
+ColorScrollBarButtonArrow="rgb:FF/ff/ff"
+
+
+#-----Move Size Status-----
+
+
+#  Background of move/resize status window
+ColorMoveSizeStatus="rgb:1E/1F/29"
+
+#  Textcolor of move/resize status window
+ColorMoveSizeStatusText="rgb:FF/FF/FF"
+
+
+#-----QuickSwitch-----
+
+
+#  Background of the quick switch window
+ColorQuickSwitch="rgb:1E/1F/29"
+
+#  Textcolor in the quick switch window
+ColorQuickSwitchText="rgb:FF/FF/FF"
+
+#  Rectangle arround the active icon in the quick switch window
+ColorQuickSwitchActive="rgb:28/2A/36"
+
+
+#-----ToolTip-----
+
+
+#  Background of tooltips
+ColorToolTip="rgb:1E/1F/29"
+
+#  Textcolor of tooltips
+ColorToolTipText="rgb:FF/FF/FF"
+
+
+#-----Dialog-----
+
+
+#  Background of dialog windows
+ColorDialog="rgb:1E/1F/29"
+
+#  Background of labels, leave empty to force transparency
+ColorLabel="rgb:1E/1F/29"
+
+#  Textcolor of labels
+ColorLabelText="rgb:FF/FF/FF"
+
+
+#-----Buttons-----
+
+
+#  Background of regular buttons
+ColorNormalButton="rgb:28/2A/36"
+
+#  Textcolor of regular buttons
+ColorNormalButtonText="rgb:FF/FF/FF"
+
+#  Background of pressed buttons
+#ColorActiveButton="rgb:E0/E0/E0"
+
+#  Text color of pressed buttons
+#ColorActiveButtonText="rgb:00/00/00"
