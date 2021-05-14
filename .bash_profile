@@ -5,7 +5,7 @@ fi
 # Default programs
 export EDITOR="nano"
 export BROWSER="chromium"
-export FILE="pcmanfm"
+export FILE="nautilus"
 
 # Paths
 export PATH=$PATH:$HOME/.local/bin
