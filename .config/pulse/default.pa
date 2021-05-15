@@ -1,7 +1,6 @@
 #!/usr/bin/pulseaudio -nF
 
-# Automatically restore the default sink/source when changed by the user
-# during runtime.
+# Automatically restore the default sink/source when changed by the user during runtime.
 
 .ifexists module-default-device-restore.so
 load-module module-default-device-restore
@@ -22,7 +21,7 @@ load-module module-card-restore
 .endif
 
 # Automatically switches the card profile and/or device port when a port changes its availablility status.
-# In practice this happens when plugging in or out something to/from a 3.5mm connector.
+# For example: unplugging headphones switches default sink to desktop speakers automatically.
 
 .ifexists module-switch-on-port-available.so
 load-module module-switch-on-port-available
@@ -53,15 +52,12 @@ load-module module-position-event-sounds
 
 # Manually loading/configuring alsa device(s)
 
-#load-module module-alsa-sink device=hw:0,0 sink_name="Archie" sink_properties=device.description=Analog-Output format=s16le rate=44100 fragments=3 fragment_size=1024 tsched=0 tsched_buffer_size=8192 fixed_latency_range=0 deferred_volume=1 ignore_dB=1
+#load-module module-alsa-sink device=hw:0,0 sink_name="Archie" sink_properties=device.description=Analog-Output rate=44100 fragments=3 fragment_size=1024 tsched=1 tsched_buffer_size=8192 fixed_latency_range=0 ignore_dB=0 deferred_volume=0
 
-#load-module module-alsa-source device=hw:0,0 source_name="Mastas" source_properties=device.description=Analog-Input format=s16le rate=44100 fragments=3 fragment_size=1024 tsched=0 tsched_buffer_size=8192 fixed_latency_range=0 deferred_volume=1 ignore_dB=1
+#load-module module-alsa-source device=hw:0,0 source_name="Mastas" source_properties=device.description=Analog-Input rate=44100 fragments=3 fragment_size=1024 tsched=1 tsched_buffer_size=8192 fixed_latency_range=0 ignore_dB=0 deferred_volume=0
 
-#load-module module-alsa-sink device=hw:0,7 sink_name="Intel-HDMI" sink_properties=device.description=HDMI-Output format=s16le rate=44100 fragments=3 fragment_size=1024 tsched=0 tsched_buffer_size=8192 fixed_latency_range=0 deferred_volume=1 ignore_dB=1
+#load-module module-alsa-sink device=hw:0,7 sink_name="Intel-HDMI" sink_properties=device.description=HDMI-Output rate=44100 fragments=3 fragment_size=1024 tsched=1 tsched_buffer_size=8192 fixed_latency_range=0 ignore_dB=0 deferred_volume=0
 
-#load-module module-alsa-card device_id="0" card_name="Motherboard" namereg_fail=1 sink_name="Archie" source_name="Mastas" format=s16le rate=44100 mmap=1 tsched=1 fixed_latency_range=0 tsched_buffer_size=8192 ignore_dB=0 deferred_volume=0 use_ucm=0
-
-#load-module module-alsa-card device_id="1" card_name="GPU" namereg_fail=1 sink_name="GPU-Sink" source_name="GPU-Source" format=s16le rate=44100 mmap=1 tsched=1 fixed_latency_range=0 tsched_buffer_size=8192 ignore_dB=0 deferred_volume=0 use_ucm=0
 
 # Automatically load driver modules depending on the hardware available.
 
