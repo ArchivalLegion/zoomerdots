@@ -2,10 +2,8 @@ if [[ -f ~/.bashrc ]]; then
       . ~/.bashrc
 fi
 
-# Default programs
+# Default text editor
 export EDITOR="nano"
-export BROWSER="chromium"
-export FILE="nautilus"
 
 # Paths
 export PATH=$PATH:$HOME/.local/bin
@@ -23,7 +21,7 @@ export WINEPREFIX=~/.openwound
 export WINEARCH=win32
 
 # Set qt5 theme using plugin styles
-export QT_QPA_PLATFORMTHEME=gtk2
+# export QT_QPA_PLATFORMTHEME=gtk2
 
 # Generic compile options,
 # please set march accordingly otherwise use generic / native.
