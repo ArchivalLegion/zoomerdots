@@ -12,6 +12,5 @@ alias sudo='sudo '
 
 # Time savers.
 alias %b='cat /sys/class/power_supply/BAT?/capacity'
-alias spc='picom -b'
 alias sx='clear && startx'
 alias mpt='mpv --profile=tty'
