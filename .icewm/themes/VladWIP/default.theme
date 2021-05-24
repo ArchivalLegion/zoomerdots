@@ -149,25 +149,25 @@ ColorCPUStatusUser="rgb:05/D5/FC"
 ColorCPUStatusSystem="rgb:DE/B9/7D"
 
 #  Interrupts on the CPU monitor
-#ColorCPUStatusInterrupts="rgb:FF/FF/00"
+ColorCPUStatusInterrupts="rgb:28/2A/36"
 
 #  IO Wait on the CPU monitor
 ColorCPUStatusIoWait="rgb:60/00/60"
 
 #  Soft Interrupts on the CPU monitor
-#ColorCPUStatusSoftIrq="rgb:00/FF/FF"
+ColorCPUStatusSoftIrq="rgb:28/2A/36"
 
 #  Nice load on the CPU monitor
-#ColorCPUStatusNice="rgb:00/00/FF"
+ColorCPUStatusNice="rgb:28/2A/36F"
 
 #  Idle (non) load on the CPU monitor, leave empty to force transparency
 ColorCPUStatusIdle="rgb:28/2A/36"
 
 #  Involuntary Wait on the CPU monitor
-#ColorCPUStatusSteal="rgb:FF/8A/91"
+ColorCPUStatusSteal="rgb:28/2A/36"
 
 #  Temperature of the CPU
-ColorCPUStatusTemp="rgb:F8/66/AF"
+ColorCPUStatusTemp="rgb:28/2A/36"
 
 
 #-----Network-----
@@ -209,10 +209,10 @@ ColorApm="rgb:28/2A/36"
 # ColorApmText="rgb:74/60/99"
 
 #  Color of APM monitor in battery mode
-ColorApmBattery="rgb:FF/79/C6"
+ColorApmBattery="rgb:79/60/99"
 
 #  Color of APM monitor in line mode
-ColorApmLine="rgb:FF/79/C6"
+ColorApmLine="rgb:74/60/99"
 
 #  Background color for graph mode
 ColorApmGraphBg="rgb:28/2A/36"
@@ -238,10 +238,10 @@ ColorNormalWorkspaceButton="rgb:1E/1F/29"
 ColorNormalWorkspaceButtonText="rgb:50/FA/7B"
 
 #  Background of the active workspace button, ColorActiveButton is used if empty
-ColorActiveWorkspaceButton="rgb:1E/1F/29"
+ColorActiveWorkspaceButton="rgb:28/2A/36"
 
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
-ColorActiveWorkspaceButtonText="rgb:FF/79/C6"
+ColorActiveWorkspaceButtonText="rgb:74/60/99"
 
 
 #-----Titlebar-----
@@ -298,7 +298,7 @@ ColorNormalTaskBarApp="rgb:1E/1F/29"
 ColorNormalTaskBarAppText="rgb:FF/FF/FF"
 
 #  Textcolor for task buttons of the active window
-ColorActiveTaskBarAppText="rgb:FF/79/C6"
+ColorActiveTaskBarAppText="rgb:74/60/99"
 
 #  Background for task buttons of the active window
 ColorActiveTaskBarApp="rgb:28/2A/36"
