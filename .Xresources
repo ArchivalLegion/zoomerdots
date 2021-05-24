@@ -2,7 +2,7 @@
 !! Cursor
 !!
 
-Xcursor*theme:              Adwaita
+Xcursor*theme:              Breeze
 Xcursor*size:               32
 
 !!
@@ -50,10 +50,10 @@ Xft*autohint:               0
 Xft*hintstyle:              hintnone
 Xft*rgba:                   rgb
 Xft*lcdfilter:              lcddefault
-URxvt*font:                 xft:Source Code Pro:size=14
-URxvt*boldFont:             xft:Source Code Pro:bold:size=16
-URxvt*italicFont:           xft:Source Code Pro:italic:size=14
-URxvt*boldItalicFont:       xft:Source Code Pro:bold:italic:size=16
+URxvt*font:                 xft:Hack:size=14
+URxvt*boldFont:             xft:Hack:bold:size=16
+URxvt*italicFont:           xft:Hack:italic:size=14
+URxvt*boldItalicFont:       xft:Hack:bold:italic:size=16
 URxvt*letterSpace:          0
 
 !!
