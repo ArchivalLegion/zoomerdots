@@ -3,7 +3,7 @@
 # This file should be copied to /etc/icewm or $HOME/.icewm/
 
 #  Use a 32-bit visual for alpha blending
-Alpha=0 # 0/1
+Alpha=1 # 0/1
 
 #  Synchronize X11 for debugging (slow)
 Synchronize=0 # 0/1
