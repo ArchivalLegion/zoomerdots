@@ -13,6 +13,6 @@ nitrogen --restore &
 # Mate polkit agent
 /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1
 
-# Compton
+# Compton / Picom
 sleep 1 &&
-compton -b --experimental-backends
+compton -b
