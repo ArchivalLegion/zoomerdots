@@ -65,7 +65,7 @@ Sxiv*background:            #282a36
 Sxiv*foreground:            #ffffff
 !!
 URxvt*foreground:           #ffffff
-URxvt*background:           #282a36
+URxvt*background:           [80]#282a36
 URxvt*pointerColor:         #b7dc4d
 URxvt*cursorColor:          #b7dc4d
 !!
