@@ -11,8 +11,8 @@ xrdb ~/.Xresources &
 nitrogen --restore &
 
 # Mate polkit agent
-/usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1
+/usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
 
-# Compton / Picom
+# Compton - Picom
 sleep 1 &&
 compton -b
