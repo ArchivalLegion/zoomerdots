@@ -1,6 +1,4 @@
-# icewm preferences ( 2.2.1^ )
-
-# This file should be copied to /etc/icewm or $HOME/.icewm/
+# icewm preferences ( 2.2.1 )
 
 #  Use a 32-bit visual for alpha blending
 Alpha=1 # 0/1
@@ -15,16 +13,16 @@ LogEvents=0 # 0/1
 # Splash=""
 
 #  Enable tracing for the given modules
-Trace=""
+# Trace=""
 
 #  Focus windows by clicking
 ClickToFocus=1 # 0/1
 
 #  Focus windows when application requests to raise
-FocusOnAppRaise=0 # 0/1
+FocusOnAppRaise=1 # 0/1
 
 #  Request focus (flashing in taskbar) when application requests raise
-RequestFocusOnAppRaise=1 # 0/1
+RequestFocusOnAppRaise=0 # 0/1
 
 #  Raise windows when focused
 RaiseOnFocus=1 # 0/1
@@ -60,7 +58,7 @@ FocusCurrentWorkspace=0 # 0/1
 FocusOnMap=1 # 0/1
 
 #  Focus dialog window when initially mapped
-FocusOnMapTransient=0 # 0/1
+FocusOnMapTransient=1 # 0/1
 
 #  Focus dialog window when initially mapped only if parent frame focused
 FocusOnMapTransientActive=1 # 0/1
@@ -69,7 +67,7 @@ FocusOnMapTransientActive=1 # 0/1
 MapInactiveOnTop=1 # 0/1
 
 #  Colormap focus follows pointer
-PointerColormap=1 # 0/1
+# PointerColormap=1 # 0/1
 
 #  Don't rotate the cursor for popup menus
 DontRotateMenuPointer=1 # 0/1
@@ -123,7 +121,7 @@ MiniIconsBottomToTop=0 # 0/1
 StrongPointerFocus=0 # 0/1
 
 #  Opaque window move
-OpaqueMove=0 # 0/1
+OpaqueMove=1 # 0/1
 
 #  Opaque window resize
 OpaqueResize=1 # 0/1
@@ -162,7 +160,7 @@ ModSuperIsCtrlAlt=0 # 0/1
 UseMouseWheel=0 # 0/1
 
 #  Show popup menus above mouse pointer
-ShowPopupsAbovePointer=0 # 0/1
+ShowPopupsAbovePointer=1 # 0/1
 
 #  Send the clicks outside menus to target window
 ReplayMenuCancelClick=0 # 0/1
@@ -189,10 +187,10 @@ QuickSwitchGroupWorkspaces=1 # 0/1
 QuickSwitchAllIcons=1 # 0/1
 
 #  Show the window title above (all reachable) icons
-QuickSwitchTextFirst=0 # 0/1
+QuickSwitchTextFirst=1 # 0/1
 
 #  Create a smaller QuickSwitch window of 1/3 screen width
-QuickSwitchSmallWindow=0 # 0/1
+QuickSwitchSmallWindow=1 # 0/1
 
 #  Go trough all window titles and choose width of the longest one
 QuickSwitchMaxWidth=0 # 0/1
@@ -207,10 +205,10 @@ QuickSwitchHugeIcon=0 # 0/1
 QuickSwitchFillSelection=0 # 0/1
 
 #  Manage root window (EXPERIMENTAL - normally enabled!)
-GrabRootWindow=1 # 0/1
+# GrabRootWindow=1 # 0/1
 
 #  Snap to nearest screen edge/window when moving windows
-SnapMove=0 # 0/1
+SnapMove=1 # 0/1
 
 #  Workspace switches by moving mouse to left/right screen edge
 EdgeSwitch=0 # 0/1
@@ -342,7 +340,7 @@ TaskBarWorkspacesLeft=1 # 0/1
 TaskBarWorkspacesTop=0 # 0/1
 
 #  Limit number of taskbar workspaces
-TaskBarWorkspacesLimit=""
+# TaskBarWorkspacesLimit=""
 
 #  Enable mouse wheel cycling over workspaces and task buttons in taskbar
 TaskBarUseMouseWheel=0 # 0/1
@@ -369,7 +367,7 @@ PagerShowNumbers=1 # 0/1
 TaskBarLaunchOnSingleClick=1 # 0/1
 
 #  Allow mouse actions on client windows (buggy with some programs)
-ClientWindowMouseActions=0 # 0/1
+# ClientWindowMouseActions=0 # 0/1
 
 #  Show programs submenu in the program menu
 ShowProgramsMenu=0 # 0/1
@@ -420,13 +418,13 @@ ShowAddressBar=1 # 0/1
 ConfirmLogout=1 # 0/1
 
 #  Don't cut client windows by shapes set trough frame corner pixmap
-ShapesProtectClientWindow=1 # 0/1
+# ShapesProtectClientWindow=1 # 0/1
 
 #  Use double buffering when redrawing the display
-DoubleBuffer=1 # 0/1
+# DoubleBuffer=1 # 0/1
 
 #  Disable use of new XRANDR API for dual head (nvidia workaround)
-XRRDisable=0 # 0/1
+# XRRDisable=0 # 0/1
 
 #  Favour Xft fonts over core X11 fonts where possible
 PreferFreetypeFonts=1 # 0/1
@@ -531,7 +529,7 @@ TaskBarCPUSamples=15 # [2-1000]
 TaskBarMEMSamples=15 # [2-1000]
 
 #  Delay between Memory Monitor samples in ms
-TaskBarMEMDelay=3000 # [10-3600000]
+TaskBarMEMDelay=3600000 # [10-3600000]
 
 #  The width of the Net Monitor applet in pixels
 TaskBarNetSamples=15 # [2-1000]
@@ -540,7 +538,7 @@ TaskBarNetSamples=15 # [2-1000]
 TaskBarNetDelay=3000 # [10-3600000]
 
 #  default number of tasks in taskbar
-TaskbarButtonWidthDivisor=3 # [1-25]
+TaskbarButtonWidthDivisor=5 # [1-25]
 
 #  Task bar width as percentage of the screen width
 TaskBarWidthPercentage=100 # [0-100]
@@ -579,25 +577,25 @@ IconPath="/usr/local/share/icons:/usr/local/share/pixmaps:/usr/share/icons:/usr/
 IconThemes="Papirus-Dark"
 
 #  Colon separated paths of your mailboxes, otherwise $MAILPATH or $MAIL is used
-MailBoxPath=""
+# MailBoxPath=""
 
 #  Command to run on mailbox
-MailCommand=""
+# MailCommand=""
 
 #  WM_CLASS to allow runonce for MailCommand
-MailClassHint=""
+# MailClassHint=""
 
 #  Command to run when new mail arrives
-NewMailCommand=""
+# NewMailCommand=""
 
 #  Command to lock display/screensaver
-LockCommand=""
+# LockCommand=""
 
 #  Command to run on clock
-ClockCommand=""
+# ClockCommand=""
 
 #  WM_CLASS to allow runonce for ClockCommand
-ClockClassHint=""
+# ClockClassHint=""
 
 #  Command to select and run a program
 # RunCommand=""
@@ -609,25 +607,25 @@ ClockClassHint=""
 TerminalCommand="urxvt"
 
 #  Command to start logout
-LogoutCommand=""
+# LogoutCommand=""
 
 #  Command to cancel logout
-LogoutCancelCommand=""
+# LogoutCancelCommand=""
 
 #  Command to shutdown the system
-ShutdownCommand=""
+# ShutdownCommand=""
 
 #  Command to reboot the system
-RebootCommand=""
+# RebootCommand=""
 
 #  Command to send the system to standby mode
-SuspendCommand=""
+# SuspendCommand=""
 
 #  Command to run on CPU status
 CPUStatusCommand="urxvt -e htop"
 
 #  WM_CLASS to allow runonce for CPUStatusCommand
-CPUStatusClassHint=""
+# CPUStatusClassHint=""
 
 #  Combine all CPUs to one
 CPUStatusCombine=1 # 0/1
@@ -636,13 +634,13 @@ CPUStatusCombine=1 # 0/1
 NetStatusCommand="urxvt -title 'Swatch' -e watch -n 2 'ss -atu'"
 
 #  WM_CLASS to allow runonce for NetStatusCommand
-NetStatusClassHint=""
+# NetStatusClassHint=""
 
 #  Command to run for address bar entries
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="*"
+NetworkStatusDevice="eth* en* wl*"
 
 #  Clock Time format (strftime format string)
 TimeFormat="%H:%M"
@@ -657,7 +655,7 @@ DateFormat="%c"
 # XRRPrimaryScreenName=""
 
 #  List of battery names (directories) in /proc/acpi/battery to ignore. Useful when more slots are built-in, but only one battery is used
-AcpiIgnoreBatteries=""
+# AcpiIgnoreBatteries=""
 
 #  Mouse binding for window move
 MouseWinMove="Alt+Pointer_Button1"
@@ -924,7 +922,7 @@ MouseWinSize="Alt+Pointer_Button3"
 # KeySysCollapseTaskBar="Alt+Ctrl+h"
 
 #  Add a workspace
-WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 ", " 5 "
+WorkspaceNames="1", "2", "3", "4", "5"
 
 #  Add a keyboard layout
 # KeyboardLayouts=""
@@ -938,7 +936,7 @@ WinMenuItems="rmsnxfhualyticw"
 # -----------------------------------------------------------
 
 #  Does it support the 'O' title bar button images (for mouse rollover)
-RolloverButtonsSupported=0 # 0/1
+RolloverButtonsSupported=1 # 0/1
 
 #  Task bar clock/battery monitor uses nice pixmap LCD display
 #  (but then it doesn't display correctly in many languages anymore,
@@ -1049,31 +1047,31 @@ TitleButtonsSupported=""
 #
 
 #  Paint the background image over all multihead monitors combined
-DesktopBackgroundMultihead=0 # 0/1
+# DesktopBackgroundMultihead=0 # 0/1
 
 #  Display desktop background centered and not tiled
-DesktopBackgroundCenter=0 # 0/1
+# DesktopBackgroundCenter=0 # 0/1
 
 #  Support for semitransparent terminals like Eterm or gnome-terminal
-SupportSemitransparency=1 # 0/1
+# SupportSemitransparency=1 # 0/1
 
 #  Resize desktop background to full screen
-DesktopBackgroundScaled=0 # 0/1
+# DesktopBackgroundScaled=0 # 0/1
 
 #  Desktop background image(s)
-DesktopBackgroundImage=""
+# DesktopBackgroundImage=""
 
 #  Desktop background color(s)
-DesktopBackgroundColor=""
+# DesktopBackgroundColor=""
 
 #  Image(s) to announce for semitransparent windows
-DesktopTransparencyImage=""
+# DesktopTransparencyImage=""
 
 #  Color(s) to announce for semitransparent windows
-DesktopTransparencyColor=""
+# DesktopTransparencyColor=""
 
 #  Choose a random selection from the list of background images
-ShuffleBackgroundImages=0 # 0/1
+# ShuffleBackgroundImages=0 # 0/1
 
 #  Seconds between cycling over all background images, default zero is off
-CycleBackgroundsPeriod=0 # [0-2147483647]
+# CycleBackgroundsPeriod=0 # [0-2147483647]
