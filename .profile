@@ -1,29 +1,27 @@
-# Default text editor
-export EDITOR="nano"
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
 
-# Paths
-export PATH=$PATH:$HOME/.local/bin
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
 
-# Moving various .dotfiles out of $HOME
-export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
 
-# Ivy Bridge 4000 is pretty much on its last legs
-# of OpenGL support, 4.3 is the maximum supported by it
-# and some programs throw errors without this.
-# export MESA_GL_VERSION_OVERRIDE=4.5
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
 
-# Wine
-export WINEPREFIX=~/.openwound
-export WINEARCH=win32
-
-# Set qt5 theme engine using plugin styles
-export QT_QPA_PLATFORMTHEME=gtk2
-
-# Generic compile options,
-# please set march accordingly otherwise use generic / native.
-export COMMON_FLAGS="-march=native -mtune=native -O2 -pipe"
-export CFLAGS="${COMMON_FLAGS}"
-export CXXFLAGS="${COMMON_FLAGS}"
-export FCFLAGS="${COMMON_FLAGS}"
-export FFLAGS="${COMMON_FLAGS}"
-export MAKEFLAGS="-j$(nproc)"
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
