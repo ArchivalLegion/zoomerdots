@@ -10,8 +10,11 @@ xrdb ~/.Xresources &
 # Nitrogen
 nitrogen --restore &
 
-# Mate polkit agent
+# Mate polkit agent for auth
 /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
+
+# Make sure Dunst gets started
+/usr/bin/dunst &
 
 # Compton - Picom
 sleep 1 &&
