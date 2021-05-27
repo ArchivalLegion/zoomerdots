@@ -160,7 +160,7 @@ ModSuperIsCtrlAlt=0 # 0/1
 UseMouseWheel=0 # 0/1
 
 #  Show popup menus above mouse pointer
-ShowPopupsAbovePointer=1 # 0/1
+ShowPopupsAbovePointer=0 # 0/1
 
 #  Send the clicks outside menus to target window
 ReplayMenuCancelClick=0 # 0/1
