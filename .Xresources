@@ -45,9 +45,9 @@ URxvt*mouseWheelScrollPage: 0
 
 Xft*dpi:                    96
 Xft*antialias:              1
-Xft*hinting:                0
+Xft*hinting:                1
 Xft*autohint:               0
-Xft*hintstyle:              hintnone
+Xft*hintstyle:              hintslight
 Xft*rgba:                   rgb
 Xft*lcdfilter:              lcddefault
 URxvt*font:                 xft:Hack:size=14
