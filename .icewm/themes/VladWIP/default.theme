@@ -1,6 +1,8 @@
+#
 #-----INFO-----
-# This is a WIP
+#
 
+# This is a WIP
 
 #  Description of the theme, credits
 ThemeDescription="A imitation of Ant-Dracula for IceWM"
@@ -129,7 +131,178 @@ LabelFontName=""
 LabelFontNameXft="monospace:size=12"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+#-----Scrollbar-----
+#
+
+
+#  Scrollbar width
+ScrollBarX=16 # [0-64]
+
+#  Scrollbar height
+ScrollBarY=16 # [0-64]
+
+
+#
+#-----Icons-----
+#
+
+
+#  Dimension of the small icons
+SmallIconSize=16 # [8-128]
+
+#  Dimension of the large icons
+LargeIconSize=24 # [8-128]
+
+#  Dimension of the huge icons
+HugeIconSize=32 # [8-128]
+
+
+#
+#-----Task-Tray/bar-----
+#
+
+
+#  Menu icon size
+MenuIconSize=8 # [8-128]
+
+#  Show application icon over menu button
+ShowMenuButtonIcon=0 # 0/1
+
+#  Vertical offset for the menu button icon
+# MenuButtonIconVertOffset=0 # [-128-128]
+
+#  Width of taskbutton side icons
+TaskbuttonIconOffset=0 # [0-16]
+
+#  Maximum scaled width of tray icons
+TrayIconMaxWidth=24 # [16-128]
+
+#  Maximum scaled height of tray icons
+TrayIconMaxHeight=24 # [16-128]
+
+#  Task bar clock/battery monitor uses nice pixmap LCD display
+#  (but then it doesn't display correctly in many languages anymore,
+#  e.g. for Japanese and Korean it works only when a real font is used and not the LCD pixmaps)
+TaskBarClockLeds=0 # 0/1
+
+
+#  Surround the tray with plastic border
+TrayDrawBevel=0 # 0/1
+
+
+#
+#-----Titlebar-----
+#
+
+
+#  Draw window title centered (obsoleted by TitleBarJustify)
+# TitleBarCentered=1 # 0/1
+
+#  Title bar height
+TitleBarHeight=24 # [0-128]
+
+#  Justification of the window title
+TitleBarJustify=50 # [0-100]
+
+#  Horizontal offset for the window title text
+TitleBarHorzOffset=0 # [-128-128]
+
+#  Vertical offset for the window title text
+TitleBarVertOffset=-2 # [-128-128]
+
+#  Join title*S and title*T
+TitleBarJoinLeft=0 # 0/1
+
+#  Join title*T and title*B
+TitleBarJoinRight=0 # 0/1
+
+#  Titlebar buttons from left to right (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth)
+TitleButtonsLeft=""
+
+#  Titlebar buttons from right to left (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth)
+TitleButtonsRight=""
+
+#  Titlebar buttons supported by theme (x,m,i,r,h,s,d)
+TitleButtonsSupported=""
+
+#  Does it support the 'O' title bar button images (for mouse rollover)
+RolloverButtonsSupported=1 # 0/1
+
+
+#
+#-----Borders-----
+#
+
+
+#  Horizontal window border
+BorderSizeX=4 # [0-128]
+
+#  Vertical window border
+BorderSizeY=4 # [0-128]
+
+#  Horizontal dialog window border
+DlgBorderSizeX=0 # [0-128]
+
+#  Vertical dialog window border
+DlgBorderSizeY=0 # [0-128]
+
+#  Resize corner width
+CornerSizeX=0 # [0-64]
+
+#  Resize corner height
+CornerSizeY=0 # [0-64]
+
+
+#-----Quickswitch-----
+
+#  Horizontal margin of the quickswitch window
+QuickSwitchHorzMargin=4 # [0-64]
+
+#  Vertical margin of the quickswitch window
+QuickSwitchVertMargin=4 # [0-64]
+
+#  Vertical margin in the quickswitch window
+QuickSwitchIconMargin=2 # [0-64]
+
+#  Distance between the active icon and it's border
+QuickSwitchIconBorder=2 # [0-64]
+
+#  Height of the separator between (all reachable) icons and text, 0 to avoid it
+QuickSwitchSeparatorSize=2 # [0-64]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
 #-----Colors-----
+#
 
 
 # Which pixmap type to use, I'm not using one so it's "flat"
@@ -282,7 +455,7 @@ ColorNormalMenuItemText="rgb:FF/FF/FF"
 ColorActiveMenuItemText="rgb:50/FA/7B"
 
 #  Textcolor of disabled menu items
-ColorDisabledMenuItemText="rgb:FF/79/C6"
+ColorDisabledMenuItemText="rgb:74/60/99"
 
 
 #-----Taskbar-----
@@ -345,10 +518,10 @@ ColorMoveSizeStatusText="rgb:FF/FF/FF"
 ColorQuickSwitch="rgb:1E/1F/29"
 
 #  Textcolor in the quick switch window
-ColorQuickSwitchText="rgb:FF/FF/FF"
+ColorQuickSwitchText="rgb:50/FA/7B"
 
 #  Rectangle arround the active icon in the quick switch window
-ColorQuickSwitchActive="rgb:28/2A/36"
+ColorQuickSwitchActive="rgb:74/60/99"
 
 
 #-----ToolTip-----
@@ -388,3 +561,39 @@ ColorNormalButtonText="rgb:FF/FF/FF"
 
 #  Text color of pressed buttons
 #ColorActiveButtonText="rgb:00/00/00"
+
+
+#
+#-----Background-----
+#
+
+
+#  Paint the background image over all multihead monitors combined
+# DesktopBackgroundMultihead=0 # 0/1
+
+#  Display desktop background centered and not tiled
+# DesktopBackgroundCenter=0 # 0/1
+
+#  Support for semitransparent terminals like Eterm or gnome-terminal
+# SupportSemitransparency=1 # 0/1
+
+#  Resize desktop background to full screen
+# DesktopBackgroundScaled=0 # 0/1
+
+#  Desktop background image(s)
+# DesktopBackgroundImage=""
+
+#  Desktop background color(s)
+# DesktopBackgroundColor=""
+
+#  Image(s) to announce for semitransparent windows
+# DesktopTransparencyImage=""
+
+#  Color(s) to announce for semitransparent windows
+# DesktopTransparencyColor=""
+
+#  Choose a random selection from the list of background images
+# ShuffleBackgroundImages=0 # 0/1
+
+#  Seconds between cycling over all background images, default zero is off
+# CycleBackgroundsPeriod=0 # [0-2147483647]
