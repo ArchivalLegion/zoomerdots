@@ -1,5 +1,3 @@
-# yt-dl config
-
 --console-title
 --hls-prefer-native
 
@@ -13,7 +11,7 @@
 --geo-bypass
 
 # Set the file output template
--o '~/Videos/yt-archive/%(uploader)s/%(title)s/%(upload_date)s.%(ext)s'
+-o '~/Videos/vid-archive/%(uploader)s/%(title)s/%(upload_date)s.%(ext)s'
 
 # Capture all info & metadata
 --write-description
