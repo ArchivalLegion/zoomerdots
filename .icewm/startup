@@ -1,7 +1,13 @@
 #!/bin/sh
 
-# Source Xresources - Xdefaults
+# Xresources - Xdefaults
 xrdb ~/.Xresources &
+
+# xsettings daemon
+xsettingsd &
+
+# Mate polkit agent for authentication
+/usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
 
 # Setup monitors
 # screens &
@@ -10,11 +16,11 @@ xrdb ~/.Xresources &
 # Nitrogen
 nitrogen --restore &
 
-# Mate polkit agent for auth
-/usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
-
 # Make sure Dunst gets started
-/usr/bin/dunst &
+dunst &
+
+# KDE connect
+kdeconnect-indicator &
 
 # Compton - Picom
 sleep 1 &&
