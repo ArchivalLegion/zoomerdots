@@ -10,39 +10,39 @@ Xcursor*size:               32
 !!
 
 URxvt*depth:                32
+URxvt*cursorBlink:          1
 
-!! Perl
-
-URxvt*perl-ext:
-URxvt*perl-ext-common:
+!! Clickble URLs / Perl
+URxvt*perl-ext-common:      default,matcher
+URxvt*url-launcher:         /usr/bin/x-www-browser
+URxvt*matcher.button:       3
 
 !!
 !! Scrolling
 !!
 
-!! remove scrollbar
-
+!! Remove scrollbar
 URxvt*scrollBar:            0
+URxvt*scrollBar_right:      1
 
-!! do not scroll with output
-
+!! Do not scroll with output
 URxvt*scrollTtyOutput:      0
 
-!! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-
+!! Scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 URxvt*scrollWithBuffer:     0
 
-!! scroll back to the bottom on keypress
-
+!! Scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress:    1
 
-!! TODO: Name
-URxvt*secondaryScreen:      1
-URxvt*secondaryScroll:      1
+!! TODO: Sort
+URxvt*secondaryScreen:      0
+URxvt*secondaryScroll:      0
 URxvt*mouseWheelScrollPage: 0
 
-!! Fonts
 
+!!
+!! Fonts
+!!
 Xft*dpi:                    96
 Xft*antialias:              1
 Xft*hinting:                1
@@ -60,15 +60,17 @@ URxvt*letterSpace:          0
 !! Coloring
 !!
 
-!!
+!! Sxiv image viewer
 Sxiv*background:            #282a36
 Sxiv*foreground:            #ffffff
-!!
+
+!! URxvt coloring
 URxvt*foreground:           #ffffff
 URxvt*background:           [80]#282a36
 URxvt*pointerColor:         #b7dc4d
 URxvt*cursorColor:          #b7dc4d
-!!
+
+!! Font color scheme
 URxvt*color0:               #3f3f3f
 URxvt*color1:               #705050
 URxvt*color2:               #00b45a
