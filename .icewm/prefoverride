@@ -22,7 +22,7 @@ ClickToFocus=1 # 0/1
 FocusOnAppRaise=1 # 0/1
 
 #  Request focus (flashing in taskbar) when application requests raise
-RequestFocusOnAppRaise=0 # 0/1
+RequestFocusOnAppRaise=1 # 0/1
 
 #  Raise windows when focused
 RaiseOnFocus=1 # 0/1
@@ -40,7 +40,7 @@ RaiseOnClickTitleBar=1 # 0/1
 RaiseOnClickButton=1 # 0/1
 
 #  Raise window when frame border is clicked
-RaiseOnClickFrame=1 # 0/1
+RaiseOnClickFrame=0 # 0/1
 
 #  Lower the active window when clicked again
 LowerOnClickWhenRaised=0 # 0/1
@@ -109,13 +109,13 @@ ShowWorkspaceStatus=1 # 0/1
 MinimizeToDesktop=0 # 0/1
 
 #  Place the mini-icons horizontal instead of vertical
-MiniIconsPlaceHorizontal=0 # 0/1
+MiniIconsPlaceHorizontal=1 # 0/1
 
 #  Place new mini-icons from right to left
 MiniIconsRightToLeft=0 # 0/1
 
 #  Place new mini-icons from bottom to top
-MiniIconsBottomToTop=0 # 0/1
+MiniIconsBottomToTop=1 # 0/1
 
 #  Always maintain focus under mouse window (makes some keyboard support non-functional or unreliable)
 StrongPointerFocus=0 # 0/1
@@ -136,7 +136,7 @@ SmartPlacement=1 # 0/1
 HideTitleBarWhenMaximized=1 # 0/1
 
 #  Center large windows
-CenterLarge=0 # 0/1
+CenterLarge=1 # 0/1
 
 #  Center dialogs on owner window
 CenterTransientsOnOwner=1 # 0/1
@@ -151,7 +151,7 @@ AutoRaise=0 # 0/1
 DelayPointerFocus=0 # 0/1
 
 #  Support win95 keyboard keys (Penguin/Meta/Win_L,R shows menu)
-Win95Keys=1 # 0/1
+Win95Keys=0 # 0/1
 
 #  Treat Super/Win modifier as Ctrl+Alt
 ModSuperIsCtrlAlt=0 # 0/1
@@ -379,7 +379,7 @@ ShowSettingsMenu=0 # 0/1
 ShowFocusModeMenu=0 # 0/1
 
 #  Show themes submenu in the program menu
-ShowThemesMenu=0 # 0/1
+ShowThemesMenu=1 # 0/1
 
 #  Show logout menu in the program menu
 ShowLogoutMenu=1 # 0/1
@@ -394,7 +394,7 @@ ShowLogoutSubMenu=0 # 0/1
 ShowAbout=0 # 0/1
 
 #  Show the run menu item in the program menu
-ShowRun=0 # 0/1
+ShowRun=1 # 0/1
 
 #  Show the window menu item in the program menu
 ShowWindowList=0 # 0/1
@@ -472,7 +472,7 @@ ToolTipTime=0 # [0-60000]
 # PointerFocusDelay=200 # [0-1000]
 
 #  Distance in pixels before windows snap together
-# SnapDistance=8 # [0-64]
+SnapDistance=6 # [0-64]
 
 #  Screen edge workspace switching delay in ms
 # EdgeSwitchDelay=600 # [0-5000]
@@ -490,7 +490,7 @@ ToolTipTime=0 # [0-60000]
 # AutoScrollDelay=60 # [0-5000]
 
 #  Time before workspace status window is hidden
-WorkspaceStatusTime=700 # [0-2500]
+WorkspaceStatusTime=1400 # [0-2500]
 
 #  Bitmask of root window button click to use in window manager
 # UseRootButtons=255 # [0-255]
@@ -544,7 +544,7 @@ TaskbarButtonWidthDivisor=5 # [1-25]
 TaskBarWidthPercentage=100 # [0-100]
 
 #  Taskbar justify left, right or center
-TaskBarJustify="center"
+TaskBarJustify="left"
 
 #  Width of battery Monitor
 TaskBarApmGraphWidth=5 # [1-1000]
@@ -559,7 +559,7 @@ TaskBarGraphHeight=20 # [16-1000]
 FocusRequestFlashTime=0 # [0-86400]
 
 #  Taskbar blink interval (ms) when requesting focus (0 = blinking disabled)
-FocusRequestFlashInterval=1200 # [0-30000]
+FocusRequestFlashInterval=3200 # [0-30000]
 
 #  Minimal number of themes after which the Themes menu becomes nested (0=disabled)
 NestedThemeMenuMinNumber=0 # [0-1234]
@@ -571,7 +571,7 @@ BatteryPollingPeriod=60 #[2-3600]
 NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/usr/local/share/icons:/usr/local/share/pixmaps:/usr/share/icons:/usr/share/pixmaps:"
+IconPath="/usr/local/share/icons:/usr/local/share/pixmaps:/usr/share/icons:/usr/share/pixmaps:$HOME/.themes:$HOME/.local/share/themes:$HOME/.icons:$HOME/.local/share/icons"
 
 #  Colon separated icon theme list with wildcard support. Minus prefix - can be used to exclude themes.
 IconThemes="Papirus-Dark"
@@ -657,119 +657,133 @@ DateFormat="%c"
 #  List of battery names (directories) in /proc/acpi/battery to ignore. Useful when more slots are built-in, but only one battery is used
 # AcpiIgnoreBatteries=""
 
+#  Add a workspace
+WorkspaceNames="1", "2", "3", "4", "5"
+
+#  Add a keyboard layout
+# KeyboardLayouts=""
+
+#  Items supported in menu window (rmsnxfhualytickw)
+WinMenuItems="rmsnxfhualytickw"
+
+
+
+
+
+
+
+
+#
+#-----Keybindings-----
+#
+
 #  Mouse binding for window move
-MouseWinMove="Alt+Pointer_Button1"
+MouseWinMove=""
 
 #  Mouse binding for window resize
-MouseWinSize="Alt+Pointer_Button3"
-
-#  Mouse binding for window move
-# MouseWinMove="Alt+Pointer_Button1"
-
-#  Mouse binding for window resize
-# MouseWinSize="Alt+Pointer_Button3"
+MouseWinSize=""
 
 #  Mouse binding to raise window
-# MouseWinRaise="Ctrl+Alt+Pointer_Button1"
+MouseWinRaise=""
 
 #  Mouse binding to lower window
-# MouseWinLower="Ctrl+Alt+Pointer_Button1"
+MouseWinLower="Alt+Pointer_Button2"
 
 #  Raises the window which currently has input focus.
-# KeyWinRaise="Alt+F1"
+KeyWinRaise="Alt+F1"
 
 #  Makes the active window occupy all work spaces.
-# KeyWinOccupyAll="Alt+F2"
+KeyWinOccupyAll="Alt+F2"
 
 #  Lowers the window which currently has input focus.
-# KeyWinLower="Alt+F3"
+KeyWinLower="Alt+F3"
 
 #  Closes the active window.
-# KeyWinClose="Alt+F4"
+KeyWinClose="Alt+F4"
 
 #  Restores the active window to its visible state.
-# KeyWinRestore="Alt+F5"
+KeyWinRestore="Alt+F5"
 
 #  Switches focus to the previous window.
-# KeyWinPrev="Alt+Shift+F6"
+KeyWinPrev="Alt+Shift+F6"
 
 #  Switches focus to the next window.
-# KeyWinNext="Alt+F6"
+KeyWinNext="Alt+F6"
 
 #  Starts movement of the active window.
-# KeyWinMove="Alt+F7"
+KeyWinMove="Alt+F7"
 
 #  Starts resizing of the active window.
-# KeyWinSize="Alt+F8"
+KeyWinSize="Alt+F8"
 
 #  Iconifies the active window.
-# KeyWinMinimize="Alt+F9"
+KeyWinMinimize="Alt+F9"
 
 #  Maximizes the active window with borders.
-# KeyWinMaximize="Alt+F10"
+KeyWinMaximize=""
 
 #  Maximizes the active window vertically.
-# KeyWinMaximizeVert="Alt+Shift+F10"
+KeyWinMaximizeVert="Alt+Shift+F10"
 
 #  Maximizes the active window horizontally.
-# KeyWinMaximizeHoriz=""
+KeyWinMaximizeHoriz="Alt+F10"
 
 #  Maximizes the active window without borders.
-# KeyWinFullscreen="Alt+F11"
+KeyWinFullscreen="Alt+F11"
 
 #  Hides the active window.
-# KeyWinHide="Alt+Shift+F12"
+KeyWinHide="Alt+Shift+F12"
 
 #  Rolls up the active window.
-# KeyWinRollup="Alt+F12"
+KeyWinRollup="Alt+F12"
 
 #  Posts the window menu.
-# KeyWinMenu="Alt+Space"
+KeyWinMenu="Alt+Space"
 
 #  Moves the active window to the top middle of the screen.
-# KeyWinArrangeN="Ctrl+Alt+KP_8"
+KeyWinArrangeN="Ctrl+Alt+KP_Up"
 
 #  Moves the active window to the top right of the screen.
-# KeyWinArrangeNE="Ctrl+Alt+KP_9"
+KeyWinArrangeNE="Ctrl+Alt+KP_Prior"
 
 #  Moves the active window to the middle right of the screen.
-# KeyWinArrangeE="Ctrl+Alt+KP_6"
+KeyWinArrangeE="Ctrl+Alt+KP_Right"
 
 #  Moves the active window to the bottom right of the screen.
-# KeyWinArrangeSE="Ctrl+Alt+KP_3"
+KeyWinArrangeSE="Ctrl+Alt+KP_Next"
 
 #  Moves the active window to the bottom middle of the screen.
-# KeyWinArrangeS="Ctrl+Alt+KP_2"
+KeyWinArrangeS="Ctrl+Alt+KP_Down"
 
 #  Moves the active window to the bottom left of the screen.
-# KeyWinArrangeSW="Ctrl+Alt+KP_1"
+KeyWinArrangeSW="Ctrl+Alt+KP_End"
 
 #  Moves the active window to the middle left of the screen.
-# KeyWinArrangeW="Ctrl+Alt+KP_4"
+KeyWinArrangeW="Ctrl+Alt+KP_Left"
 
 #  Moves the active window to the top left corner of the screen.
-# KeyWinArrangeNW="Ctrl+Alt+KP_7"
+KeyWinArrangeNW="Ctrl+Alt+KP_Home"
 
 #  Moves the active window to the top middle of the screen.
-# KeyWinArrangeC="Ctrl+Alt+KP_5"
+KeyWinArrangeC="Ctrl+Alt+KP_Begin"
 
 #  Smart place the active window.
-# KeyWinSmartPlace="Ctrl+Alt+Shift+KP_5"
+KeyWinSmartPlace="Ctrl+Alt+Shift+KP_Begin"
 
 #  Give focus to the next window and raise it.
-# KeySysSwitchNext="Alt+Tab"
+KeySysSwitchNext="Alt+Tab"
 
 #  Works like KeySysSwitchNext but moving in the opposite direction.
-# KeySysSwitchLast="Alt+Shift+Tab"
+KeySysSwitchLast="Alt+Shift+Tab"
 
 #  Is like KeySysSwitchNext but only for windows with the same WM_CLASS property as the currently focused window.
-# KeySysSwitchClass="Alt+grave"
+KeySysSwitchClass="Alt+grave"
 
 #  Opens the QuickSwitch popup and/or moves the selector in the QuickSwitch popup
-# KeySysWinNext="Alt+Esc"
+KeySysWinNext="Alt+Esc"
 
 #  Give focus to the previous window and raise it.
-# KeySysWinPrev="Alt+Shift+Esc"
+KeySysWinPrev="Alt+Shift+Esc"
 
 #  Switch to the next window in the Task Bar
 # KeyTaskBarSwitchNext=""
@@ -784,294 +798,139 @@ MouseWinSize="Alt+Pointer_Button3"
 # KeyTaskBarMovePrev=""
 
 #  Posts the system window menu.
-# KeySysWinMenu="Shift+Esc"
+KeySysWinMenu="Shift+Esc"
 
 #  Opens the IceWM system dialog in the center of the screen.
-# KeySysDialog="Alt+Ctrl+Del"
+KeySysDialog="Alt+Ctrl+Del"
 
 #  Activates the IceWM root menu in the lower left corner.
-# KeySysMenu="Ctrl+Esc"
+KeySysMenu="Ctrl+Esc"
 
 #  Opens the IceWM system window list in the center of the screen.
-# KeySysWindowList="Alt+Ctrl+Esc"
+KeySysWindowList="Alt+Ctrl+Esc"
 
 #  Shows the window list menu.
-# KeySysWinListMenu=""
+KeySysWinListMenu=""
 
 #  Opens the address bar in the task bar where a command can be typed.
-# KeySysAddressBar="Alt+Ctrl+Space"
+KeySysAddressBar="Super+Space"
 
 #  Goes one workspace to the left.
-# KeySysWorkspacePrev="Alt+Ctrl+Left"
+KeySysWorkspacePrev="Alt+Ctrl+Left"
 
 #  Goes one workspace to the right.
-# KeySysWorkspaceNext="Alt+Ctrl+Right"
+KeySysWorkspaceNext="Alt+Ctrl+Right"
 
 #  Goes to the previous workspace.
-# KeySysWorkspaceLast="Alt+Ctrl+Down"
+KeySysWorkspaceLast="Alt+Ctrl+Down"
 
 #  Takes the active window one workspace to the left.
-# KeySysWorkspacePrevTakeWin="Alt+Ctrl+Shift+Left"
+KeySysWorkspacePrevTakeWin="Alt+Ctrl+Shift+Left"
 
 #  Takes the active window one workspace to the right.
-# KeySysWorkspaceNextTakeWin="Alt+Ctrl+Shift+Right"
+KeySysWorkspaceNextTakeWin="Alt+Ctrl+Shift+Right"
 
 #  Takes the active window to the previous workspace.
-# KeySysWorkspaceLastTakeWin="Alt+Ctrl+Shift+Down"
+KeySysWorkspaceLastTakeWin="Alt+Ctrl+Shift+Down"
 
 #  Goes to workspace 1.
-# KeySysWorkspace1="Alt+Ctrl+1"
+KeySysWorkspace1="Alt+Ctrl+1"
 
 #  Goes to workspace 2.
-# KeySysWorkspace2="Alt+Ctrl+2"
+KeySysWorkspace2="Alt+Ctrl+2"
 
 #  Goes to workspace 3.
-# KeySysWorkspace3="Alt+Ctrl+3"
+KeySysWorkspace3="Alt+Ctrl+3"
 
 #  Goes to workspace 4.
-# KeySysWorkspace4="Alt+Ctrl+4"
+KeySysWorkspace4="Alt+Ctrl+4"
 
 #  Goes to workspace 5.
-# KeySysWorkspace5="Alt+Ctrl+5"
+KeySysWorkspace5="Alt+Ctrl+5"
 
 #  Goes to workspace 6.
-# KeySysWorkspace6="Alt+Ctrl+6"
+KeySysWorkspace6="Alt+Ctrl+6"
 
 #  Goes to workspace 7.
-# KeySysWorkspace7="Alt+Ctrl+7"
+KeySysWorkspace7="Alt+Ctrl+7"
 
 #  Goes to workspace 8.
-# KeySysWorkspace8="Alt+Ctrl+8"
+KeySysWorkspace8="Alt+Ctrl+8"
 
 #  Goes to workspace 9.
-# KeySysWorkspace9="Alt+Ctrl+9"
+KeySysWorkspace9="Alt+Ctrl+9"
 
 #  Goes to workspace 10.
-# KeySysWorkspace10="Alt+Ctrl+0"
+KeySysWorkspace10="Alt+Ctrl+0"
 
 #  Goes to workspace 11.
-# KeySysWorkspace11="Alt+Ctrl+bracketleft"
+KeySysWorkspace11="Alt+Ctrl+bracketleft"
 
 #  Goes to workspace 12.
-# KeySysWorkspace12="Alt+Ctrl+bracketright"
+KeySysWorkspace12="Alt+Ctrl+bracketright"
 
 #  Takes the active window to workspace 1.
-# KeySysWorkspace1TakeWin="Alt+Ctrl+Shift+1"
+KeySysWorkspace1TakeWin="Alt+Ctrl+Shift+1"
 
 #  Takes the active window to workspace 2.
-# KeySysWorkspace2TakeWin="Alt+Ctrl+Shift+2"
+KeySysWorkspace2TakeWin="Alt+Ctrl+Shift+2"
 
 #  Takes the active window to workspace 3.
-# KeySysWorkspace3TakeWin="Alt+Ctrl+Shift+3"
+KeySysWorkspace3TakeWin="Alt+Ctrl+Shift+3"
 
 #  Takes the active window to workspace 4.
-# KeySysWorkspace4TakeWin="Alt+Ctrl+Shift+4"
+KeySysWorkspace4TakeWin="Alt+Ctrl+Shift+4"
 
 #  Takes the active window to workspace 5.
-# KeySysWorkspace5TakeWin="Alt+Ctrl+Shift+5"
+KeySysWorkspace5TakeWin="Alt+Ctrl+Shift+5"
 
 #  Takes the active window to workspace 6.
-# KeySysWorkspace6TakeWin="Alt+Ctrl+Shift+6"
+KeySysWorkspace6TakeWin="Alt+Ctrl+Shift+6"
 
 #  Takes the active window to workspace 7.
-# KeySysWorkspace7TakeWin="Alt+Ctrl+Shift+7"
+KeySysWorkspace7TakeWin="Alt+Ctrl+Shift+7"
 
 #  Takes the active window to workspace 8.
-# KeySysWorkspace8TakeWin="Alt+Ctrl+Shift+8"
+KeySysWorkspace8TakeWin="Alt+Ctrl+Shift+8"
 
 #  Takes the active window to workspace 9.
-# KeySysWorkspace9TakeWin="Alt+Ctrl+Shift+9"
+KeySysWorkspace9TakeWin="Alt+Ctrl+Shift+9"
 
 #  Takes the active window to workspace 10.
-# KeySysWorkspace10TakeWin="Alt+Ctrl+Shift+0"
+KeySysWorkspace10TakeWin="Alt+Ctrl+Shift+0"
 
 #  Takes the active window to workspace 11.
-# KeySysWorkspace11TakeWin="Alt+Ctrl+Shift+bracketleft"
+KeySysWorkspace11TakeWin="Alt+Ctrl+Shift+bracketleft"
 
 #  Takes the active window to workspace 12.
-# KeySysWorkspace12TakeWin="Alt+Ctrl+Shift+bracketright"
+KeySysWorkspace12TakeWin="Alt+Ctrl+Shift+bracketright"
 
 #  Tiles all windows from left to right maximized vertically.
-# KeySysTileVertical="Alt+Shift+F2"
+KeySysTileVertical="Alt+Shift+F2"
 
 #  Tiles all windows from top to bottom maximized horizontally.
-# KeySysTileHorizontal="Alt+Shift+F3"
+KeySysTileHorizontal="Alt+Shift+F3"
 
 #  Makes a horizontal cascade of all windows which are maximized vertically.
-# KeySysCascade="Alt+Shift+F4"
+KeySysCascade="Alt+Shift+F4"
 
 #  Rearranges the windows.
-# KeySysArrange="Alt+Shift+F5"
+KeySysArrange="Alt+Shift+F5"
 
 #  Rearranges icons.
-# KeySysArrangeIcons="Alt+Shift+F8"
+KeySysArrangeIcons="Alt+Shift+F8"
 
 #  Minimizes all windows.
-# KeySysMinimizeAll="Alt+Shift+F9"
+KeySysMinimizeAll="Alt+Shift+F9"
 
 #  Hides all windows.
-# KeySysHideAll="Alt+Shift+F11"
+KeySysHideAll="Alt+Shift+F11"
 
 #  Undoes arrangement.
-# KeySysUndoArrange="Alt+Shift+F7"
+KeySysUndoArrange="Alt+Shift+F7"
 
 #  Unmaps all windows to show the desktop.
-# KeySysShowDesktop="Alt+Ctrl+d"
+KeySysShowDesktop="Alt+Ctrl+d"
 
 #  Hides the task bar.
-# KeySysCollapseTaskBar="Alt+Ctrl+h"
-
-#  Add a workspace
-WorkspaceNames="1", "2", "3", "4", "5"
-
-#  Add a keyboard layout
-# KeyboardLayouts=""
-
-#  Items supported in menu window (rmsnxfhualytickw)
-WinMenuItems="rmsnxfhualyticw"
-
-# -----------------------------------------------------------
-# Themable preferences. Themes will override these.
-# To override the themes, place them in ~/.icewm/prefoverride
-# -----------------------------------------------------------
-
-#  Does it support the 'O' title bar button images (for mouse rollover)
-RolloverButtonsSupported=1 # 0/1
-
-#  Task bar clock/battery monitor uses nice pixmap LCD display
-#  (but then it doesn't display correctly in many languages anymore,
-#  e.g. for Japanese and Korean it works only when a real font is used and not the LCD pixmaps)
-TaskBarClockLeds=0 # 0/1
-
-#  Width of taskbutton side icons
-TaskbuttonIconOffset=0 # [0-16]
-
-#  Maximum scaled width of tray icons
-TrayIconMaxWidth=24 # [16-128]
-
-#  Maximum scaled height of tray icons
-TrayIconMaxHeight=24 # [16-128]
-
-#  Surround the tray with plastic border
-TrayDrawBevel=0 # 0/1
-
-#  Draw window title centered (obsoleted by TitleBarJustify)
-# TitleBarCentered=1 # 0/1
-
-#  Join title*S and title*T
-TitleBarJoinLeft=0 # 0/1
-
-#  Join title*T and title*B
-TitleBarJoinRight=0 # 0/1
-
-#  Show application icon over menu button
-ShowMenuButtonIcon=1 # 0/1
-
-#  Horizontal window border
-BorderSizeX=4 # [0-128]
-
-#  Vertical window border
-BorderSizeY=4 # [0-128]
-
-#  Horizontal dialog window border
-DlgBorderSizeX=0 # [0-128]
-
-#  Vertical dialog window border
-DlgBorderSizeY=0 # [0-128]
-
-#  Resize corner width
-CornerSizeX=0 # [0-64]
-
-#  Resize corner height
-CornerSizeY=0 # [0-64]
-
-#  Title bar height
-TitleBarHeight=24 # [0-128]
-
-#  Justification of the window title
-TitleBarJustify=50 # [0-100]
-
-#  Horizontal offset for the window title text
-TitleBarHorzOffset=0 # [-128-128]
-
-#  Vertical offset for the window title text
-TitleBarVertOffset=-2 # [-128-128]
-
-#  Vertical offset for the menu button icon
-MenuButtonIconVertOffset=0 # [-128-128]
-
-#  Scrollbar width
-ScrollBarX=16 # [0-64]
-
-#  Scrollbar (button) height
-ScrollBarY=16 # [0-64]
-
-#  Menu icon size
-MenuIconSize=16 # [8-128]
-
-#  Dimension of the small icons
-SmallIconSize=16 # [8-128]
-
-#  Dimension of the large icons
-LargeIconSize=32 # [8-128]
-
-#  Dimension of the large icons
-HugeIconSize=48 # [8-128]
-
-#  Horizontal margin of the quickswitch window
-QuickSwitchHorzMargin=0 # [0-64]
-
-#  Vertical margin of the quickswitch window
-QuickSwitchVertMargin=0 # [0-64]
-
-#  Vertical margin in the quickswitch window
-QuickSwitchIconMargin=0 # [0-64]
-
-#  Distance between the active icon and it's border
-QuickSwitchIconBorder=0 # [0-64]
-
-#  Height of the separator between (all reachable) icons and text, 0 to avoid it
-QuickSwitchSeparatorSize=0 # [0-64]
-
-#  Titlebar buttons from left to right (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth)
-TitleButtonsLeft=""
-
-#  Titlebar buttons from right to left (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth)
-TitleButtonsRight=""
-
-#  Titlebar buttons supported by theme (x,m,i,r,h,s,d)
-TitleButtonsSupported=""
-
-#
-# icewmbg preferences
-#
-
-#  Paint the background image over all multihead monitors combined
-# DesktopBackgroundMultihead=0 # 0/1
-
-#  Display desktop background centered and not tiled
-# DesktopBackgroundCenter=0 # 0/1
-
-#  Support for semitransparent terminals like Eterm or gnome-terminal
-# SupportSemitransparency=1 # 0/1
-
-#  Resize desktop background to full screen
-# DesktopBackgroundScaled=0 # 0/1
-
-#  Desktop background image(s)
-# DesktopBackgroundImage=""
-
-#  Desktop background color(s)
-# DesktopBackgroundColor=""
-
-#  Image(s) to announce for semitransparent windows
-# DesktopTransparencyImage=""
-
-#  Color(s) to announce for semitransparent windows
-# DesktopTransparencyColor=""
-
-#  Choose a random selection from the list of background images
-# ShuffleBackgroundImages=0 # 0/1
-
-#  Seconds between cycling over all background images, default zero is off
-# CycleBackgroundsPeriod=0 # [0-2147483647]
+KeySysCollapseTaskBar="Alt+Ctrl+h"
