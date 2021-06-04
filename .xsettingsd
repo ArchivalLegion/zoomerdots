@@ -1,0 +1,9 @@
+# Themeing
+Net/ThemeName     "Ant-Dracula"
+Net/IconThemeName "Papirus-Dark"
+
+# Fonts
+Xft/Hinting       "0"
+Xft/HintStyle     "hintnone"
+Xft/Antialias     "1"
+Xft/RGBA          "rgb"
