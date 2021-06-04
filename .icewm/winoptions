@@ -1,1 +1,6 @@
-#
+# URxvt
+urxvt.icon: xterm
+urxvt.startMaximized: 1
+
+# Pavucontrol
+pavucontrol.startMaximized: 1
