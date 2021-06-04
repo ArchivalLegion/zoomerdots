@@ -12,6 +12,11 @@ Xcursor*size:               32
 URxvt*depth:                32
 URxvt*cursorBlink:          1
 
+!! Some programs like alsamixer and xprop
+!! do not perform well with some graphics drivers
+!! and in consequence redraw very slowly
+URxvt*skipBuiltinGlyphs:    1
+
 !! Clickble URLs / Perl
 URxvt*perl-ext-common:      default,matcher
 URxvt*url-launcher:         /usr/bin/x-www-browser
@@ -29,15 +34,16 @@ URxvt*scrollBar_right:      1
 URxvt*scrollTtyOutput:      0
 
 !! Scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer:     0
+URxvt*scrollWithBuffer:     1
 
 !! Scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress:    1
 
 !! TODO: Sort
-URxvt*secondaryScreen:      0
+URxvt*secondaryScreen:      1
 URxvt*secondaryScroll:      0
-URxvt*mouseWheelScrollPage: 0
+URxvt*mouseWheelScrollPage: 1
+URxvt*secondaryWheel:       1
 
 
 !!
