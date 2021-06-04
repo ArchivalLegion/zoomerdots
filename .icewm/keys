@@ -1,12 +1,15 @@
 # Valid modifiers are Alt, Ctrl, Shift, Meta, Super, XF86, and Hyper.
-key "Shift+Alt+t" urxvt
-key "Shift+Alt+g" geany
-key "Shift+Alt+b" firefox --private-window
-key "Shift+Alt+a" pavucontrol
-key "Shift+Alt+w" scrot -d 3 -q 95 '%m-%d-%Y_%H-%M-%S.png' -e 'mv $f ~/Pictures/screens/'
-key "Shift+Alt+f" pcmanfm
-key "Shift+F11"   clicker
-key "Shift+F12"   killall xdotool
+key "Alt+t"                 urxvt
+key "Alt+g"                 geany
+key "Alt+b"                 firefox --private-window
+key "Alt+n"                 flatpak run com.github.Eloston.UngoogledChromium --incognito
+key "Alt+a"                 pavucontrol
+key "Alt+w"                 scrot -d 3 -q 95 '%m-%d-%Y_%H-%M-%S.png' -e 'mv $f ~/Pictures/screens/'
+key "Alt+f"                 pcmanfm
+key "Alt+F11"               clicker
+key "Alt+F12"               killall xdotool
+
+# Media & Function keys
 key "XF86AudioRaiseVolume"  pactl set-sink-volume @DEFAULT_SINK@ +5%
 key "XF86AudioLowerVolume"  pactl set-sink-volume @DEFAULT_SINK@ -5%
 key "XF86AudioMute"         pactl set-sink-mute @DEFAULT_SINK@ toggle
