@@ -162,6 +162,9 @@ ScrollBarY=16 # [0-64]
 #
 
 
+#  Menu icon size
+MenuIconSize=16 # [8-128]
+
 #  Dimension of the small icons
 SmallIconSize=16 # [8-128]
 
@@ -177,9 +180,6 @@ HugeIconSize=32 # [8-128]
 #
 
 
-#  Menu icon size
-MenuIconSize=8 # [8-128]
-
 #  Show application icon over menu button
 ShowMenuButtonIcon=0 # 0/1
 
@@ -187,7 +187,7 @@ ShowMenuButtonIcon=0 # 0/1
 # MenuButtonIconVertOffset=0 # [-128-128]
 
 #  Width of taskbutton side icons
-TaskbuttonIconOffset=0 # [0-16]
+# TaskbuttonIconOffset=0 # [0-16]
 
 #  Maximum scaled width of tray icons
 TrayIconMaxWidth=24 # [16-128]
