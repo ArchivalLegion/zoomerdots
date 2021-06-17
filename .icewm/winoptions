@@ -1,5 +1,4 @@
 # URxvt
-urxvt.icon: xterm
 urxvt.startMaximized: 1
 
 # Pavucontrol
