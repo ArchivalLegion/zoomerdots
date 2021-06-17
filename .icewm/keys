@@ -6,8 +6,8 @@ key "Super+n"               flatpak run com.github.Eloston.UngoogledChromium --i
 key "Super+a"               pavucontrol
 key "Super+w"               scrot -d 3 -q 95 '%m-%d-%Y_%H-%M-%S.png' -e 'mv $f ~/Pictures/screens/'
 key "Super+f"               pcmanfm
-key "Super+F11"             clicker
-key "Super+F12"             killall xdotool
+key "Ctrl+F11"              clicker
+key "Ctrl+F12"              killall xdotool
 
 # Media & Function keys
 key "XF86AudioRaiseVolume"  pactl set-sink-volume @DEFAULT_SINK@ +5%
