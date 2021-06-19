@@ -43,8 +43,8 @@ export FFLAGS="${COMMON_FLAGS}"
 export MAKEFLAGS="-j$(nproc)"
 
 # Set cursor theme
-XCURSOR_THEME=breeze_cursors
-XCURSOR_SIZE=32
+export XCURSOR_THEME=breeze_cursors
+export XCURSOR_SIZE=32
 
 # Auto start Xorg on tty1
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
