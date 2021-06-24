@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Setup monitor(s)
-sleep 1;screens;sleep 1 &
+#sleep 1;screens;sleep 1 &
 
 # Nitrogen
 nitrogen --restore &
@@ -12,13 +12,13 @@ xrdb ~/.Xresources &
 # xsettings daemon
 xsettingsd &
 
-# Mate polkit agent for authentication
+# Mate polkit agent for authentication prompts
 /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
 
-# Make sure Dunst gets started
+# Dunst
 dunst &
 
-# GNOME
+# GNOME network manager applet
 nm-applet &
 
 # KDE connect
