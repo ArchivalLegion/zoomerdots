@@ -17,9 +17,9 @@ URxvt*cursorBlink:          1
 !! and in consequence redraw very slowly
 URxvt*skipBuiltinGlyphs:    1
 
-!! Clickble URLs / Perl
-URxvt*perl-ext-common:      default,matcher
-URxvt*url-launcher:         /usr/bin/x-www-browser
+!! Disable Perl extensions
+URxvt*perl-ext-common:      
+URxvt*url-launcher:         
 URxvt*matcher.button:       3
 
 !!
@@ -33,7 +33,8 @@ URxvt*scrollBar_right:      1
 !! Do not scroll with output
 URxvt*scrollTtyOutput:      0
 
-!! Scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+!! Scroll in relation to buffer
+!! (with mouse scroll or Shift+Page Up)
 URxvt*scrollWithBuffer:     1
 
 !! Scroll back to the bottom on keypress
