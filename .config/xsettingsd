@@ -4,7 +4,7 @@ Net/ThemeName       "Ant-Dracula"
 Net/IconThemeName   "Papirus-Dark"
 
 # Fonts
-Xft/Hinting         "0"
-Xft/HintStyle       "hintnone"
+Xft/Hinting         "1"
+Xft/HintStyle       "hintslight"
 Xft/Antialias       "1"
 Xft/RGBA            "rgb"
