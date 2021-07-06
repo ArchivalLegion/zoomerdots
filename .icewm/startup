@@ -10,7 +10,7 @@ nitrogen --restore &
 xrdb ~/.Xresources &
 
 # xsettings daemon
-xsettingsd &
+xsettingsd -c ~/.config/xsettingsd &
 
 # Mate polkit agent for authentication prompts
 /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
