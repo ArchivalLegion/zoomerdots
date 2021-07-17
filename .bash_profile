@@ -11,14 +11,16 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-# set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
 # Moving various .dotfiles out of $HOME
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
+
+# VAAPI / VDPAU
+export VAAPI_MPEG4_ENABLED=true
+export VDPAU_DRIVER=va_gl
 
 # Wine
 export WINEPREFIX=~/.openwound
