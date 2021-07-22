@@ -11,6 +11,9 @@ Xcursor*size:               32
 
 URxvt*depth:                32
 URxvt*cursorBlink:          1
+URxvt*imLocale:             en_US.UTF-8
+URxvt*termName:             rxvt-unicode-256color
+
 
 !! Some programs like alsamixer and xprop
 !! do not perform well with some graphics drivers
@@ -43,7 +46,7 @@ URxvt*scrollTtyKeypress:    1
 !! TODO: Sort
 URxvt*secondaryScreen:      1
 URxvt*secondaryScroll:      0
-URxvt*mouseWheelScrollPage: 1
+URxvt*mouseWheelScrollPage: 0
 URxvt*secondaryWheel:       1
 
 
