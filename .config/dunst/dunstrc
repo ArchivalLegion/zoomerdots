@@ -1,16 +1,11 @@
 [global]
-font = Sans 12
+font = Noto Sans 12
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
 #   <i>italic</i>
 #   <s>strikethrough</s>
 #   <u>underline</u>
-#
-# For a complete reference see
-# <http://developer.gnome.org/pango/stable/PangoMarkupFormat.html>.
-# If markup is not allowed, those tags will be stripped out of the
-# message.
 markup = yes
 plain_text = no
 
@@ -22,10 +17,10 @@ plain_text = no
 #   %I  iconname (without its path)
 #   %p  progress value if set ([  0%] to [100%]) or nothing
 # Markup is allowed
-format = "<b>%s</b>\n%b"
+format = "<b>%a</b>\n%s\n%b"
 
 # Sort messages by urgency.
-sort = no
+sort = yes
 
 # Show how many messages are currently hidden (because of geometry).
 indicate_hidden = yes
@@ -34,10 +29,7 @@ indicate_hidden = yes
 # Possible values are "left", "center" and "right".
 alignment = center
 
-# The frequency with wich text that is longer than the notification
-# window allows bounces back and forth.
-# This option conflicts with "word_wrap".
-# Set to 0 to disable.
+#
 bounce_freq = 0
 
 # Show age of message if message is older than show_age_threshold
@@ -77,29 +69,15 @@ geometry = "300x50-60-55"
 shrink = no
 
 # The transparency of the window.  Range: [0; 100].
-# This option will only work if a compositing windowmanager is
-# present (e.g. xcompmgr, compiz, etc.).
 transparency = 20
 
-# Don't remove messages, if the user is idle (no mouse or keyboard input)
-# for longer than idle_threshold seconds.
-# Set to 0 to disable.
+# Don't remove messages, if the user is idle.
 idle_threshold = 5
 
 # Which monitor should the notifications be displayed on.
 monitor = 0
 
-# Display notification on focused monitor.  Possible modes are:
-#   mouse: follow mouse pointer
-#   keyboard: follow window with keyboard focus
-#   none: don't follow anything
-#
-# "keyboard" needs a windowmanager that exports the
-# _NET_ACTIVE_WINDOW property.
-# This should be the case for almost all modern windowmanagers.
-#
-# If this option is set to mouse or keyboard, the monitor option
-# will be ignored.
+# Display notification on focused monitor.
 follow = mouse
 
 # Should a notification popped up from history be sticky or timeout
@@ -110,7 +88,7 @@ sticky_history = yes
 history_length = 100
 
 # Display indicators for URLs (U) and actions (A).
-show_indicators = no
+show_indicators = yes
 
 # The height of a single line.  If the height is smaller than the
 # font height, it will get raised to the font height.
@@ -119,7 +97,6 @@ line_height = 3
 
 # Draw a line of "separatpr_height" pixel height between two
 # notifications.
-# Set to 0 to disable.
 separator_height = 2
 
 # Padding between text and separator.
@@ -129,11 +106,6 @@ padding = 6
 horizontal_padding = 6
 
 # Define a color for the separator.
-# possible values are:
-#  * auto: dunst tries to find a color fitting to the background;
-#  * foreground: use the same color as the foreground;
-#  * frame: use the same color as the frame;
-#  * anything else will be interpreted as a X color.
 separator_color = frame
 
 # Print a notification on startup.
@@ -158,11 +130,6 @@ frame_color = "#8EC07C"
 
 [shortcuts]
 
-# Shortcuts are specified as [modifier+][modifier+]...key
-# Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
-# "mod3" and "mod4" (windows-key).
-# Xev might be helpful to find names for keys.
-
 # Close notification.
 close = ctrl+space
 
@@ -170,16 +137,12 @@ close = ctrl+space
 close_all = ctrl+shift+space
 
 # Redisplay last message(s).
-# On the US keyboard layout "grave" is normally above TAB and left
-# of "1".
 history = ctrl+grave
 
 # Context menu.
 context = ctrl+shift+period
 
 [urgency_low]
-# IMPORTANT: colors have to be defined in quotation marks.
-# Otherwise the "#" and following would be interpreted as a comment.
 frame_color = "#3B7C87"
 foreground = "#3B7C87"
 background = "#282A36"
