@@ -61,9 +61,9 @@ Xft*hintstyle:              hintslight
 Xft*rgba:                   rgb
 Xft*lcdfilter:              lcddefault
 URxvt*font:                 xft:Fira Code:size=14
-URxvt*boldFont:             xft:Fira Code Bold:size=14
-URxvt*italicFont:           xft:Fira Code Italic:size=14
-URxvt*boldItalicFont:       xft:Fira Code Bold Italic:size=14
+URxvt*boldFont:             xft:Fira Code:bold:size=14
+URxvt*italicFont:           xft:Fira Code:italic:size=14
+URxvt*boldItalicFont:       xft:Fira Code:bold:italic:size=14
 URxvt*letterSpace:          0
 
 !!
