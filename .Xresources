@@ -60,10 +60,10 @@ Xft*autohint:               0
 Xft*hintstyle:              hintslight
 Xft*rgba:                   rgb
 Xft*lcdfilter:              lcddefault
-URxvt*font:                 xft:Hack:size=14
-URxvt*boldFont:             xft:Hack:bold:size=16
-URxvt*italicFont:           xft:Hack:italic:size=14
-URxvt*boldItalicFont:       xft:Hack:bold:italic:size=16
+URxvt*font:                 xft:Fira Code:size=14
+URxvt*boldFont:             xft:Fira Code Bold:size=14
+URxvt*italicFont:           xft:Fira Code Italic:size=14
+URxvt*boldItalicFont:       xft:Fira Code Bold Italic:size=14
 URxvt*letterSpace:          0
 
 !!
