@@ -1,99 +1,102 @@
 !!
-!! Cursor
+!! Mouse cursor
 !!
 
-Xcursor*theme:              breeze_cursors
-Xcursor*size:               32
+Xcursor.theme:              breeze_cursors
+Xcursor.size:               32
 
 !!
-!!  URxvt Settings
+!!  Terminal settings
 !!
 
-URxvt*depth:                32
-URxvt*cursorBlink:          1
-URxvt*imLocale:             en_US.UTF-8
-URxvt*termName:             rxvt-unicode-256color
+*depth:                     32
+*imLocale:                  en_US.UTF-8
 
+!! Urxvt
+URxvt.termName:             rxvt-unicode-256color
+URxvt.cursorBlink:          1
 
 !! Some programs like alsamixer and xprop
 !! do not perform well with some graphics drivers
 !! and in consequence redraw very slowly
-URxvt*skipBuiltinGlyphs:    1
+URxvt.skipBuiltinGlyphs:    1
 
-!! Disable Perl extensions
-URxvt*perl-ext-common:      
-URxvt*url-launcher:         
-URxvt*matcher.button:       3
+!! Disable urxvt Perl extensions
+URxvt.perl-ext-common:      
+URxvt.url-launcher:         
+URxvt.matcher.button:       3
 
 !!
 !! Scrolling
 !!
 
+!! Urxvt
 !! Remove scrollbar
-URxvt*scrollBar:            0
-URxvt*scrollBar_right:      1
+URxvt.scrollBar:            0
+URxvt.scrollBar_right:      1
 
 !! Do not scroll with output
-URxvt*scrollTtyOutput:      0
+URxvt.scrollTtyOutput:      0
 
 !! Scroll in relation to buffer
 !! (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer:     1
+URxvt.scrollWithBuffer:     1
 
 !! Scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress:    1
+URxvt.scrollTtyKeypress:    1
 
 !! TODO: Sort
-URxvt*secondaryScreen:      1
-URxvt*secondaryScroll:      0
-URxvt*mouseWheelScrollPage: 0
-URxvt*secondaryWheel:       1
-
+URxvt.secondaryScreen:      1
+URxvt.secondaryScroll:      0
+URxvt.mouseWheelScrollPage: 0
+URxvt.secondaryWheel:       1
 
 !!
 !! Fonts
 !!
-Xft*dpi:                    96
-Xft*antialias:              1
-Xft*hinting:                1
-Xft*autohint:               0
-Xft*hintstyle:              hintslight
-Xft*rgba:                   rgb
-Xft*lcdfilter:              lcddefault
-URxvt*font:                 xft:Fira Code:size=14
-URxvt*boldFont:             xft:Fira Code:bold:size=14
-URxvt*italicFont:           xft:Fira Code:italic:size=14
-URxvt*boldItalicFont:       xft:Fira Code:bold:italic:size=14
-URxvt*letterSpace:          0
+
+Xft.dpi:                    96
+Xft.antialias:              1
+Xft.hinting:                1
+Xft.autohint:               0
+Xft.hintstyle:              hintslight
+Xft.rgba:                   rgb
+Xft.lcdfilter:              lcddefault
+*font:                      xft:Fira Code:size=14
+*boldFont:                  xft:Fira Code:bold:size=14
+*italicFont:                xft:Fira Code:italic:size=14
+*boldItalicFont:            xft:Fira Code:bold:italic:size=14
+*letterSpace:               0
 
 !!
-!! Coloring
+!! Color
 !!
 
 !! Sxiv image viewer
-Sxiv*background:            #282a36
-Sxiv*foreground:            #ffffff
+Sxiv.background:            #282A36
+Sxiv.foreground:            #FFFFFF
 
-!! URxvt coloring
-URxvt*foreground:           #ffffff
-URxvt*background:           [80]#282a36
-URxvt*pointerColor:         #b7dc4d
-URxvt*cursorColor:          #b7dc4d
+!! Terminal cursor color
+*pointerColor:              #B7DC4D
+*cursorColor:               #B7DC4D
 
-!! Font color scheme
-URxvt*color0:               #3f3f3f
-URxvt*color1:               #705050
-URxvt*color2:               #00b45a
-URxvt*color3:               #dfcf8f
-URxvt*color4:               #506070
-URxvt*color5:               #dc8cc3
-URxvt*color6:               #8cd0d3
-URxvt*color7:               #dcdccc
-URxvt*color8:               #709080
-URxvt*color9:               #cc5454
-URxvt*color10:              #4d9f4d
-URxvt*color11:              #f0dfaf
-URxvt*color12:              #4186be
-URxvt*color13:              #ec93d3
-URxvt*color14:              #93e0e3
-URxvt*color15:              #ffffff
+!! Font color schemes
+!! Dracula palette
+*foreground:                #F8F8F2
+*background:            [75]#282A36
+*color0:                    #000000
+*color8:                    #4D4D4D
+*color1:                    #FF5555
+*color9:                    #FF6E67
+*color2:                    #50FA7B
+*color10:                   #5AF78E
+*color3:                    #F1FA8C
+*color11:                   #F4F99D
+*color4:                    #BD93F9
+*color12:                   #CAA9FA
+*color5:                    #FF79C6
+*color13:                   #FF92D0
+*color6:                    #8BE9FD
+*color14:                   #9AEDFE
+*color7:                    #BFBFBF
+*color15:                   #E6E6E6
