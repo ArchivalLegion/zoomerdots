@@ -9,11 +9,11 @@ Xcursor.size:               32
 !!  Terminal settings
 !!
 
-*depth:                     32
 *imLocale:                  en_US.UTF-8
 
 !! Urxvt
 URxvt.termName:             rxvt-unicode-256color
+URxvt.depth:                32
 URxvt.cursorBlink:          1
 
 !! Some programs like alsamixer and xprop
@@ -59,7 +59,7 @@ Xft.dpi:                    96
 Xft.antialias:              1
 Xft.hinting:                1
 Xft.autohint:               0
-Xft.hintstyle:              hintslight
+Xft.hintstyle:              hintfull
 Xft.rgba:                   rgb
 Xft.lcdfilter:              lcddefault
 *font:                      xft:Fira Code:size=14
