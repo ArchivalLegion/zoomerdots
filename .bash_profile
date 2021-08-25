@@ -19,7 +19,7 @@ fi
 # Uncruft home
 export GTK2_RC_FILES="$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="$HOME/.config/gnupg"
-export WINEPREFIX="$home/.local/wine0"
+export WINEPREFIX="$HOME/.local/wine0"
 
 # Wine
 export WINEARCH="win32"
