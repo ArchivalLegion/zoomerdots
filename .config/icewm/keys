@@ -5,7 +5,7 @@ key "Super+b"               firefox --private-window
 key "Super+n"               flatpak run com.github.Eloston.UngoogledChromium --incognito
 key "Super+a"               pavucontrol
 key "Super+w"               scrot -d 3 -q 95 '%m-%d-%Y_%H-%M-%S.png' -e 'mv $f ~/Pictures/screens/'
-key "Super+f"               pcmanfm
+key "Super+f"               thunar
 key "Ctrl+F11"              clicker
 key "Ctrl+F12"              killall xdotool
 
