@@ -1,0 +1,4 @@
+#!/bin/sh
+WINEPREFIX=/home/prostagama/.local/wine-bottles/d2vanilla
+WINEARCH=win32
+wine ~/.local/wine-bottles/d2vanilla/drive_c/'Program Files'/'Diablo II'/'Diablo II.exe' -w -ddraw
