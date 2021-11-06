@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=MultiMC
-Exec=/home/prostagama/gitty/MultiMC/bin/MultiMC
+Exec=/home/prostagama/.local/bin/MultiMC/bin/MultiMC
 Icon=multimc
 Type=Application
 Categories=Game
