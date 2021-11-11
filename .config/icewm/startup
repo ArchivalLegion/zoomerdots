@@ -1,10 +1,7 @@
 #!/bin/sh
 
-# Setup monitor(s)
+# Monitor script
 #sleep 1;screens;sleep 1 &
-
-# Nitrogen
-nitrogen --restore &
 
 # Xresources - Xdefaults
 xrdb ~/.Xresources &
@@ -12,11 +9,11 @@ xrdb ~/.Xresources &
 # xsettings daemon
 xsettingsd -c ~/.config/xsettingsd &
 
-# Mate polkit agent for authentication prompts
-/usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1 &
+# Nitrogen
+nitrogen --restore &
 
-# Dunst
-dunst &
+# Mate polkit agent for authentication prompts
+/usr/bin/lxpolkit &
 
 # GNOME network manager applet
 nm-applet &
