@@ -62,10 +62,10 @@ Xft.autohint:               0
 Xft.hintstyle:              hintfull
 Xft.rgba:                   rgb
 Xft.lcdfilter:              lcddefault
-*font:                      xft:Fira Code:size=14
-*boldFont:                  xft:Fira Code:bold:size=14
-*italicFont:                xft:Fira Code:italic:size=14
-*boldItalicFont:            xft:Fira Code:bold:italic:size=14
+*font:                      xft:monospace:size=14
+*boldFont:                  xft:monospace:bold:size=14
+*italicFont:                xft:monospace:italic:size=14
+*boldItalicFont:            xft:monospace:bold:italic:size=14
 *letterSpace:               0
 
 !!
