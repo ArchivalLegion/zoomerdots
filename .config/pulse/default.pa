@@ -61,7 +61,7 @@ load-module module-position-event-sounds
 # Automatically load driver modules depending on the hardware available.
 
 .ifexists module-udev-detect.so
-load-module module-udev-detect
+load-module module-udev-detect deferred_volume=1 tsched=0 fragments=3 fragment_size=2048
 .endif
 
 .nofail
