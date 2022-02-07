@@ -1,13 +1,3 @@
-# Source bashrc
-if [[ -f ~/.bashrc ]]; then
-      . ~/.bashrc
-fi
-
-# Source aliases
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # Uncruft home
 export GTK2_RC_FILES="$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="$HOME/.config/gnupg"
