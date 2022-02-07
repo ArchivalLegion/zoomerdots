@@ -8,14 +8,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
 # Uncruft home
 export GTK2_RC_FILES="$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="$HOME/.config/gnupg"
