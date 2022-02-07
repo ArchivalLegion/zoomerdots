@@ -2,4 +2,6 @@
 killall pulseaudio
 killall pipewire
 killall pipewire-media-session
-clear
+if [ "$SHLVL" = 1 ]; then
+    [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
+fi
