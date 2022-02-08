@@ -12,6 +12,8 @@ fi
 export GTK2_RC_FILES="$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="$HOME/.config/gnupg"
 export WINEPREFIX="$HOME/.local/wine0"
+# https://wiki.archlinux.org/index.php/java#Better_font_rendering
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 # Wine
 export WINEARCH="win32"
 # Set cursor theme
