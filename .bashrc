@@ -8,6 +8,12 @@
 # Set the PS1 prompt
 export PS1='\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]\$\[\033[00m\] '
 
+# Make files rw-rw-r in creation
+umask 002
+
+# Disable coredumps
+ulimit -c 0
+
 # SHOPT
 shopt -s autocd # change to named directory
 shopt -s cdspell # autocorrects cd misspellings
