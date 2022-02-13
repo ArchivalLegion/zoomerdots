@@ -3,6 +3,11 @@ if [[ -f ~/.bashrc ]]; then
       . ~/.bashrc
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # Source aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -12,7 +17,7 @@ fi
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="$HOME/.config/gnupg"
 export WINEPREFIX="$HOME/.local/wine0"
-# https://wiki.archlinux.org/index.php/java#Better_font_rendering
+# Java font rendering
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 # Wine
 export WINEARCH="win32"
@@ -36,6 +41,7 @@ export CXXFLAGS="${COMMON_FLAGS}"
 export FCFLAGS="${COMMON_FLAGS}"
 export FFLAGS="${COMMON_FLAGS}"
 export MAKEFLAGS="-j$(nproc)"
+
 # Auto start Xorg on tty1
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec startx
