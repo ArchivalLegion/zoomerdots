@@ -9,7 +9,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Uncruft home
-export GTK2_RC_FILES="$HOME/.config}/gtk-2.0/gtkrc-2.0"
+export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="$HOME/.config/gnupg"
 export WINEPREFIX="$HOME/.local/wine0"
 # https://wiki.archlinux.org/index.php/java#Better_font_rendering
