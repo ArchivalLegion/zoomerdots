@@ -1,51 +1,29 @@
 #!/usr/bin/pulseaudio -nF
 
-# Automatically restore the default sink/source when changed by the user during runtime.
+# Automatically restore the default sink/source when changed by the user during runtime
 
-.ifexists module-default-device-restore.so
 load-module module-default-device-restore
-.endif
 
-# Automatically restore the volume of streams and devices.
+# Automatically restore the volume of streams and devices
 
-.ifexists module-device-restore.so
 load-module module-device-restore
-.endif
-
-.ifexists module-stream-restore.so
 load-module module-stream-restore
-.endif
-
-.ifexists module-card.restore.so
 load-module module-card-restore
-.endif
 
-# Automatically switches the card profile and/or device port when a port changes its availablility status.
-# For example: unplugging headphones switches default sink to desktop speakers automatically.
+# Automatically switches the card profile and/or device port when a port changes its availablility status
+# For example: unplugging headphones switches default sink to desktop speakers automatically
 
-.ifexists module-switch-on-port-available.so
 load-module module-switch-on-port-available
-.endif
 
 # Load protocols.
 
-.ifexists module-dbus-protocol.so
 load-module module-dbus-protocol
-.endif
-
-.ifexists module-esound-protocol-unix.so
 load-module module-esound-protocol-unix
-.endif
-
-.ifexists module-native-protocol-unix.so
 load-module module-native-protocol-unix
-.endif
 
 # Position event sounds between L and R depending on the position on screen of the widget triggering them.
 
-.ifexists module-position-event-sounds.so
 load-module module-position-event-sounds
-.endif
 
 #######
 .fail
@@ -58,11 +36,10 @@ load-module module-position-event-sounds
 
 # load-module module-alsa-sink device=hw:0,7 sink_name="Intel-HDMI" sink_properties=device.description=HDMI-Output rate=48000 tsched=0 fixed_latency_range=1 fragments=3 fragment_size=2048
 
+
 # Automatically load driver modules depending on the hardware available.
 
-.ifexists module-udev-detect.so
 load-module module-udev-detect
-.endif
 
 .nofail
 #######
@@ -70,10 +47,5 @@ load-module module-udev-detect
 # If autoexit on idle is enabled we want to make sure we only quit
 # when no local session needs us anymore.
 
-.ifexists module-console-kit.so
 load-module module-console-kit
-.endif
-
-.ifexists module-systemd-login.so
 load-module module-systemd-login
-.endif
