@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 [[ -f ~/.Xresources ]] && xrdb -I $HOME ~/.Xresources
-#dbus-launch --exit-with-x11 icewm-session -b
+dbus-launch --exit-with-x11 icewm-session -b
 #icewm-session -b
