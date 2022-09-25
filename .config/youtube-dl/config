@@ -22,7 +22,7 @@
 
 # Embed info into file
 --embed-subs
---embed-thumbnail
+#--embed-thumbnail
 
 # h264 / mp4 is still the most common / supported format
 -f 'best[ext=mp4]'
