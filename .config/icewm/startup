@@ -19,7 +19,7 @@ nitrogen --restore &
 nm-applet &
 
 # KDE connect
-kdeconnect-indicator &
+# kdeconnect-indicator &
 
-# Compton - Picom
-compton -b &
+# Compton
+compton -b --config ~/.config/compton.conf &
